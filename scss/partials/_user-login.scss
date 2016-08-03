@@ -1,0 +1,44 @@
+.user-login {
+    .modal-section {
+        min-height: 50px;
+
+        &:first-child {
+            background-color: $brand-kpi-bar-color;
+        }
+
+        &:nth-child(2) {
+            background-color:white;
+        }
+
+        .modal-label {
+            color: $brand-text-color;
+            @include all-margins(0,null,0,null);
+        }
+    }
+    label {
+        font-size: 18px;
+        height:60px;
+    }
+    .input-text {
+        @extend label;
+
+        &.name, &.password {
+            background: {
+                image: url('../assets/icons/icon-player-dash.svg');
+                repeat:no-repeat;
+                position: right 10px bottom 10px;
+                color: #eee7dd;
+                size: 10%;
+            }
+        }
+        &.password {
+            background: {
+                image: url('../assets/icons/icon-lock.svg');
+            }
+        }
+    }
+    .bigger-icon {
+        width: 30px;
+        height: 30px;
+    }
+}

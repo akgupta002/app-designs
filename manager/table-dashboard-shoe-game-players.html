@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Perfect Pay UI Library</title>
+  <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="../vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body class="has-header has-sub-header has-supervisor-footer bg-light">
+  <header class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="nav navbar-nav">
+        <ul class="breadcrumbs clearfix default-view">
+          <li class="breadcrumb-item">
+            <a href="../mgm-index.html" class="breadcrumb-item-link">
+              <img class="logo" src="../assets/img/logo-test.png" alt="MGM-Macau">
+            </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../casino/casino-overview.html" class="breadcrumb-item-link" title="Casino">Casino</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="casino-vip.html" class="breadcrumb-item-link" title="VIP">VIP</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="casino-vip-pit.html" class="breadcrumb-item-link" title="Pit 1">Pit 1</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="casino-vip-table-dashboard.html" class="breadcrumb-item-link" title="MB001">MB001</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="table-dashboard-shoe-games.html" class="breadcrumb-item-link" title="Shoe#1">Shoe#1</a>
+          </li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-item-link">Game#8759992</span>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="nav navbar-nav navbar-center">
+          <li class="dropdown dropdown-center application-menu">
+              <a href="#" class="dropdown-toggle application-menu-toggle" type="button" id="application-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <span class="glyphicon icon-application-menu"></span> Table Dashboard
+              </a>
+              <div class="dropdown-menu applications-menu" aria-labelledby="application-menu">
+                  <div class="dropdown-body apps-menu">
+                      <div class="dropdown-content">
+                          <div class='app-instruction-text'>
+                              <span class='icon-fav lg' title='Set as default app'></span>
+                              <p>Set as default.</p>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-right">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a data-href="../mgm-index.html" class="application-menu-item-link clickable">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-casino-manager-landing"></span>
+                                          </div>
+                                          Casino<br>Manager
+                                      </a>
+
+                                  </div>
+                              </div>
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a href="#" class="application-menu-item-link application-menu-separator-right">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-treasury-manager"></span>
+                                          </div>
+                                          Treasury<br>Manager
+                                      </a>
+
+                                  </div>
+                              </div>
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-right">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a href="#" class="application-menu-item-link">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-cam"></span>
+                                          </div>
+                                          CAM<br>Application
+                                      </a>
+
+                                  </div>
+                              </div>
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a href="#" class="application-menu-item-link">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-cashier"></span>
+                                          </div>
+                                          Cashier<br>Application
+                                      </a>
+
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a data-href="../configuration/config-table.html" class="application-menu-item-link clickable">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-configurations-landing"></span>
+                                          </div>
+                                          Configuration<br>Application
+                                      </a>
+
+                                  </div>
+                              </div>
+
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a data-href="casino-vip-player-dashboard.html" class="application-menu-item-link clickable">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-player-dash"></span>
+                                          </div>
+                                          Player<br>Dashboard
+                                      </a>
+
+                                  </div>
+                              </div>
+
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a href="#" class="application-menu-item-link">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-alert-landing"></span>
+                                          </div>
+                                          Alerts<br>Application
+                                      </a>
+
+                                  </div>
+                              </div>
+
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-top">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a href="#" class="application-menu-item-link">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-chart"></span>
+                                          </div>
+                                          BI<br>Application
+                                      </a>
+
+                                  </div>
+                              </div>
+
+                          </div>
+
+                      </div>
+                  </div>
+
+              </div>
+
+          </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li class="navbar-search">
+
+            <div class="navbar-input-search-wrapper input-search-wrapper">
+              <input type="text" class="form-control input-text navbar-input-search input-search" placeholder="Search..." />
+              <span class="glyphicon icon-search-input"></span>
+              <a class="input-search-clear">
+                <span class="glyphicon icon-close-sm"></span>
+              </a>
+            </div>
+            <a class="navbar-search-show">
+              <span class="glyphicon icon-search navbar-icon-search"></span>
+            </a>
+
+          </li> -->
+
+        <li class="dropdown dropdown-right navbar-calendar">
+          <a href="#" class="dropdown-toggle icon-top-bar" type="button" id="casino-gaming-day" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="glyphicon icon-calendar"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="casino-gaming-day">
+            <div class="dropdown-body">
+              <div class="dropdown-content">
+                <ul class="nav dropdown-nav">
+                  <li class="dropdown-nav-item">
+                    <a href="#" class="dropdown-nav-link">30/01</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown dropdown-right dropdown-lg casino-alerts">
+          <a href="#" class="dropdown-toggle" type="button" id="casino-alerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="navbar-casino-alerts-indicator has-alerts"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="casino-alerts">
+            <div class="dropdown-body">
+              <div class="dropdown-content">
+
+                <div class="dropdown-alert-filters-header clearfix">
+                  <a class="dropdown-alert-filter-link active" data-target="#casino-alert-filters-critical">CRITICAL (2)</a>
+                  <span class="dropdown-alert-filter-separator">|</span>
+                  <a class="dropdown-alert-filter-link" data-target="#casino-alert-filters-high">HIGH (2)</a>
+                  <span class="dropdown-alert-filter-separator">|</span>
+                  <a class="dropdown-alert-filter-link" data-target="#casino-alert-filters-low">LOW (3)</a>
+                  <a class="dropdown-alert-filter-link pull-right clickable" data-href="../alert/casino-alerts.html">SEE ALL (7)</a>
+                </div>
+
+                <div class="dropdown-alert-filters collapse in" id="casino-alert-filters-critical">
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert1">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert2">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="dropdown-alert-filters collapse" id="casino-alert-filters-high">
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert1">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert2">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="dropdown-alert-filters collapse" id="casino-alert-filters-low">
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">CHIPS MISSING</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert3">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert4">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert5">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="dropdown dropdown-right user-menu">
+          <a href="#" class="dropdown-toggle user-menu-toggle" type="button" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Mark F. <span class="caret"></span>
+            </a>
+          <div class="dropdown-menu" aria-labelledby="user-menu">
+            <div class="dropdown-body">
+              <div class="dropdown-content">
+                <ul class="nav dropdown-nav">
+                  <li class="dropdown-nav-item">
+                    <a href="#" class="dropdown-nav-link">Change language</a>
+                  </li>
+                  <li class="dropdown-nav-item">
+                    <a href="#" class="dropdown-nav-link">View account</a>
+                  </li>
+                  <li class="dropdown-nav-item">
+                    <a href="#" class="dropdown-nav-link">Log out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="navbar-refresh">
+          <a href="#"><span class="glyphicon glyphicon-refresh"></span></a>
+        </li>
+      </ul>
+
+    </div>
+
+  </header>
+  <!-- .navbar -->
+
+  <header class="navbar navbar-fixed-top sub-navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <span class="navbar-brand">
+            <a href="casino-vip-pit.html" class="header-back-link">
+              <span class="glyphicon icon-lsaquo"></span>MB001
+        </a>
+        </span>
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li class="sub-navbar-data-group">
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle user-menu-toggle" id="table-status-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div class="item-data-label sub-navbar-data-label">Status</div>
+              <div class="item-data-value sub-navbar-data-value">Open <span class="caret"></span>
+              </div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="table-status-menu">
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Open</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Close</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Standard Mode</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Sleep Mode</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="sub-navbar-data-group">
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle user-menu-toggle" id="game-limits-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div class="item-data-label sub-navbar-data-label">Limits</div>
+              <div class="item-data-value sub-navbar-data-value">Inhouse 5K - 1 Mil<span class="caret"></span>
+              </div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="table-status-menu">
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Inhouse 5K - 1 Mil</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Inhouse 1 Mil - 2.5 Mil</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="sub-navbar-data-group">
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle user-menu-toggle" id="table-status-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div class="item-data-label sub-navbar-data-label">Gaming Day</div>
+              <div class="item-data-value sub-navbar-data-value">30/01<span class="caret"></span>
+              </div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="table-status-menu">
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Roll Day</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- <li class="sub-navbar-data-group">
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle user-menu-toggle" id="table-status-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="item-data-label sub-navbar-data-label">Player</div>
+                <div class="item-data-value sub-navbar-data-value">59<span class="caret"></span>
+                </div>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="table-status-menu">
+                <div class="dropdown-body">
+                  <div class="dropdown-content">
+                    <ul class="nav dropdown-nav">
+                      <li class="dropdown-nav-item">
+                        <a href="#" class="dropdown-nav-link">Top 5 Winners</a>
+                      </li>
+                      <li class="dropdown-nav-item">
+                        <a href="#" class="dropdown-nav-link">Top 5 Losers</a>
+                      </li>
+                      <li class="dropdown-nav-item">
+                        <a href="#" class="dropdown-nav-link">All</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li> -->
+        <li class="sub-navbar-data-group">
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle user-menu-toggle" id="table-status-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div class="item-data-label sub-navbar-data-label">Supervisor</div>
+              <div class="item-data-value sub-navbar-data-value">Thomas<span class="caret"></span>
+              </div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="table-status-menu">
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Logout</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Change Password</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="sub-navbar-data-group">
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle user-menu-toggle" id="table-status-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div class="item-data-label sub-navbar-data-label">Dealer</div>
+              <div class="item-data-value sub-navbar-data-value">Jacob<span class="caret"></span>
+              </div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="table-status-menu">
+              <div class="dropdown-body">
+                <div class="dropdown-content">
+                  <ul class="nav dropdown-nav">
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Logout</a>
+                    </li>
+                    <li class="dropdown-nav-item">
+                      <a href="#" class="dropdown-nav-link">Change Password</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown dropdown-right dropdown-lg">
+          <a href="#" class="dropdown-toggle alerts-menu-toggle" type="button" id="alerts-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <div class="alert-indicator has-alerts">
+              <div class="alert-count">7</div>
+            </div>
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="table-alerts">
+            <div class="dropdown-body">
+              <div class="dropdown-content">
+                <div class="dropdown-alert-filters clearfix">
+                  <a href="#" class="dropdown-alert-filter-link active">HIGH (2)</a>
+                  <span class="dropdown-alert-filter-separator">|</span>
+                  <a href="#" class="dropdown-alert-filter-link">LOW (14)</a>
+                  <a href="#" class="dropdown-alert-filter-link pull-right">SEE ALL</a>
+                </div>
+
+                <div class="dropdown-item-box dropdown-alert-box">
+
+                  <header class="dropdown-alert-box-header clearfix">
+                    <span class="dropdown-alert-box-title">INVALID CHIP</span>
+                    <span class="dropdown-alert-box-time pull-right">2 h</span>
+                  </header>
+
+                  <div class="dropdown-alert-box-body clearfix">
+                    Added, Player, seat 5
+                    <button class="btn btn-primary pull-right" type="button">DONE</button>
+                  </div>
+
+                </div>
+
+                <div class="dropdown-item-box dropdown-alert-box">
+
+                  <header class="dropdown-alert-box-header clearfix">
+                    <span class="dropdown-alert-box-title">INVALID CHIP</span>
+                    <span class="dropdown-alert-box-time pull-right">2 h</span>
+                  </header>
+
+                  <div class="dropdown-alert-box-body clearfix">
+                    Added, Player, seat 5
+                    <button class="btn btn-primary pull-right" type="button">DONE</button>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown dropdown-right">
+
+          <a href="#" class="dropdown-toggle action-menu-toggle" type="button" id="action-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="glyphicon icon-action-menu"></span>
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="action-menu">
+
+            <div class="dropdown-body">
+              <div class="dropdown-content">
+                <ul class="nav dropdown-nav">
+                  <li class="dropdown-nav-item">
+                    <a id="showRollTime_trigger" type="button" href="#modalRollTime" data-toggle="modal">Show Roll Time</a>
+                  </li>
+                  <li class="dropdown-nav-item">
+                    <a href="#" class="dropdown-nav-link" data-toggle="modal" data-target="#modalPlayerSearch">Player Search</a>
+                  </li>
+                  <li class="dropdown-nav-item clickable" data-href="../search/mgm-dealer-search.html">
+                    <a href="#" class="dropdown-nav-link">Dealer Search</a>
+                  </li>
+                  <li class="dropdown-nav-item clickable" data-href="../search/mgm-supervisor-search.html">
+                    <a href="#" class="dropdown-nav-link">Supervisor Search</a>
+                  </li>
+                  <li class="dropdown-nav-item clickable" data-href="../search/mgm-cashier-search.html">
+                    <a href="#" class="dropdown-nav-link">Cashier Search</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+      </ul>
+
+    </div>
+
+  </header>
+  <!-- .sub-navbar -->
+
+  <div class="modal modal-roll-time auto-height fade" id="modalRollTime" tabindex="-1" role="dialog" aria-labelledby="modalRollTime">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+        <header class="modal-sticky-header navbar-fixed-top">
+          <div class='row'>
+            <div class="col-xs-12">
+              <div class="dealer-search-player-options text-center">
+                Show Roll Time
+                <hr>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div id="roll-time-picker-1" class="input-append date datetimepicker">
+                <div class="input-group">
+                  <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                  <a class="add-on input-group-addon">
+                    <span class="glyphicon icon-time"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class='col-xs-8'>
+              <button class="btn btn-secondary table-action-option btn-change-roll-time" type="button">
+                CHANGE ROLL TIME
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="modal-body">
+          <div class='table-responsive'>
+            <table class="table-default table-alerts">
+              <thead>
+                <th class="narrow">
+                  <div class="checkbox">
+                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox00">
+                    <label for="checkbox00"></label>
+                  </div>
+                </th>
+                <th class="md-width">Nodes</th>
+                <th>Roll Time</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox11">
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 1</li>
+                      <li class="highlight">Table 1</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input11" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input11" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox12">
+                      <label for="checkbox12"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 1</li>
+                      <li class="highlight">Table 2</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input12" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input12" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox21">
+                      <label for="checkbox21"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 2</li>
+                      <li class="highlight">Table 1</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input21" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input21" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox22">
+                      <label for="checkbox22"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 1</li>
+                      <li class="highlight">Table 3</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input22" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input22" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-sticky-footer navbar-fixed-bottom">
+          <div class="modal-footer">
+            <div class="pull-left">
+              <p class="text-info">* Select the node(s) to roll the time.</p>
+            </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-fullscreen" id="modalPlayerSearch" tabindex="-1" role="dialog" aria-labelledby="modalPlayerSearch" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+
+        <header class="modal-sticky-header navbar-fixed-top" style="background-color:##eee7dd;">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="dealer-search-player-options text-center">
+                Player Search by:&nbsp;
+                <button id="btn-search-card" type="button" class="btn btn-primary btn-margins">
+                  <span class="glyphicon icon-search-btn"></span>Swipe Player Id Card</button>
+                <button id="btn-search-name" type="button" class="btn btn-secondary btn-margins">
+                  <span class="glyphicon icon-search-btn"></span>Player Name</button>
+                <button id="btn-search-id" type="button" class="btn btn-secondary btn-margins">
+                  <span class="glyphicon icon-search-btn"></span>Player Id</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- Player search form view by swiping card -->
+              <div class="search-wrapper search-form-by-card">
+                <div class="swipe-card">
+                  <h3 class="pull-left">Swipe<br>Player ID Card</h3>
+                  <div class="pull-right">
+                    <img src="../assets/img/swipe-player-id-card.svg" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Player search form view by name -->
+              <div class="search-wrapper search-form-by-name">
+                <div id="player-search-name">
+                  <div class="dealer-search-player-input-row">
+                    <div class="dealer-search-player-input input-search-wrapper">
+                      <input class="form-control input-search" type="text" name="first-name" placeholder="Enter first name" value="Brian" />
+                      <a class="input-search-clear">
+                        <span class="glyphicon icon-close-sm"></span>
+                      </a>
+                    </div>
+                    <div class="dealer-search-player-input input-search-wrapper">
+                      <input class="form-control input-search" type="text" name="last-name" placeholder="Enter last name" />
+                      <a class="input-search-clear">
+                        <span class="glyphicon icon-close-sm"></span>
+                      </a>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <span class="glyphicon icon-search-btn"></span>
+                    </a>
+                  </div>
+                  <div class="error-text text-center">
+                    <p>
+                      <span class="glyphicon icon-error">!</span> More than 10 players identified, please refine search.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Player search form view by id -->
+              <div class="search-wrapper search-form-by-id">
+                <div id="player-search-id">
+                  <div class="dealer-search-player-input-row single-search-box ">
+                    <div class="dealer-search-player-input input-search-wrapper">
+                      <input class="form-control input-search" type="text" name="player-id" placeholder="Enter Player Id" />
+
+                      <a class="input-search-clear">
+                        <span class="glyphicon icon-close-sm"></span>
+                      </a>
+                    </div>
+
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <span class="glyphicon icon-search-btn"></span>
+                    </a>
+
+                  </div>
+
+                  <div class="error-text text-center">
+                    <p>
+                      <span class="glyphicon icon-error">!</span> More than 10 players identified, please refine search.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </header>
+
+        <div class="modal-body">
+
+          <div class="search-wrapper">
+            <div class="player-search-results">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="table-responsive">
+                    <table class="table-default table-tables sticky-table-header">
+                      <thead>
+                        <tr>
+                          <th>Player</th>
+                          <th class="text-center">Last Session Id</th>
+                          <th class="text-center">Session Location</th>
+                          <th class="text-center">Last Player Location</th>
+                          <th class="text-center">Last Activity Time</th>
+                          <th class="text-center">Session Active</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="player-search-results-row clickable" data-href="../manager/table-dashboard-session-12345-games.html">
+                          <td>
+                            <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Smith B.">
+                            <p class="text-left highlight">Smith, Brian
+                              <span class="player-id"> (Id 11480)</span>
+                            </p>
+                          </td>
+                          <td class="text-center">12345</td>
+                          <td class="text-center">MB005</td>
+                          <td class="text-center">MB005</td>
+                          <td class="text-center">16:35</td>
+                          <td class="text-center"><span class="glyphicon glyphicon-flag"></span></td>
+                        </tr>
+                        <tr class="player-search-results-row clickable" data-href="../manager/casino-vip-player-dashboard.html">
+                          <td>
+                            <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Besterman B.">
+                            <p class="text-left highlight">Besterman, Brian<span class="player-id"> (Id 10237)</span></p>
+                          </td>
+                          <td class="text-center">67891</td>
+                          <td class="text-center">MB001</td>
+                          <td class="text-center">MB001</td>
+                          <td class="text-center">17:40</td>
+                          <td class="text-center"><span class="glyphicon glyphicon-flag disable"></span></td>
+                        </tr>
+                        <tr class="player-search-results-row clickable" data-href="../manager/table-dashboard-session-12345-games.html">
+                          <td>
+                            <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Smith B.">
+                            <p class="text-left highlight">Smith, Brian
+                              <span class="player-id"> (Id 11480)</span>
+                            </p>
+                          </td>
+                          <td class="text-center">12345</td>
+                          <td class="text-center">MB005</td>
+                          <td class="text-center">MB005</td>
+                          <td class="text-center">16:35</td>
+                          <td class="text-center"><span class="glyphicon glyphicon-flag"></span></td>
+                        </tr>
+                        <tr class="player-search-results-row clickable" data-href="../manager/casino-vip-player-dashboard.html">
+                          <td>
+                            <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Besterman B.">
+                            <p class="text-left highlight">Besterman, Brian<span class="player-id"> (Id 10237)</span></p>
+                          </td>
+                          <td class="text-center">67891</td>
+                          <td class="text-center">MB001</td>
+                          <td class="text-center">MB001</td>
+                          <td class="text-center">17:40</td>
+                          <td class="text-center"><span class="glyphicon glyphicon-flag disable"></span></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer clearfix">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="main-content">
+
+    <div class="container-fluid">
+
+      <!-- tab-content -->
+      <div class="tab-content main-tab-content">
+        <!-- Contents for shoe-game-drill-in-game-details  -->
+        <div role="tabpanel" class="tab-pane fade in active" id="tab-shoe-game-players">
+
+          <div class="container-fluid">
+
+            <ul class="nav nav-tabs" role="tablist">
+
+              <li role="presentation" class="active">
+
+                <a href="#" class="tab" aria-controls="tab1" role="tab" data-toggle="tab">GAME DETAILS</a>
+
+              </li>
+
+            </ul>
+
+            <header class="content-header tab-content-header padTop-15 clearfix">
+
+              <h3 class="tab-content-header-title">SHOE ID #1 > GAME ID #8759992</h3>
+
+              <div class="pull-right">
+
+                <div class="btn-group" data-toggle="buttons-radio">
+
+                  <a href="#player-card-back" role="button" data-toggle="button" class="btn btn-toggle btn-toggle-player-cards btn-primary active" aria-controls="player-card-back">
+                      PLAYERS
+                    </a>
+
+                  <a href="#player-card-front" role="button" data-toggle="button" class="btn btn-toggle btn-toggle-player-cards btn-primary" aria-controls="player-card-front">
+                      BETS
+                    </a>
+
+                </div>
+
+              </div>
+
+            </header>
+
+            <div class="game-player-cards row wrap flip-game-player-cards">
+
+              <div class="game-player-card" data-toggle="tab" data-href="">
+
+                <header class="game-player-card-number">1</header>
+
+                <div class="game-player-card-wrapper">
+
+                  <div class="game-player-card-container max-player">
+
+                    <div class="game-player-card-content card-front">
+                      <div class="game-player-known clickable" data-href="casino-vip-table-shoe-player-dash.html">
+                        <div class="game-player-wrapper clearfix">
+                          <header class="game-player-card-title">
+                            <div class="pull-left">
+                              <img class="game-player-image" src="../assets/img/game-player-default.svg" alt="Besterman B." />
+                            </div>
+                            <h3>BESTERMAN B.</h3>
+                            <p>(Id 10237)</p>
+                          </header>
+                        </div>
+                        <div class="game-player-data">
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Chips in:</div>
+                            <div class="item-data-value">300,000,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Casino W/L:</div>
+                            <div class="item-data-value">(100,350)</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Turnover:</div>
+                            <div class="item-data-value">70,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Avg. bet:</div>
+                            <div class="item-data-value">500,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Start time:</div>
+                            <div class="item-data-value">13:21</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="game-player-backbetter clickable" data-href="casino-vip-player-dashboard-anonymous.html">
+
+                        <div class="game-player-wrapper clearfix">
+                          <header class="game-player-card-title">
+                            <div class="pull-left">
+                              <img class="game-player-image" src="../assets/img/game-player-default.svg" alt="Anonymous" />
+                            </div>
+                            <h3>ANONYMOUS</h3>
+                            <p>(Id 10238)</p>
+                          </header>
+                        </div>
+                        <div class="game-player-data">
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Bankroll Id:</div>
+                            <div class="item-data-value">BNK10</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Bankroll Value:</div>
+                            <div class="item-data-value">10,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Casino W/L:</div>
+                            <div class="item-data-value">(100,350)</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Avg. bet:</div>
+                            <div class="item-data-value">500,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Start time:</div>
+                            <div class="item-data-value">13:21</div>
+                          </div>
+                        </div>
+
+
+                      </div>
+
+                      <div class="game-player-backbetter clickable" data-href="casino-vip-player-dashboard-anonymous2.html">
+
+                        <div class="game-player-wrapper clearfix">
+                          <header class="game-player-card-title">
+                            <div class="pull-left">
+                              <img class="game-player-image" src="../assets/img/game-player-default.svg" alt="Anonymous" />
+                            </div>
+                            <h3>ANONYMOUS</h3>
+                            <p>(Id 10239)</p>
+                          </header>
+                        </div>
+                        <div class="game-player-data">
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Bankroll Id:</div>
+                            <div class="item-data-value">BNK11</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Bankroll Value:</div>
+                            <div class="item-data-value">10,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Casino W/L:</div>
+                            <div class="item-data-value">(100,350)</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Avg. bet:</div>
+                            <div class="item-data-value">500,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Start time:</div>
+                            <div class="item-data-value">13:21</div>
+                          </div>
+                        </div>
+
+
+                      </div>
+
+                    </div>
+
+                    <div class="game-player-card-content card-back">
+
+                      <header class="game-player-card-title">
+
+                        <h3>3 PLAYERS</h3>
+
+                      </header>
+
+                      <div class="game-player-data game-player-bet-data">
+
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+
+                          <div class="item-data-label">P</div>
+
+                          <div class="item-data-value">200,000,000</div>
+
+                          <div class="game-player-bet-data-indicators">
+
+                            <div class="game-player-bet-data-indicator"></div>
+
+                            <div class="game-player-bet-data-indicator"></div>
+
+                            <div class="game-player-bet-data-indicator"></div>
+
+                          </div>
+
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+
+                          <div class="item-data-label">B</div>
+
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+
+                          <div class="item-data-label">PP</div>
+
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+
+                          <div class="item-data-label">BP</div>
+
+                          <div class="item-data-value">100,000,000</div>
+
+                          <div class="game-player-bet-data-indicators">
+
+                            <div class="game-player-bet-data-indicator"></div>
+
+                            <div class="game-player-bet-data-indicator"></div>
+
+                          </div>
+
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+
+                          <div class="item-data-label">T</div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="game-player-card">
+
+                <header class="game-player-card-number">2</header>
+
+                <div class="game-player-card-wrapper">
+
+                  <div class="game-player-card-container">
+
+                    <div class="game-player-card-content card-front">
+                      <div class="game-player-known">
+                        <div class="game-player-wrapper clearfix">
+                          <header class="game-player-card-title">
+                            <div class="pull-left">
+                              <img class="game-player-image" src="../assets/img/game-player-default.svg" alt="John F." />
+                            </div>
+                            <h3>JOHN F.</h3>
+                            <p>(Id 10338)</p>
+                          </header>
+
+                        </div>
+
+                        <div class="game-player-data">
+                          <!-- <div class="game-player-card-data-row clearfix">
+                              <div class="item-data-label">Rating:</div>
+                              <div class="item-data-value">15</div>
+                            </div> -->
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Chips in:</div>
+                            <div class="item-data-value">300,000,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Casino W/L:</div>
+                            <div class="item-data-value">(100,350)</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Turnover:</div>
+                            <div class="item-data-value">70,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Avg. bet:</div>
+                            <div class="item-data-value">500,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Start time:</div>
+                            <div class="item-data-value">13:21</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="game-player-card-content card-back">
+
+                      <header class="game-player-card-title">
+                        <h3>JOHN F.</h3>
+                      </header>
+
+                      <div class="game-player-data game-player-bet-data">
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                          <div class="item-data-label">P</div>
+                          <div class="item-data-value">300,000,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                          <div class="item-data-label">B</div>
+                          <div class="item-data-value">50,000,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                          <div class="item-data-label">PP</div>
+                          <div class="item-data-value">100,000,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">BP</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">T</div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="game-player-card empty">
+                <header class="game-player-card-number">3</header>
+                <div class="game-player-known">
+                  <div class="game-player-card-wrapper">
+                    <div class="game-player-card-container">
+                      <div class="game-player-card-content card-front"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-player-card">
+
+                <header class="game-player-card-number">5</header>
+
+                <div class="game-player-card-wrapper">
+
+                  <div class="game-player-card-container">
+
+                    <div class="game-player-card-content card-front">
+
+                      <div class="game-player-wrapper clearfix">
+                        <header class="game-player-card-title">
+                          <div class="pull-left">
+                            <img class="game-player-image" src="../assets/img/game-player-default.svg" alt="Miquel P." />
+                          </div>
+                          <h3>MIQUEL P.</h3>
+                          <p>(Id 10439)</p>
+                        </header>
+                      </div>
+                      <div class="game-player-data">
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Chips in:</div>
+                          <div class="item-data-value">300,000,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Casino W/L:</div>
+                          <div class="item-data-value">(100,350)</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Turnover:</div>
+                          <div class="item-data-value">70,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Avg. bet:</div>
+                          <div class="item-data-value">500,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Start time:</div>
+                          <div class="item-data-value">13:21</div>
+                        </div>
+                      </div>
+
+
+                      <div class="game-player-backbetter">
+
+                        <div class="game-player-wrapper clearfix">
+                          <header class="game-player-card-title">
+                            <div class="pull-left">
+                              <img class="game-player-image" src="../assets/img/game-player-default.svg" alt="Anonymous" />
+                            </div>
+                            <h3>ANONYMOUS</h3>
+                            <p>(Id 10440)</p>
+                          </header>
+                        </div>
+                        <div class="game-player-data">
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Bankroll Id:</div>
+                            <div class="item-data-value">BNK20</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Bankroll Value:</div>
+                            <div class="item-data-value">10,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Casino W/L:</div>
+                            <div class="item-data-value">(100,350)</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Avg. bet:</div>
+                            <div class="item-data-value">500,000</div>
+                          </div>
+
+                          <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Start time:</div>
+                            <div class="item-data-value">13:21</div>
+                          </div>
+                        </div>
+
+
+                      </div>
+
+                    </div>
+
+                    <div class="game-player-card-content card-back">
+
+                      <header class="game-player-card-title">
+                        <h3>2 PLAYERS</h3>
+                      </header>
+
+                      <div class="game-player-data game-player-bet-data">
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">P</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                          <div class="item-data-label">B</div>
+                          <div class="item-data-value">150,000,000</div>
+
+                          <div class="game-player-bet-data-indicators">
+                            <div class="game-player-bet-data-indicator"></div>
+                            <div class="game-player-bet-data-indicator"></div>
+                            <div class="game-player-bet-data-indicator"></div>
+                          </div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">PP</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">BP</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">T</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-player-card empty">
+                <header class="game-player-card-number">6</header>
+                <div class="game-player-card-wrapper">
+                  <div class="game-player-card-container">
+                    <div class="game-player-card-content card-front"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-player-card">
+
+                <header class="game-player-card-number">7</header>
+
+                <div class="game-player-card-wrapper">
+
+                  <div class="game-player-card-container">
+
+                    <div class="game-player-card-content card-front">
+                      <div class="game-player-wrapper clearfix">
+                        <header class="game-player-card-title">
+                          <div class="pull-left">
+                            <img class="game-player-image" src="../assets/img/game-player-default.svg" alt="Richard T." />
+                          </div>
+                          <h3>RICHARD T.</h3>
+                          <p>(Id 10530)</p>
+                        </header>
+                      </div>
+
+                      <div class="game-player-data">
+                        <!-- <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Rating:</div>
+                            <div class="item-data-value">25</div>
+                          </div> -->
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Chips in:</div>
+                          <div class="item-data-value">250,000,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Casino W/L:</div>
+                          <div class="item-data-value">(100,350)</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Turnover:</div>
+                          <div class="item-data-value">70,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Avg. bet:</div>
+                          <div class="item-data-value">500,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Start time:</div>
+                          <div class="item-data-value">13:21</div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="game-player-card-content card-back">
+
+                      <header class="game-player-card-title">
+                        <h3>RICHARD T.</h3>
+                      </header>
+
+                      <div class="game-player-data game-player-bet-data">
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                          <div class="item-data-label">P</div>
+                          <div class="item-data-value">250,000,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">B</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">PP</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                          <div class="item-data-label">BP</div>
+                          <div class="item-data-value">25,000,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">T</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-player-card">
+
+                <header class="game-player-card-number">8</header>
+
+                <div class="game-player-card-wrapper">
+
+                  <div class="game-player-card-container">
+
+                    <div class="game-player-card-content card-front">
+                      <div class="game-player-wrapper clearfix">
+                        <header class="game-player-card-title">
+                          <div class="pull-left">
+                            <img class="game-player-image" src="../assets/img/game-player-default.svg" alt="Gabriela K." />
+                          </div>
+                          <h3>GABRIELA K.</h3>
+                          <p>(Id 10631)</p>
+                        </header>
+                      </div>
+
+                      <div class="game-player-data">
+                        <!-- <div class="game-player-card-data-row clearfix">
+                            <div class="item-data-label">Rating:</div>
+                            <div class="item-data-value">10</div>
+                          </div> -->
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Chips in:</div>
+                          <div class="item-data-value">200,000,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Casino W/L:</div>
+                          <div class="item-data-value">(100,350)</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Turnover:</div>
+                          <div class="item-data-value">70,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Avg. bet:</div>
+                          <div class="item-data-value">500,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row clearfix">
+                          <div class="item-data-label">Start time:</div>
+                          <div class="item-data-value">13:21</div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="game-player-card-content card-back">
+
+                      <header class="game-player-card-title">
+                        <h3>GABRIELA K.</h3>
+                      </header>
+
+                      <div class="game-player-data game-player-bet-data">
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                          <div class="item-data-label">P</div>
+                          <div class="item-data-value">350,000,000</div>
+
+                          <div class="game-player-bet-data-indicators">
+                            <div class="game-player-bet-data-indicator"></div>
+                            <div class="game-player-bet-data-indicator"></div>
+                            <div class="game-player-bet-data-indicator"></div>
+                          </div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                          <div class="item-data-label">B</div>
+                          <div class="item-data-value">50,000,000</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row clearfix">
+                          <div class="item-data-label">PP</div>
+                          <div class="item-data-value">100,000,000</div>
+
+                          <div class="game-player-bet-data-indicators">
+                            <div class="game-player-bet-data-indicator"></div>
+                            <div class="game-player-bet-data-indicator"></div>
+                          </div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">BP</div>
+                        </div>
+
+                        <div class="game-player-card-data-row game-player-bet-data-row empty clearfix">
+                          <div class="item-data-label">T</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!--  -->
+            <div class="shoe-cards-wrapper clearfix">
+
+              <div class="row">
+
+                <div class="col-xs-6">
+
+                  <div class="row">
+
+                    <div class="col-xs-6 cards-on-left">
+
+                      <div class="shoe-cards-container">
+
+                        <div class="shoe-card-cover">
+
+                          <div class="shoe-card counter-landscape">
+
+                            <div class="card-value">3</div>
+
+                            <div class="icon-suit-clubs at-mid"></div>
+
+                          </div>
+
+                          <div class="shoe-card-footer">6</div>
+
+                        </div>
+
+                        <div class="shoe-card-cover">
+
+                          <div class="shoe-card">
+
+                            <div class="card-value">5</div>
+
+                            <div class="icon-suit-hearts at-mid"></div>
+
+                          </div>
+
+                          <div class="shoe-card-footer">3</div>
+
+                        </div>
+
+                        <div class="shoe-card-cover">
+
+                          <div class="shoe-card">
+
+                            <div class="card-value">Q</div>
+
+                            <div class="icon-suit-spades at-mid"></div>
+
+                          </div>
+
+                          <div class="shoe-card-footer">1</div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-6 cards-on-right">
+
+                      <div class="shoe-cards-container">
+
+                        <div class="shoe-card-cover">
+
+                          <div class="shoe-card">
+
+                            <div class="card-value">5</div>
+
+                            <div class="icon-suit-hearts at-mid"></div>
+
+                          </div>
+
+                          <div class="shoe-card-footer">2</div>
+
+                        </div>
+
+                        <div class="shoe-card-cover">
+
+                          <div class="shoe-card">
+
+                            <div class="card-value">Q</div>
+
+                            <div class="icon-suit-spades at-mid"></div>
+
+                          </div>
+
+                          <div class="shoe-card-footer">4</div>
+
+                        </div>
+
+                        <div class="shoe-card-cover">
+
+                          <div class="shoe-card landscape">
+
+                            <div class="card-value">K</div>
+
+                            <div class="icon-suit-diamonds at-mid"></div>
+
+                          </div>
+
+                          <div class="shoe-card-footer">5</div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-xs-4 col-xs-offset-2">
+
+                  <div class="table-responsive">
+
+                    <table class="table-default">
+
+                      <tbody>
+
+                        <tr>
+
+                          <td><strong>Player:</strong></td>
+
+                          <td class="text-right">(5h, Qh, 3h)&nbsp;<strong>8</strong></td>
+
+                        </tr>
+
+                        <tr>
+
+                          <td><strong>Banker:</strong></td>
+
+                          <td class="text-right">(5h, Qh, Kh)&nbsp;<strong>5</strong></td>
+
+                        </tr>
+
+                        <tr class="bdr-top">
+
+                          <td><strong>Winner:</strong></td>
+
+                          <td class="text-right"><strong>PLAYER</strong></td>
+
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!--  -->
+
+          </div>
+          <!-- .container -->
+
+        </div>
+        <!-- /shoe-game-drill-in-game-details -->
+
+      </div>
+      <!-- /.tab-content -->
+    </div>
+  </section>
+
+  <footer class="navbar-default navbar-fixed-bottom footer supervisor-footer">
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-xs-12">
+
+          <div class="row seven-divs">
+
+            <div class="col-1">
+
+              <a class="clickable" data-href="casino-vip-table-dashboard.html" role="tab" data-toggle="tab" aria-expanded="false" aria-controls="tab-default">
+
+                <header class="supervisor-footer-header">
+
+                  <h3>GAME HISTORY</h3>
+
+                </header>
+
+                <div class="supervisor-footer-content">
+
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Last Game
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          P, PP, T
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          W/L
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          15,000
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+            <div class="col-1">
+
+              <a class="clickable" data-href="table-dashboard-shoe.html" role="tab" data-toggle="tab" aria-expanded="false" aria-controls="tab-shoe">
+
+                <header class="supervisor-footer-header">
+
+                  <h3 class='highlight'>SHOE</h3>
+
+                </header>
+
+                <div class="supervisor-footer-content">
+
+                  <div class="row highlight">
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Shoe W/L
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          50,000
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Game
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          11
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+            <div class="col-1">
+
+              <a class="clickable" data-href="table-dashboard-chip-tray.html" role="tab" data-toggle="tab" aria-expanded="false" aria-controls="tab-chip-tray">
+
+                <header class="supervisor-footer-header">
+
+                  <h3>CHIP TRAY</h3>
+
+                </header>
+
+                <div class="supervisor-footer-content">
+
+                  <div class="row">
+
+                    <div class="col-xs-7">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Total
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          510,000
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-5">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Variance
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          0
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+            <div class="col-1">
+
+              <a class="clickable" data-href="table-dashboard-session.html" role="tab" data-toggle="tab" aria-expanded="false" aria-controls="tab-sessions">
+
+                <header class="supervisor-footer-header">
+
+                  <h3>SESSIONS</h3>
+
+                </header>
+
+                <div class="supervisor-footer-content">
+
+                  <div class="row">
+
+                    <div class="col-xs-12">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Count
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          3
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+            <div class="col-1">
+
+              <a class="clickable" data-href="table-dashboard-fill.html" role="tab" data-toggle="tab" aria-expanded="false" aria-controls="tab-fills">
+
+                <header class="supervisor-footer-header">
+
+                  <h3>FILLS</h3>
+
+                </header>
+
+                <div class="supervisor-footer-content">
+
+                  <div class="row">
+
+                    <div class="col-xs-5">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Count
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          3
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-7">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Total Value
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          2,321
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+            <div class="col-1">
+
+              <a class='clickable' data-href="table-dashboard-credit.html" role="tab" data-toggle="tab" aria-expanded="false" aria-controls="tab-credits">
+
+                <header class="supervisor-footer-header">
+
+                  <h3>CREDITS</h3>
+
+                </header>
+
+                <div class="supervisor-footer-content">
+
+                  <div class="row">
+
+                    <div class="col-xs-5">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Count
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          2
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-7">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Total Value
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          2,321
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+            <div class="col-1">
+
+              <a class='clickable' data-href="table-dashboard-buyin.html" role="tab" data-toggle="tab" aria-expanded="false" aria-controls="tab-buyins">
+
+                <header class="supervisor-footer-header">
+
+                  <h3>BUY INS</h3>
+
+                </header>
+
+                <div class="supervisor-footer-content">
+
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Count
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          1
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                      <div class="supervisor-footer-data-row">
+
+                        <div class="item-data-label">
+
+                          Total
+
+                        </div>
+
+                        <div class="item-data-value">
+
+                          1,175
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="../vendor/jquery-1.11.3.js"></script>
+  <script src="../vendor/jquery-ui.js"></script>
+  <script src="../vendor/jquery.keyboard-focus.js"></script>
+  <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+  <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="../vendor/jquery.stickytableheaders.min.js"></script>
+  <script src="../js/dropdowns.js"></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/buttons.js"></script>
+  <script src="../js/filters.js"></script>
+  <script src="../js/alerts.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/table.js"></script>
+  <script src="../js/player-cards.js"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

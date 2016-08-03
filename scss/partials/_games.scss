@@ -1,0 +1,597 @@
+.game-player-cards {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -3px 10px;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    /* akgupta */
+    /*-webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+          -webkit-box-align: flex-start;
+          -webkit-align-items: flex-start;
+              -ms-flex-align: flex-start;
+                  align-items: flex-start;*/
+}
+.game-player-card-title {
+    color: $brand-text-color;
+    text-align: center;
+}
+.game-player-card-container {
+    position: relative;
+    min-height: 306px;
+    min-height: 340px;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.game-player-card {
+    position: relative;
+    max-width: 400px;
+    min-width: 140px;
+    margin: 0 3px;
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+
+    &.flip-back .game-player-card-container {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    .game-player-card-wrapper {
+        -webkit-perspective: 1000;
+        perspective: 1000;
+    }
+    .game-player-card-number {
+        height: 26px;
+        margin-bottom: 23px;
+        font-size: 36px;
+        line-height: 26px;
+        color: $brand-kpi-bar-color;
+        text-align: center;
+    }
+    .game-player-card-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        padding: 12px 0 6px;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .game-player-card-content:hover {
+        background-color: $brand-white;
+    }
+    .game-player-card-content.card-front {
+        z-index: 2;
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    .game-player-card-content.card-back {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    .game-player-card-title {
+        margin: 7px 0;
+    }
+    .game-player-image {
+        display: block;
+        width: 68px;
+        height: 68px;
+        margin: 7px auto 16px;
+        border-radius: 50%;
+    }
+    .game-player-data {
+        margin-top: 16px;
+        font-size: 13px;
+    }
+    .game-player-data.game-player-bet-data {
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+    .game-player-card-data-row {
+        margin: 12px 0 0;
+    }
+    .game-player-card-data-row .item-data-label,
+    .game-player-card-data-row .item-data-value {
+        font-size: inherit;
+    }
+    &.empty {
+        min-width: 50px;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+
+        .game-player-card-number {
+            color: $brand-kpi-label-color;
+            text-align: center;
+        }
+
+        .game-player-card-content {
+            background: url("../assets/icons/icon-plus-lg.svg") rgba(255, 255, 255, 0.3) center center no-repeat;
+            background-size: 30px;
+        }
+        .game-player-card-content:hover {
+            background-color: $brand-white;
+        }
+    }
+}
+
+.game-player-card {
+    .game-player-card-data-row .item-data-label {
+        float: left;
+        margin-left: 7px;
+    }
+    .game-player-card-data-row.empty .item-data-label {
+        color: rgba(51, 51, 51, 0.2);
+    }
+    .game-player-card-data-row .item-data-value {
+        float: right;
+        margin-right: 17px;
+    }
+    .game-player-card-data-row.game-player-bet-data-row {
+        position: relative;
+        padding: 16px 0 7px;
+        margin: 0;
+        line-height: 24px;
+        border-top: 1px dashed rgba(187, 145, 86, 0.4);
+    }
+    .game-player-card-data-row.game-player-bet-data-row .item-data-label {
+        font-size: 15px;
+    }
+    .game-player-card-data-row.game-player-bet-data-row .item-data-value {
+        font-size: 18px;
+    }
+    .game-player-bet-data-indicators {
+        position: absolute;
+        top: 60%;
+        right: 7px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .game-player-bet-data-indicators .game-player-bet-data-indicator {
+        width: 4px;
+        height: 4px;
+        margin: 2px 0;
+        background: $brand-text-color;
+        border-radius: 3px;
+    }
+    .game-player-backbetter {
+        margin-top: 9px;
+        border-top: 1px dashed rgba(187, 145, 86, 0.4);
+        /* akgupta */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .game-player-backbetter:first-of-type {
+        margin-top: 26px;
+    }
+    .game-player-backbetter .game-player-image {
+        width: 40px;
+        height: 40px;
+        margin: 6px auto 0;
+    }
+    .game-player-card-footer {
+        margin-top: 15px;
+
+        .game-player-card-footer-link {
+            color: $brand-white;
+        }
+    }
+
+}
+
+.bet-management .game-player-card-content {
+    cursor: default;
+    background-color: $brand-white;
+}
+.bet-management .game-player-card-data-row:not(.empty) {
+    background-color: $fade-text-color;
+}
+.bet-management .game-player-card-data-row:not(.empty) .item-data-label {
+    margin-left: 13px;
+    color: $brand-white;
+}
+.bet-management .game-player-card-data-row.game-player-bet-data-row {
+    padding: 5px 0;
+    color: $brand-white;
+    border-top: 1px solid $brand-white;
+}
+.bet-management .game-player-bet-data-indicators {
+    top: 50%;
+}
+.bet-management .game-player-bet-data-indicators .game-player-bet-data-indicator {
+    background: $brand-white;
+}
+.player-details-number {
+    margin-bottom: 25px;
+    font-size: 72px;
+    line-height: 72px;
+    color: $brand-text-color;
+    text-align: center;
+}
+.player-details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.player-details .player-details-col {
+    width: 260px;
+    margin: 0 8px;
+    background-color: $brand-white;
+    border-radius: 5px;
+}
+.player-details .player-details-box-header {
+    height: 128px;
+    padding-top: 12px;
+    font-size: 18px;
+    color: $brand-text-color;
+    text-align: center;
+    background-color: #f2ede5;
+    border-bottom: 1px dashed rgba(179, 179, 179, 0.2);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.player-details .player-details-box-header .player-details-image {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+.player-details .player-details-section {
+    padding: 10px 15px 0;
+    border-bottom: 1px dashed rgba(179, 179, 179, 0.2);
+}
+.player-details .player-details-section:last-of-type {
+    border-bottom: 0;
+}
+.player-details .player-details-item-header {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: $fade-text-color;
+}
+.player-details .player-details-item-header .player-details-item-header-link {
+    display: inline-block;
+}
+.player-details .player-details-item-header .player-details-item-header-link:not(:last-child) {
+    padding-right: 7px;
+    margin-right: 5px;
+    border-right: 1px solid $fade-text-color;
+}
+.player-details .player-details-item-footer {
+    padding: 8px 0 0;
+    text-align: right;
+    border-top: 1px dashed rgba(179, 179, 179, 0.2);
+}
+.player-details .player-details-item-col {
+    padding: 14px 10px 0;
+}
+.player-details .player-details-item-row {
+    margin: 8px 0;
+    font-size: 13px;
+}
+.player-details .player-details-item-row .item-data-label {
+    color: #b3b3b3;
+}
+.player-details .player-details-item-row .item-data-value {
+    font-size: inherit;
+}
+.player-details .player-details-bet-row {
+    padding: 5px 15px;
+    margin: 0 -15px 1px;
+}
+.player-details .player-details-bet-row:not(.empty) {
+    color: $brand-white;
+    background-color: $fade-text-color;
+}
+.player-details .player-details-bet-row.empty {
+    opacity: 0.2;
+}
+.player-details .player-details-bet-row.empty + .empty {
+    border-top: 1px dashed #b3b3b3;
+}
+.player-details .player-details-bet-row:last-of-type {
+    margin-bottom: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.player-details .player-details-bet-row .item-data-label {
+    font-size: 14px;
+    color: inherit;
+}
+.player-details .player-details-bet-row .item-data-value {
+    font-size: inherit;
+    color: inherit;
+}
+.player-details .player-details-btns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.player-details.expanded {
+    position: relative;
+    display: block;
+    width: 670px;
+    margin: 0 auto;
+}
+.player-details.expanded .player-details-col-1 {
+    float: right;
+    width: 205px;
+}
+.player-details.expanded .player-details-col-1 .player-details-box {
+    background-color: #f2ede5;
+}
+.player-details.expanded .player-details-col-2 {
+    float: left;
+    width: 412px;
+}
+.player-details.expanded .player-details-col-2 .player-details-box {
+    background-color: $brand-white;
+}
+.player-details.expanded .player-details-box {
+    height: 349px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.player-details.expanded .player-details-seat-number {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    color: $brand-text-color;
+}
+.player-details.expanded .player-details-item-header {
+    color: $brand-text-color;
+}
+.player-details.expanded .player-details-item-col {
+    padding: 14px 10px 0;
+}
+.player-details.expanded [class^="col-"] + [class^="col-"] .player-details-item-col,
+.player-details.expanded [class*=" col-"] + [class*=" col-"] .player-details-item-col {
+    padding-left: 0;
+}
+.player-details.expanded .player-details-bet-row {
+    margin: 0 0 1px;
+}
+.player-details.expanded .player-details-bet-row.empty,
+.player-details.expanded .player-details-bet-row.empty + .empty {
+    border-top: 0;
+}
+.player-details.expanded .player-details-bet-row:last-of-type {
+    border-radius: 0;
+}
+.playing-card,
+.playing-card:hover,
+.playing-card:active {
+    position: relative;
+    display: inline-block;
+    width: 74px;
+    height: 100px;
+    padding: 2px 0;
+    color: $brand-footer-color;
+    vertical-align: top;
+    background-color: $brand-white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0 rgba(187, 145, 86, 0.65);
+}
+.playing-card .playing-card-value {
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 57px;
+    text-align: center;
+}
+.playing-card .playing-card-suit {
+    text-align: center;
+}
+.edit-mode .playing-card {
+    cursor: pointer;
+    border-color: $brand-text-color;
+    box-shadow: none;
+}
+.open .playing-card.dropdown-toggle:after {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    display: block;
+    background-color: $brand-text-color;
+    border-radius: 5px;
+    content: '';
+    opacity: 0.5;
+}
+.card-buffer .playing-card,
+.dealer .playing-card {
+    width: 54px;
+    height: 74px;
+    border: 0;
+    box-shadow: none;
+}
+.card-buffer .playing-card .playing-card-value,
+.dealer .playing-card .playing-card-value {
+    font-size: 36px;
+    line-height: 44px;
+}
+.card-buffer .playing-card {
+    border: 1px solid $brand-text-color;
+}
+.game-table-cards {
+    margin: 3px -3px 10px;
+}
+.game-table-card-header {
+    color: $brand-text-color;
+    text-align: center;
+}
+.game-table-card {
+    position: relative;
+    float: left;
+    max-width: 350px;
+    min-width: 250px;
+    padding: 8px 10px;
+    margin: 3px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+.game-table-card:hover {
+    background-color: $brand-white;
+}
+.game-table-card .game-table-visualizer {
+    position: relative;
+    min-height: 125px;
+    margin-bottom: 29px;
+}
+.game-table-card .game-table {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 68px;
+    height: 40px;
+    background: url("../assets/img/bg-game-table-closed.svg");
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.game-table-card.open .game-table {
+    background: url("../assets/img/bg-game-table-open.svg");
+}
+.game-table-card.closed .game-table:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("../assets/icons/icon-lock.svg") center center;
+    content: '';
+    -webkit-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+}
+.game-table-card .game-table-player-group {
+    position: absolute;
+    right: 50%;
+    bottom: 8px;
+    width: 108px;
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+}
+.game-table-card .game-table-player-group-1 {
+    bottom: 8px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.game-table-card .game-table-player-group-1 .game-table-player {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.game-table-card .game-table-player-group-2 {
+    bottom: 4px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.game-table-card .game-table-player-group-2 .game-table-player {
+    -webkit-transform: rotate(330deg);
+    transform: rotate(330deg);
+}
+.game-table-card .game-table-player-group-3 {
+    bottom: 0;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+.game-table-card .game-table-player-group-3 .game-table-player {
+    -webkit-transform: rotate(300deg);
+    transform: rotate(300deg);
+}
+.game-table-card .game-table-player-group-4 {
+    bottom: -4px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.game-table-card .game-table-player-group-4 .game-table-player {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.game-table-card .game-table-player-group-5 {
+    bottom: 0;
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+.game-table-card .game-table-player-group-5 .game-table-player {
+    -webkit-transform: rotate(240deg);
+    transform: rotate(240deg);
+}
+.game-table-card .game-table-player-group-6 {
+    bottom: 4px;
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg);
+}
+.game-table-card .game-table-player-group-6 .game-table-player {
+    -webkit-transform: rotate(210deg);
+    transform: rotate(210deg);
+}
+.game-table-card .game-table-player-group-7 {
+    bottom: 8px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.game-table-card .game-table-player-group-7 .game-table-player {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.game-table-card .game-table-player {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-color: $brand-kpi-label-color;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+.game-table-card .game-table-player.seated {
+    background-color: $brand-text-color;
+    opacity: 1;
+}
+.game-table-card .game-table-player.starred {
+    background-image: url("../assets/icons/icon-star.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 14px 12px;
+}
+.game-table-card.open .game-table-player.main-player:not(.seated) {
+    opacity: 0.7;
+}
+.game-table-card .game-table-card-data-row {
+    margin: 18px 0 10px;
+    text-align: center;
+}

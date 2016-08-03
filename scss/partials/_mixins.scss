@@ -1,0 +1,51 @@
+@mixin paddings($values...) {
+    padding: $values;
+}
+@mixin all-paddings($top,$right,$bottom,$left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+@mixin margins($values...) {
+    margin: $values;
+}
+@mixin all-margins($top,$right,$bottom,$left) {
+    margin-top:$top;
+    margin-right:$right;
+    margin-bottom:$bottom;
+    margin-left:$left;
+}
+@mixin borders($values...) {
+    border: $values;
+}
+@mixin all-borders($top,$right,$bottom,$left) {
+    border-top: $top;
+    border-right: $right;
+    border-bottom: $bottom;
+    border-left: $left;
+}
+@mixin border-radius($radius: 5px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius:    $radius;
+    -ms-border-radius:     $radius;
+    border-radius:         $radius;
+}
+
+@mixin default-text-color ($tc){
+    color: $tc;
+}
+@mixin width ($width){
+    width: $width;
+}
+@mixin height ($height){
+    height: $height;
+}
+@mixin background-color($color, $opacity:1){
+    background-color: rgba($color,$opacity);
+}
+@mixin drop-shadow($color,$x, $y, $blurriness){
+    -webkit-box-shadow: $color $x $y $blurriness;
+    -moz-box-shadow: $color $x $y $blurriness;
+    box-shadow: $color $x $y $blurriness;
+}

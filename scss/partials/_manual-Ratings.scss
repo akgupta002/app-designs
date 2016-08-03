@@ -1,0 +1,139 @@
+.manual-rating-modal {
+    .modal-title {
+        text-transform: capitalize;
+    }
+    .modal-dialog.has-sidebar {
+        @include width(900px);
+        -webkit-transition: width 1s; /* Safari */
+        transition: width 1s;
+    }
+
+    .modal-content {
+        overflow:hidden;
+        @include paddings(null 20px null 20px);
+    }
+    .modal-body {
+        @include paddings(null null 0 null);
+
+        h4 {
+            margin-bottom: 4px;
+        }
+    }
+    #rating-player-search {
+        margin: 0 10px 0 -10px;
+    }
+    .form-control {
+        background-color: $brand-white;
+        border: 1px solid rgba(187, 145, 86, 0.8);
+
+        &.input-text {
+            &.hover {
+                &:hover {
+                    border-color: #892229;
+                }
+            }
+        }
+    }
+    .form-control[readonly] {
+        background-color: lighten($brand-text-color,20);
+        @include borders(0);
+    }
+    .form-horizontal {
+
+        .control-label {
+            text-align: left;
+            margin-bottom: 4px;
+        }
+    }
+    .form-control-separator {
+        height: 2vh;
+        @include width(100%);
+    }
+}
+
+.table-manual-ratings {
+    th {
+        &.narrower {
+            @include width(7%);
+        }
+    }
+    tr {
+        &:hover{
+            td {
+                background-color: opacify($brand-white, 0.2);
+                cursor: pointer;
+            }
+
+        }
+    }
+    td {
+        @include paddings(null 8px null 8px);
+
+        &.narrow {
+            @include paddings(null 15px null 15px);
+        }
+        &.narrower {
+            @include width(7%);
+        }
+    }
+    .btn {
+        @include paddings(4px 5px null 5px);
+
+        .icon-status {
+            position: relative;
+            top: -2px;
+        }
+    }
+    .dropdown-menu {
+        min-width: null;
+    }
+    .dropside {
+        .dropdown-menu {
+            @include paddings(10px);
+            min-width: 180px;
+
+            ul {
+                &.inline > li {
+                    display: inline-block;
+                }
+                &.inline > li {
+                    a {
+                        border-left: 1px dashed rgba(128, 128, 128, 0.15);
+                        border-bottom: none;
+
+                        &.first {
+                            border-left: none;
+                        }
+                        &.last {
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.show-search-result {
+    background-color: lighten($brand-text-color, 40);
+    display: block;
+    min-height: 150px;
+    max-height: 370px;
+    overflow-y: auto;
+    height: auto;
+    @include paddings(4px);
+    @include width(100%);
+    @include height(100%);
+    @include border-radius(4px);
+
+    .list-players {
+
+        .list-item {
+            cursor: pointer;
+
+            &:hover {
+                background-color: opacify($brand-white,0.15);
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+/*
+Create new chipset styles
+*/
+
+.modal-new-chipset {
+
+    .modal-content {
+        background-color: $brand-background-color;
+        @include paddings(0 15px);
+        @include border-radius(5px);
+    }
+
+    .modal-dialog.modal-lg {
+        @include width(70%);
+    }
+
+    .instruction-text {
+        color: #b3b3b3;
+
+        &.black {
+            color: #000;
+        }
+    }
+
+
+    .chip-denom-drop-target {
+        display: block;
+        min-height: 180px;
+        height: auto;
+        max-height: 240px;
+        overflow-y: auto;
+        background-color: #f7f3ee;
+        width: 100%;
+        border: 1px solid $brand-text-color;
+        border-radius: 4px;
+    }
+
+    .table-inventory tr.selected td .table-inventory-box {
+        background-color: $brand-kpi-label-color;
+    }
+
+    .item-data-label.item-view-data-label {
+        font-size: 13px;
+
+        &.title {
+            font-size: 15px;
+        }
+    }
+
+    .dropdown {
+        padding-top: 4px;
+        width: 100%;
+        min-width: 120px;
+        margin-bottom: 15px;
+    }
+
+    .dropdown:first-child {
+        margin-bottom: 0;
+    }
+
+    .table-default td {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .new-chipset-table {
+
+        td {
+            padding-top: 7px;
+            padding-bottom: 8px;
+
+            &.narrow {
+                position: relative;
+            }
+
+        }
+
+        th.wider {
+            width: 20%;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: rgba(238, 231, 221, 0.3);
+        }
+
+        .glyphicon.glyphicon-remove {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: $brand-kpi-bar-color;
+        }
+
+        &.top-buffer {
+            margin-top: 10px;
+        }
+
+    }
+
+    .item-view-row {
+        max-height: 300px;
+        background-color: #fff;
+        cursor: default;
+        overflow-y: auto;
+        border: 1px solid $brand-text-color;
+    }
+
+    .collapse {
+        border-top: 1px solid rgba(187,145,86,0.15);
+        padding-top: 10px;
+    }
+
+    select {
+
+        &.form-control {
+            height: 40px;
+            border: 1px solid $brand-text-color;
+
+            &:focus {
+                border: 1px solid $brand-text-color;
+            }
+        }
+    }
+
+    .chipset-denom-block {
+        display: block;
+        border-radius: 5px;
+        background-color: #efeae4;
+        padding: 11px 10px 12px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .btn-move {
+        padding-top: 20px;
+    }
+
+    .form-group {
+
+        &.inline {
+            display: inline-block;
+            margin-bottom: 15px;
+
+            &.input-lg {
+                width: 25%;
+            }
+        }
+
+        &.bottom-margin {
+            margin-bottom: 0;
+        }
+    }
+
+    .input-group-addon.left-border-only {
+        border: 0;
+        border-left: 1px solid $brand-text-color;
+    }
+    .input-group-addon.left-border-only .caret {
+        margin-left: 0;
+    }
+    .dropdown .dropdown-toggle.no-padding {
+        padding: 0;
+    }
+    .modal-new-chipset .dropdown .dropdown-menu {
+        overflow-y: auto;
+        max-height: 96px;
+    }
+}

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Perfect Pay UI Library
+    </title>
+    <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="has-header has-sub-header">
+    <header class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="nav navbar-nav">
+                <ul class="breadcrumbs clearfix">
+                    <li class="breadcrumb-item">
+                        <a href="../mgm-index.html" class="breadcrumb-item-link"> <img class="logo" src="../assets/img/logo-test.png" alt="MGM-Macau"> </a>
+                    </li>
+                    <li class="breadcrumb-item"> <a href="../casino/casino-overview.html" class="breadcrumb-item-link">Configuration</a> </li>
+                    <li class="breadcrumb-item"> <span class="breadcrumb-item-link">MB001</span> </li>
+                </ul>
+            </div>
+
+            <ul class="nav navbar-nav navbar-center">
+                <li class="dropdown dropdown-center application-menu">
+                    <a href="#" class="dropdown-toggle application-menu-toggle" type="button" id="application-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="glyphicon icon-application-menu"></span>Configuration Application
+                    </a>
+                    <div class="dropdown-menu applications-menu" aria-labelledby="application-menu">
+                        <div class="dropdown-body">
+                            <div class="dropdown-content">
+                                <div class='app-instruction-text'>
+                                    <span class='icon-fav lg' title='Set as default app'></span>
+                                    <p>Set as default.</p>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-xs-3">
+                                        <div class="application-menu-item application-menu-separator-right">
+                                            <div class='icon-fav' title='Set as default app'></div>
+                                            <a data-href="../mgm-index.html" class="application-menu-item-link clickable">
+                                                <div class="application-menu-item-icon">
+                                                    <span class="glyphicon icon-casino-manager-landing"></span>
+                                                </div>
+                                                Casino<br>Manager
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="application-menu-item application-menu-separator-right">
+                                            <div class='icon-fav' title='Set as default app'></div>
+                                            <a data-href="../manager/casino-vip-table-dashboard.html" class="application-menu-item-link clickable">
+                                                <div class="application-menu-item-icon">
+                                                    <span class="glyphicon icon-table-dash"></span>
+                                                </div>
+                                                Table<br>Dashboard
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="application-menu-item application-menu-separator-right">
+                                            <div class='icon-fav' title='Set as default app'></div>
+                                            <a href="#" class="application-menu-item-link">
+                                                <div class="application-menu-item-icon">
+                                                    <span class="glyphicon icon-treasury-manager"></span>
+                                                </div>
+                                                Treasury<br>Manager
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="application-menu-item">
+                                            <div class='icon-fav' title='Set as default app'></div>
+                                            <a href="#" class="application-menu-item-link">
+                                                <div class="application-menu-item-icon">
+                                                    <span class="glyphicon icon-cam"></span>
+                                                </div>
+                                                CAM<br>Application
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+                                            <div class='icon-fav' title='Set as default app'></div>
+                                            <a href="#" class="application-menu-item-link">
+                                                <div class="application-menu-item-icon">
+                                                    <span class="glyphicon icon-cashier"></span>
+                                                </div>
+                                                Cashier<br>Application
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-3">
+                                        <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+                                            <div class='icon-fav' title='Set as default app'></div>
+                                            <a data-href="../manager/casino-vip-player-dashboard.html" class="application-menu-item-link clickable">
+                                                <div class="application-menu-item-icon">
+                                                    <span class="glyphicon icon-player-dash"></span>
+                                                </div>
+                                                Player<br>Dashboard
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="application-menu-item application-menu-separator-top application-menu-separator-right">
+                                            <div class='icon-fav' title='Set as default app'></div>
+                                            <a href="#" class="application-menu-item-link">
+                                                <div class="application-menu-item-icon">
+                                                    <span class="glyphicon icon-alert-landing"></span>
+                                                </div>
+                                                Alerts<br>Application
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="application-menu-item disable application-menu-separator-top">
+                                            <div class='icon-fav' title='Set as default app'></div>
+                                            <a href="#" class="application-menu-item-link">
+                                                <div class="application-menu-item-icon">
+                                                    <span class="glyphicon icon-chart"></span>
+                                                </div>
+                                                BI<br>Application
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown dropdown-right navbar-calendar">
+                    <a href="#" class="dropdown-toggle icon-top-bar" type="button" id="casino-gaming-day" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="glyphicon icon-calendar"></span> </a>
+                    <div class="dropdown-menu" aria-labelledby="casino-gaming-day">
+                        <div class="dropdown-body">
+                            <div class="dropdown-content">
+                                <ul class="nav dropdown-nav">
+                                    <li class="dropdown-nav-item"> <a href="#" class="dropdown-nav-link">30/01</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown dropdown-right dropdown-lg casino-alerts">
+                    <a href="#" class="dropdown-toggle" type="button" id="casino-alerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="navbar-casino-alerts-indicator has-alerts"></span> </a>
+                    <div class="dropdown-menu" aria-labelledby="casino-alerts">
+                        <div class="dropdown-body">
+                            <div class="dropdown-content">
+
+                                <div class="dropdown-alert-filters-header clearfix">
+                                    <a class="dropdown-alert-filter-link active" data-target="#casino-alert-filters-critical">CRITICAL (2)</a>
+                                    <span class="dropdown-alert-filter-separator">|</span>
+                                    <a class="dropdown-alert-filter-link" data-target="#casino-alert-filters-high">HIGH (2)</a>
+                                    <span class="dropdown-alert-filter-separator">|</span>
+                                    <a class="dropdown-alert-filter-link" data-target="#casino-alert-filters-low">LOW (3)</a>
+                                    <a class="dropdown-alert-filter-link pull-right clickable" data-href="../alert/casino-alerts.html">SEE ALL (7)</a>
+                                </div>
+
+                                <div class="dropdown-alert-filters collapse in" id="casino-alert-filters-critical">
+
+                                    <div class="dropdown-item-box dropdown-alert-box">
+
+                                        <header class="dropdown-alert-box-header clearfix">
+                                            <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                                            <span class="dropdown-alert-box-time pull-right">2 h</span>
+                                        </header>
+
+                                        <div class="dropdown-alert-box-body clearfix">
+                                            <a class="dropdown-alert-box-expand-link" data-target="#alert1">Area 1 / Pit 2</a>
+                                            <div class="dropdown-alert-box-expandable collapse" id="alert1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus
+                                                id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                                            <button class="btn btn-primary pull-right" type="button">DONE</button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dropdown-item-box dropdown-alert-box">
+
+                                        <header class="dropdown-alert-box-header clearfix">
+                                            <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                                            <span class="dropdown-alert-box-time pull-right">2 h</span>
+                                        </header>
+
+                                        <div class="dropdown-alert-box-body clearfix">
+                                            <a class="dropdown-alert-box-expand-link" data-target="#alert2">Area 1 / Pit 2</a>
+                                            <div class="dropdown-alert-box-expandable collapse" id="alert2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus
+                                                id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                                            <button class="btn btn-primary pull-right" type="button">DONE</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="dropdown-alert-filters collapse" id="casino-alert-filters-high">
+
+                                    <div class="dropdown-item-box dropdown-alert-box">
+
+                                        <header class="dropdown-alert-box-header clearfix">
+                                            <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                                            <span class="dropdown-alert-box-time pull-right">2 h</span>
+                                        </header>
+
+                                        <div class="dropdown-alert-box-body clearfix">
+                                            <a class="dropdown-alert-box-expand-link" data-target="#alert1">Area 1 / Pit 2</a>
+                                            <div class="dropdown-alert-box-expandable collapse" id="alert1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus
+                                                id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                                            <button class="btn btn-primary pull-right" type="button">DONE</button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dropdown-item-box dropdown-alert-box">
+
+                                        <header class="dropdown-alert-box-header clearfix">
+                                            <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                                            <span class="dropdown-alert-box-time pull-right">2 h</span>
+                                        </header>
+
+                                        <div class="dropdown-alert-box-body clearfix">
+                                            <a class="dropdown-alert-box-expand-link" data-target="#alert2">Area 1 / Pit 2</a>
+                                            <div class="dropdown-alert-box-expandable collapse" id="alert2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus
+                                                id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                                            <button class="btn btn-primary pull-right" type="button">DONE</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="dropdown-alert-filters collapse" id="casino-alert-filters-low">
+
+                                    <div class="dropdown-item-box dropdown-alert-box">
+
+                                        <header class="dropdown-alert-box-header clearfix">
+                                            <span class="dropdown-alert-box-title">CHIPS MISSING</span>
+                                            <span class="dropdown-alert-box-time pull-right">2 h</span>
+                                        </header>
+
+                                        <div class="dropdown-alert-box-body clearfix">
+                                            <a class="dropdown-alert-box-expand-link" data-target="#alert3">Area 1 / Pit 2</a>
+                                            <div class="dropdown-alert-box-expandable collapse" id="alert3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus
+                                                id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                                            <button class="btn btn-primary pull-right" type="button">DONE</button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dropdown-item-box dropdown-alert-box">
+
+                                        <header class="dropdown-alert-box-header clearfix">
+                                            <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                                            <span class="dropdown-alert-box-time pull-right">2 h</span>
+                                        </header>
+
+                                        <div class="dropdown-alert-box-body clearfix">
+                                            <a class="dropdown-alert-box-expand-link" data-target="#alert4">Area 1 / Pit 2</a>
+                                            <div class="dropdown-alert-box-expandable collapse" id="alert4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus
+                                                id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                                            <button class="btn btn-primary pull-right" type="button">DONE</button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dropdown-item-box dropdown-alert-box">
+
+                                        <header class="dropdown-alert-box-header clearfix">
+                                            <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                                            <span class="dropdown-alert-box-time pull-right">2 h</span>
+                                        </header>
+
+                                        <div class="dropdown-alert-box-body clearfix">
+                                            <a class="dropdown-alert-box-expand-link" data-target="#alert5">Area 1 / Pit 2</a>
+                                            <div class="dropdown-alert-box-expandable collapse" id="alert5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus
+                                                id, congue vel nunc. Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                                            <button class="btn btn-primary pull-right" type="button">DONE</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li class="dropdown dropdown-right user-menu">
+
+                    <a href="#" class="dropdown-toggle user-menu-toggle" type="button" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+            Mark F. <span class="caret"></span>
+
+          </a>
+
+                    <div class="dropdown-menu" aria-labelledby="user-menu">
+
+                        <div class="dropdown-body">
+
+                            <div class="dropdown-content">
+
+                                <ul class="nav dropdown-nav">
+
+                                    <li class="dropdown-nav-item">
+
+                                        <a href="#" class="dropdown-nav-link">Change language</a>
+
+                                    </li>
+
+                                    <li class="dropdown-nav-item">
+
+                                        <a href="#" class="dropdown-nav-link">View account</a>
+
+                                    </li>
+
+                                    <li class="dropdown-nav-item">
+
+                                        <a href="#" class="dropdown-nav-link">Log out</a>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li class="navbar-refresh">
+
+                    <a href="#"><span class="glyphicon glyphicon-refresh"></span></a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+    <!-- .navbar -->
+
+    <header class="navbar navbar-fixed-top sub-navbar">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+
+                <span class="navbar-brand">
+
+          <a href="../mgm-index.html" class="header-back-link">
+
+            <span class="glyphicon icon-lsaquo"></span>MB001
+
+                </a>
+
+                </span>
+
+            </div>
+
+            <ul class="nav navbar-nav navbar-left width-80">
+
+                <div class="row nine-divs">
+
+                    <div class="col-1">
+
+                        <li class="sub-navbar-data-group">
+
+                            <div class="item-data-label sub-navbar-data-label">Open Tables
+                            </div>
+
+                            <div class="item-data-value sub-navbar-data-value">24/48</div>
+
+                        </li>
+
+                    </div>
+
+                    <div class="col-1 smaller">
+
+                        <li class="sub-navbar-data-group">
+
+                            <div class="item-data-label
+              sub-navbar-data-label">Utilization</div>
+
+                            <div class="item-data-value sub-navbar-data-value">34%</div>
+
+                        </li>
+
+                    </div>
+
+                    <div class="col-1 larger">
+
+                        <li class="sub-navbar-data-group">
+
+                            <div class="item-data-label sub-navbar-data-label">Casino W/L
+                            </div>
+
+                            <div class="item-data-value sub-navbar-data-value">3,300,000</div>
+
+                        </li>
+
+                    </div>
+
+                    <div class="col-1 larger">
+
+                        <li class="sub-navbar-data-group">
+
+                            <div class="item-data-label sub-navbar-data-label">Theo Win</div>
+
+                            <div class="item-data-value sub-navbar-data-value">2,980,000</div>
+
+                        </li>
+
+                    </div>
+
+                    <div class="col-1 smaller">
+
+                        <li class="sub-navbar-data-group">
+
+                            <div class="item-data-label sub-navbar-data-label">Hold %</div>
+
+                            <div class="item-data-value sub-navbar-data-value">74%</div>
+
+                        </li>
+
+                    </div>
+
+                    <div class="col-1">
+
+                        <li class="sub-navbar-data-group">
+
+                            <div class="item-data-label sub-navbar-data-label">Total Buy In
+                            </div>
+
+                            <div class="item-data-value sub-navbar-data-value">180,000</div>
+
+                        </li>
+
+                    </div>
+
+                    <div class="col-1">
+
+                        <li class="sub-navbar-data-group">
+
+                            <div class="item-data-label sub-navbar-data-label">Average Bet
+                            </div>
+
+                            <div class="item-data-value sub-navbar-data-value">19,875</div>
+
+                        </li>
+
+                    </div>
+
+                    <div class="col-1 larger">
+
+                        <li class="sub-navbar-data-group">
+
+                            <div class="item-data-label sub-navbar-data-label">Turnover</div>
+
+                            <div class="item-data-value
+              sub-navbar-data-value">238,400,000</div>
+
+                        </li>
+
+                    </div>
+
+                    <div class="col-1 smaller">
+
+                        <li class="sub-navbar-data-group">
+
+                            <div class="item-data-label sub-navbar-data-label">Rated Play
+                            </div>
+
+                            <div class="item-data-value sub-navbar-data-value">35%</div>
+
+                        </li>
+
+                    </div>
+
+                </div>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown dropdown-right">
+
+                    <a href="#" class="dropdown-toggle action-menu-toggle" type="button" id="action-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                        <span class="glyphicon icon-action-menu"></span>
+
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="action-menu">
+
+                        <div class="dropdown-body">
+
+                            <div class="dropdown-content">
+
+                                <ul class="nav dropdown-nav">
+
+                                    <li class="dropdown-nav-item">
+                                        <a id="showRollTime_trigger" type="button" href="#modalRollTime" data-toggle="modal">Show Roll Time</a>
+                                    </li>
+                                    <li class="dropdown-nav-item">
+                                        <a href="#" class="dropdown-nav-link" data-toggle="modal" data-target="#modalPlayerSearch">Player Search</a>
+                                    </li>
+                                    <li class="dropdown-nav-item clickable" data-href="../search/mgm-dealer-search.html">
+                                        <a href="#" class="dropdown-nav-link">Dealer Search</a>
+                                    </li>
+                                    <li class="dropdown-nav-item clickable" data-href="../search/mgm-supervisor-search.html">
+                                        <a href="#" class="dropdown-nav-link">Supervisor Search</a>
+                                    </li>
+                                    <li class="dropdown-nav-item clickable" data-href="../search/mgm-cashier-search.html">
+                                        <a href="#" class="dropdown-nav-link">Cashier Search</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+    <!-- .sub-navbar -->
+
+    <section class="main-content">
+
+        <ul class="nav nav-tabs" role="tablist">
+
+            <li role="presentation"  class='clickable' data-href='config-table.html'>
+                <a href="#tab1" class="tab" aria-controls="tab1" role="tab" data-toggle="tab">PROPERTIES</a>
+            </li>
+
+            <li role="presentation" class='clickable' data-href='config-chipset.html'>
+                <a href="#tab2" class="tab" aria-controls="tab2" role="tab" data-toggle="tab">Chip Set</a>
+            </li>
+
+            <li role="presentation" class="active">
+                <a href="#tab3" class="tab" aria-controls="tab3" role="tab" data-toggle="tab">User</a>
+            </li>
+
+        </ul>
+
+        <div class="container-fluid">
+            <h3></h3>
+            <button type="button" class="btn btn-secondary clickable" data-toggle="modal" data-href="config-user-1.html">
+                CREATE USER 1
+            </button>
+
+            <h3></h3>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-create-user-2">
+                CREATE USER 2
+            </button>
+
+            <div class="modal fade create-user" id="modal-create-user-2" tabindex="-1" role="dialog" aria-labelledby="createUser2Modal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Create New User ver.2
+                            </h4>
+                        </div>
+
+                        <div class="modal-body clearfix">
+
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" class="thin-band active">
+                                    <span data-target="#tab21" class="tab" role="tab" data-toggle="tab">Profile</span>
+                                </li>
+
+                                <li role="presentation" class="thin-band">
+                                    <span data-target="#tab22" class="tab" role="tab" data-toggle="tab">Role</span>
+                                </li>
+
+                                <li role="presentation" class="thin-band">
+                                    <span data-target="#tab23" class="tab" role="tab" data-toggle="tab">Access Group</span>
+                                </li>
+
+                            </ul>
+                            <!-- /.nav-tabs -->
+
+                            <div class="tab-content top-buffer">
+
+
+                                <div role="tabpanel" class="tab-pane fade in active" id="tab21">
+
+                                    <div class="form-horizontal clearfix">
+                                        <div class="col-xs-4">
+                                            <img class="user-image" src="../assets/img/game-player-default.svg" alt="User Name">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <label for="first-name" class="control-label">First Name</label>
+                                                <input type="text" class="form-control" id="first-name" placeholder="First Name"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="last-name" class="control-label">Last Name</label>
+                                                <input type="text" class="form-control" id="last-name" placeholder="Last Name"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="title" class="control-label">Title</label>
+                                                <input type="text" class="form-control" id="title" placeholder="Title"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="emp-num" class="control-label">Employee Number</label>
+                                                <input type="text" class="form-control" id="emp-num" placeholder="Employee Number"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="user-name" class="control-label">User Name</label>
+                                                <input type="text" class="form-control" id="user-name" placeholder="User Name"/>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-xs-4">
+                                                        <label for="lang" class="control-label">Language</label>
+                                                    </div>
+                                                    <div class="col-xs-8">
+                                                        <div class="dropup">
+                                                            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                                                Chinese <span class="caret caret-up"></span>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <div class="dropdown-body">
+                                                                    <div class="dropdown-content">
+                                                                        <ul class="nav dropdown-nav">
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">English</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">Language 3</a>
+                                                                            </li>
+                                                                            <li class="dropdown-nav-item">
+                                                                                <a href="#" class="dropdown-nav-link">Language 4</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- /#tab1 -->
+
+                                <div role="tabpanel" class="tab-pane fade" id="tab22" arialabelledby="user-role">
+
+                                    <div class='row'>
+                                        <div class='col-xs-5'>
+                                            <h4>Roles</h4>
+                                            <div class='left-wrapper'>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item" title='Click to assign this role.'>Casino Manager
+                                                        <!-- <span class="pull-right fade">
+                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                        </span> -->
+                                                    </li>
+                                                    <li class="list-group-item" title='Click to assign this role.'>
+                                                        Pit Manager
+                                                    </li>
+                                                    <li class="list-group-item" title='Click to assign this role.'>
+                                                        Supervisor
+                                                    </li>
+                                                    <li class="list-group-item" title='Click to assign this role.'>
+                                                        Surveillance
+                                                    </li>
+                                                    <li class="list-group-item" title='Click to assign this role.'>
+                                                        Dealer
+                                                    </li>
+                                                    <li class="list-group-item" title='Click to assign this role.'>
+                                                        Technician
+                                                    </li>
+                                                    <li class="list-group-item" title='Click to assign this role.'>
+                                                        Role 1
+                                                    </li>
+                                                    <li class="list-group-item" title='Click to assign this role.'>
+                                                        Role 2
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class='col-xs-2'>
+                                            <div class='middle-wrapper move-btn text-center'>
+
+                                                <img src="../assets/icons/icon-arrow-right-lg.svg" width='50' height='50'/>
+
+                                            </div>
+                                        </div>
+                                        <div class='col-xs-5'>
+                                            <h4>Assigned Roles</h4>
+                                            <div class='right-wrapper'>
+                                                <ul class="list-group">
+                                                    <li class=instruction-text>No role assigned to this user.</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane fade" id="tab23">
+                                    <!-- Create an access group -->
+                                    <!-- This may create a table to select from the topology to provide access to the user -->
+                                    <h4 class=''>Access Groups</h4>
+                                    <div class='access-groups-container fixedHeight'>
+                                        <div class='row'>
+                                            <div class='col-xs-12'>
+                                                <div class='col-xs-3'>
+                                                    <span class='item-data-label access-group-label'>Access Group 1</span>
+                                                </div>
+                                                <div class='col-xs-3'>
+                                                    <span class='item-data-label access-group-label'>Access Group 2</span>
+                                                </div>
+                                                <div class='col-xs-3'>
+                                                    <span class='item-data-label access-group-label'>Access Group 3</span>
+                                                </div>
+                                                <div class='col-xs-3'>
+                                                    <span class='item-data-label access-group-label'>Access Group 4</span>
+                                                </div>
+                                                <div class='col-xs-3'>
+                                                    <span class='item-data-label access-group-label'>Access Group 5</span>
+                                                </div>
+                                                <div class='col-xs-3'>
+                                                    <span class='item-data-label access-group-label'>Access Group 6</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- <div class='row'>
+                                        <div class='col-xs-12'>
+                                            <div class='row'>
+                                                <div class='col-xs-4'>
+                                                    <h4 class=''>Applications</h4>
+                                                </div>
+                                                <div class='col-xs-8'>
+                                                    <h4 class=''>Access Groups</h4>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <div class='wrapper-access-groups'>
+
+                                        <section class='section-access-group'>
+
+                                            <div class='row'>
+                                                <div class='col-xs-4'>
+                                                    <h4 class=''>Applications</h4>
+                                                    <!-- <div class='checkbox'>
+                                                        <input type='checkbox' class='input-checkbox' id='access-group-1'>
+                                                        <label for='access-group-1'>CAM</label>
+                                                    </div> -->
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <input type="radio" class="input-radio" name="radio-group1" id="access-group-1">
+                                                            <label for="access-group-1">CAM</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class='col-xs-8'>
+                                                    <h4 class=''>Access Groups</h4>
+                                                    <div class='access-groups-target-container'>
+                                                        <div class='row'>
+                                                            <span class='col-xs-12 instruction-text'>
+                                                                Click on Access Groups shown above to get assigned here.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </section>
+
+                                        <section class='section-access-group'>
+
+                                            <div class='row'>
+                                                <div class='col-xs-4'>
+                                                    <h4 class=''>Applications</h4>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <input type="radio" class="input-radio" name="radio-group1" id="access-group-2">
+                                                            <label for="access-group-2">Casino Manager</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class='col-xs-8'>
+                                                    <h4 class=''>Access Groups</h4>
+                                                    <div class='access-groups-target-container'>
+                                                        <div class='row'>
+                                                            <span class='col-xs-12 instruction-text'>
+                                                                Click on Access Groups shown above to get assigned here.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </section>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- /.tab-content -->
+
+                        </div>
+                        <!-- /.modal-body -->
+
+                        <!-- Modal Footer -->
+                        <div class="col-xs-12 modal-footer">
+                            <div class='pull-left'>
+                                <a id="user-back-btn" class="btn btn-secondary btn-margins" title='Go Back'>BACK</a>
+                            </div>
+                            <div class="pull-right">
+                                <a id='user-next-btn' href="#" class="btn btn-primary btn-margins" title='Go Next'>NEXT</a>
+                                <a id='user-save-btn' href="#" class="btn btn-secondary btn-margins" title='Create User'>SAVE</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- /.modal-content -->
+
+                </div>
+                <!-- /.modal-dialog -->
+
+            </div>
+            <!-- /.modal -->
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+
+    <script src="../vendor/jquery-1.11.3.js"></script>
+
+    <script src="../vendor/jquery-ui.js"></script>
+
+    <script src="../vendor/jquery.keyboard-focus.js"></script>
+
+    <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- <script src="../vendor/jquery.stickytableheaders.min.js"></script> -->
+
+    <script src="../vendor/floatThead/jquery.floatThead.min.js"></script>
+
+    <script src="../js/dropdowns.js"></script>
+
+    <script src="../js/header.js"></script>
+
+    <script src="../js/buttons.js"></script>
+
+    <script src="../js/filters.js"></script>
+
+    <script src="../js/alerts.js"></script>
+
+    <script src="../js/forms.js"></script>
+
+    <!-- <script src="../js/table.js"></script> -->
+
+    <script src="../js/table-thead-float.js"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/chipset.js"></script>
+    <script src="../js/user.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.demo-tall-content {
+    height: 200vh;
+    background-color: rgba(120, 120, 120, 0.25);
+}
+.demo-dropdown-placeholder {
+    width: 100%;
+    height: 20vh;
+}
+.demo-tall-dropdown-content {
+    height: 100vh;
+    background-color: rgba(120, 120, 120, 0.25);
+}
+.tabs-demo .nav-tabs {
+    margin-top: 0;
+}
+.documentation {
+    margin-top: 40px;
+}
+.documentation .well {
+    font-size: 15px;
+    color: $brand-footer-color;
+}
+.documentation .well b {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.documentation pre {
+    padding: 10px 20px;
+    margin: 20px 0;
+    line-height: 20px;
+}
+.notification-demo .dealer-notification-bar {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    margin: 0 -30px 20px;
+}
+.menu-header-demo .dealer-menu-header,
+.sidebar-demo .dealer-menu-sidebar {
+    position: relative;
+    height: auto;
+}

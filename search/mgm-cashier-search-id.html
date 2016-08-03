@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Perfect Pay UI Library</title>
+  <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="../vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body class="has-header has-sub-header has-tabs">
+
+  <header class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="nav navbar-nav">
+        <ul class="breadcrumbs clearfix">
+
+          <li class="breadcrumb-item">
+            <a href="../mgm-index.html" class="breadcrumb-item-link">
+              <img class="logo" src="../assets/img/logo-test.png" alt="MGM-Macau">
+            </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../mgm-index.html" class="breadcrumb-item-link disable" title="MGM Macau">MGM Macau</a>
+          </li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-item-link disable">Casino</span>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="nav navbar-nav navbar-center">
+        <li class="dropdown dropdown-center application-menu">
+          <a href="#" class="dropdown-toggle application-menu-toggle" type="button" id="application-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="glyphicon icon-application-menu"></span> Casino Manager
+          </a>
+          <div class="dropdown-menu" aria-labelledby="application-menu">
+            <div class="dropdown-body">
+              <div class="dropdown-content">
+
+                <div class="clearfix">
+
+                  <div class="col-xs-6">
+                    <div class="application-menu-item application-menu-separator-right">
+
+                      <a href="#" class="application-menu-item-link">
+                        <div class="application-menu-item-icon">
+                          <span class="glyphicon icon-casino-manager"></span>
+                        </div>
+                        Casino Manager
+                      </a>
+
+                    </div>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <div class="application-menu-item">
+
+                      <a href="#" class="application-menu-item-link">
+                        <div class="application-menu-item-icon">
+                          <span class="glyphicon icon-configurations"></span>
+                        </div>
+                        Configuration
+                      </a>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="clearfix">
+
+                  <div class="col-xs-6">
+                    <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+
+                      <a href="#" class="application-menu-item-link">
+                        <div class="application-menu-item-icon">
+                          <span class="glyphicon icon-application-placeholder"></span>
+                        </div>
+                        Application YX
+                      </a>
+
+                    </div>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <div class="application-menu-item application-menu-separator-top">
+
+                      <a href="#" class="application-menu-item-link">
+                        <div class="application-menu-item-icon">
+                          <span class="glyphicon icon-application-placeholder"></span>
+                        </div>
+                        Application XY
+                      </a>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown dropdown-right navbar-calendar">
+
+          <a href="#" class="dropdown-toggle icon-top-bar" type="button" id="casino-gaming-day" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="glyphicon icon-calendar"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="casino-gaming-day">
+            <div class="dropdown-body">
+              <div class="dropdown-content">
+                <ul class="nav dropdown-nav">
+                  <li class="dropdown-nav-item">
+                    <a href="#" class="dropdown-nav-link">12/06</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </li>
+
+        <li class="dropdown dropdown-right dropdown-lg casino-alerts">
+
+          <a href="#" class="dropdown-toggle" type="button" id="casino-alerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="navbar-casino-alerts-indicator has-alerts"></span>
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="casino-alerts">
+
+            <div class="dropdown-body">
+              <div class="dropdown-content">
+
+                <div class="dropdown-alert-filters-header clearfix">
+                  <a class="dropdown-alert-filter-link active" data-target="#casino-alert-filters-critical">CRITICAL (2)</a>
+                  <span class="dropdown-alert-filter-separator">|</span>
+                  <a class="dropdown-alert-filter-link" data-target="#casino-alert-filters-high">HIGH (2)</a>
+                  <span class="dropdown-alert-filter-separator">|</span>
+                  <a class="dropdown-alert-filter-link" data-target="#casino-alert-filters-low">LOW (3)</a>
+                  <a class="dropdown-alert-filter-link pull-right clickable" data-href="../alert/casino-alerts.html">SEE ALL (7)</a>
+                </div>
+
+                <div class="dropdown-alert-filters collapse in" id="casino-alert-filters-high">
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert1">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert2">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="dropdown-alert-filters collapse" id="casino-alert-filters-low">
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">CHIPS MISSING</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert3">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert4">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert5">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li class="dropdown dropdown-right user-menu">
+          <a href="#" class="dropdown-toggle user-menu-toggle" type="button" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Mark F. <span class="caret"></span>
+            </a>
+          <div class="dropdown-menu" aria-labelledby="user-menu">
+            <div class="dropdown-body">
+              <div class="dropdown-content">
+                <ul class="nav dropdown-nav">
+                  <li class="dropdown-nav-item">
+                    <a href="#" class="dropdown-nav-link">Change language</a>
+                  </li>
+                  <li class="dropdown-nav-item">
+                    <a href="#" class="dropdown-nav-link">View account</a>
+                  </li>
+                  <li class="dropdown-nav-item">
+                    <a href="#" class="dropdown-nav-link">Log out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="navbar-refresh">
+          <a href="#"><span class="glyphicon glyphicon-refresh"></span></a>
+        </li>
+
+      </ul>
+    </div>
+  </header>
+  <!-- .navbar -->
+
+  <header class="navbar navbar-fixed-top sub-navbar">
+    <div class="navbar-header">
+      <span class="navbar-brand">
+          <a href="../mgm-index.html" class="header-back-link">
+            <span class="glyphicon icon-lsaquo"></span> Casino
+      </a>
+      </span>
+
+    </div>
+
+    <ul class="nav navbar-nav navbar-left width-80">
+      <div class="row nine-divs">
+        <div class="col-1">
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Open Tables</div>
+            <div class="item-data-value sub-navbar-data-value">20/46</div>
+          </li>
+        </div>
+        <div class="col-1 smaller">
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Utilization</div>
+            <div class="item-data-value sub-navbar-data-value">44%</div>
+          </li>
+        </div>
+        <div class="col-1 larger">
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Casino W/L</div>
+            <div class="item-data-value sub-navbar-data-value">3,175,000</div>
+          </li>
+        </div>
+        <div class="col-1 larger">
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Theo Win</div>
+            <div class="item-data-value sub-navbar-data-value">2,857,500</div>
+          </li>
+        </div>
+        <div class="col-1 smaller">
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Hold %</div>
+            <div class="item-data-value sub-navbar-data-value">20,092</div>
+          </li>
+        </div>
+        <div class="col-1">
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Total Buy In</div>
+            <div class="item-data-value sub-navbar-data-value">10,090</div>
+          </li>
+        </div>
+        <div class="col-1">
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Average Bet</div>
+            <div class="item-data-value sub-navbar-data-value">20,092</div>
+          </li>
+        </div>
+        <div class="col-1 larger">
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Turnover</div>
+            <div class="item-data-value sub-navbar-data-value">228,600,000</div>
+          </li>
+        </div>
+        <div class="col-1 smaller">
+          <li class="sub-navbar-data-group">
+            <div class="item-data-label sub-navbar-data-label">Rated Play</div>
+            <div class="item-data-value sub-navbar-data-value">49%</div>
+          </li>
+        </div>
+      </div>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown dropdown-right">
+
+        <a href="#" class="dropdown-toggle action-menu-toggle" type="button" id="action-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <span class="glyphicon icon-action-menu"></span>
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="action-menu">
+
+          <div class="dropdown-body">
+            <div class="dropdown-content">
+              <ul class="nav dropdown-nav">
+                <li class="dropdown-nav-item">
+                  <a id="showRollTime_trigger" type="button" href="#modalRollTime" data-toggle="modal">Show Roll Time</a>
+                </li>
+                <li class="dropdown-nav-item">
+                  <a href="#" class="dropdown-nav-link" data-toggle="modal" data-target="#modalPlayerSearch">Player Search</a>
+                </li>
+                <li class="dropdown-nav-item clickable" data-href="mgm-dealer-search.html">
+                  <a href="#" class="dropdown-nav-link">Dealer Search</a>
+                </li>
+                <li class="dropdown-nav-item clickable" data-href="mgm-supervisor-search.html">
+                  <a href="#" class="dropdown-nav-link">Supervisor Search</a>
+                </li>
+                <li class="dropdown-nav-item clickable" data-href="mgm-cashier-search.html">
+                  <a href="#" class="dropdown-nav-link">Cashier Search</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </li>
+    </ul>
+
+  </header>
+  <!-- .sub-navbar -->
+
+  <div class="modal modal-roll-time auto-height fade" id="modalRollTime" tabindex="-1" role="dialog" aria-labelledby="modalRollTime">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+        <header class="modal-sticky-header navbar-fixed-top">
+          <div class='row'>
+            <div class="col-xs-12">
+              <div class="dealer-search-player-options text-center">
+                Show Roll Time
+                <hr>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div id="roll-time-picker-1" class="input-append date datetimepicker">
+                <div class="input-group">
+                  <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                  <a class="add-on input-group-addon">
+                    <span class="glyphicon icon-time"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class='col-xs-8'>
+              <button class="btn btn-secondary table-action-option btn-change-roll-time" type="button">
+                CHANGE ROLL TIME
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="modal-body">
+          <div class='table-responsive'>
+            <table class="table-default table-alerts">
+              <thead>
+                <th class="narrow">
+                  <div class="checkbox">
+                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox00">
+                    <label for="checkbox00"></label>
+                  </div>
+                </th>
+                <th class="md-width">Nodes</th>
+                <th>Roll Time</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox11">
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 1</li>
+                      <li class="highlight">Table 1</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input11" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input11" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox12">
+                      <label for="checkbox12"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 1</li>
+                      <li class="highlight">Table 2</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input12" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input12" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox21">
+                      <label for="checkbox21"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 2</li>
+                      <li class="highlight">Table 1</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input21" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input21" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox22">
+                      <label for="checkbox22"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 1</li>
+                      <li class="highlight">Table 3</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input22" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input22" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-sticky-footer navbar-fixed-bottom">
+          <div class="modal-footer">
+            <div class="pull-left">
+              <p class="text-info">* Select the node(s) to roll the time.</p>
+            </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="main-content">
+    <div class="container-fluid">
+
+
+      <div class="modal fade modal-fullscreen" id="modalPlayerSearch" tabindex="-1" role="dialog" aria-labelledby="modalPlayerSearch" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+
+            <header class="modal-sticky-header navbar-fixed-top" style="background-color:##eee7dd;">
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="dealer-search-player-options text-center">
+                    Player Search by:&nbsp;
+                    <button id="btn-search-card" type="button" class="btn btn-primary btn-margins">
+                      <span class="glyphicon icon-search-btn"></span>Swipe Player Id Card</button>
+                    <button id="btn-search-name" type="button" class="btn btn-secondary btn-margins">
+                      <span class="glyphicon icon-search-btn"></span>Player Name</button>
+                    <button id="btn-search-id" type="button" class="btn btn-secondary btn-margins">
+                      <span class="glyphicon icon-search-btn"></span>Player Id</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <!-- Player search form view by swiping card -->
+                  <div class="search-wrapper search-form-by-card">
+                    <div class="swipe-card">
+                      <h3 class="pull-left">Swipe<br>Player ID Card</h3>
+                      <div class="pull-right">
+                        <img src="../assets/img/swipe-player-id-card.svg" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Player search form view by name -->
+                  <div class="search-wrapper search-form-by-name">
+                    <div id="player-search-name">
+                      <div class="dealer-search-player-input-row">
+                        <div class="dealer-search-player-input input-search-wrapper">
+                          <input class="form-control input-search" type="text" name="first-name" placeholder="Enter first name" value="Brian" />
+                          <a class="input-search-clear">
+                            <span class="glyphicon icon-close-sm"></span>
+                          </a>
+                        </div>
+                        <div class="dealer-search-player-input input-search-wrapper">
+                          <input class="form-control input-search" type="text" name="last-name" placeholder="Enter last name" />
+                          <a class="input-search-clear">
+                            <span class="glyphicon icon-close-sm"></span>
+                          </a>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm">
+                          <span class="glyphicon icon-search-btn"></span>
+                        </a>
+                      </div>
+                      <div class="error-text text-center">
+                        <p>
+                          <span class="glyphicon icon-error">!</span> More than 10 players identified, please refine search.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Player search form view by id -->
+                  <div class="search-wrapper search-form-by-id">
+                    <div id="player-search-id">
+                      <div class="dealer-search-player-input-row single-search-box ">
+                        <div class="dealer-search-player-input input-search-wrapper">
+                          <input class="form-control input-search" type="text" name="player-id" placeholder="Enter Player Id" />
+
+                          <a class="input-search-clear">
+                            <span class="glyphicon icon-close-sm"></span>
+                          </a>
+                        </div>
+
+                        <a href="#" class="btn btn-primary btn-sm">
+                          <span class="glyphicon icon-search-btn"></span>
+                        </a>
+
+                      </div>
+
+                      <div class="error-text text-center">
+                        <p>
+                          <span class="glyphicon icon-error">!</span> More than 10 players identified, please refine search.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </header>
+
+            <div class="modal-body">
+
+              <div class="search-wrapper">
+                <div class="player-search-results">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="table-responsive">
+                        <table class="table-default table-tables sticky-table-header">
+                          <thead>
+                            <tr>
+                              <th>Player</th>
+                              <th class="text-center">Last Session Id</th>
+                              <th class="text-center">Session Location</th>
+                              <th class="text-center">Last Player Location</th>
+                              <th class="text-center">Last Activity Time</th>
+                              <th class="text-center">Session Active</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="player-search-results-row clickable" data-href="../manager/table-dashboard-session-12345-games.html">
+                              <td>
+                                <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Smith B.">
+                                <p class="text-left highlight">Smith, Brian
+                                  <span class="player-id"> (Id 11480)</span>
+                                </p>
+                              </td>
+                              <td class="text-center">12345</td>
+                              <td class="text-center">MB005</td>
+                              <td class="text-center">MB005</td>
+                              <td class="text-center">16:35</td>
+                              <td class="text-center"><span class="glyphicon glyphicon-flag"></span></td>
+                            </tr>
+                            <tr class="player-search-results-row clickable" data-href="../manager/casino-vip-player-dashboard.html">
+                              <td>
+                                <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Besterman B.">
+                                <p class="text-left highlight">Besterman, Brian<span class="player-id"> (Id 10237)</span></p>
+                              </td>
+                              <td class="text-center">67891</td>
+                              <td class="text-center">MB001</td>
+                              <td class="text-center">MB001</td>
+                              <td class="text-center">17:40</td>
+                              <td class="text-center"><span class="glyphicon glyphicon-flag disable"></span></td>
+                            </tr>
+                            <tr class="player-search-results-row clickable" data-href="../manager/table-dashboard-session-12345-games.html">
+                              <td>
+                                <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Smith B.">
+                                <p class="text-left highlight">Smith, Brian
+                                  <span class="player-id"> (Id 11480)</span>
+                                </p>
+                              </td>
+                              <td class="text-center">12345</td>
+                              <td class="text-center">MB005</td>
+                              <td class="text-center">MB005</td>
+                              <td class="text-center">16:35</td>
+                              <td class="text-center"><span class="glyphicon glyphicon-flag"></span></td>
+                            </tr>
+                            <tr class="player-search-results-row clickable" data-href="../manager/casino-vip-player-dashboard.html">
+                              <td>
+                                <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Besterman B.">
+                                <p class="text-left highlight">Besterman, Brian<span class="player-id"> (Id 10237)</span></p>
+                              </td>
+                              <td class="text-center">67891</td>
+                              <td class="text-center">MB001</td>
+                              <td class="text-center">MB001</td>
+                              <td class="text-center">17:40</td>
+                              <td class="text-center"><span class="glyphicon glyphicon-flag disable"></span></td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer clearfix">
+
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a href="#" aria-controls="tab1" role="tab" data-toggle="tab">SEARCH</a>
+        </li>
+      </ul>
+
+      <div class="tab-content main-tab-content">
+
+        <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+          <header class="content-header tab-content-header no-context clearfix lesser">
+
+          </header>
+          <div class="row">
+            <div class="col-xs-12">
+
+              <div class="search-wrapper">
+
+
+                <div class="dealer-search-player-options">
+                  Cashier Search by:
+                  <a data-href="mgm-cashier-search.html" class="dealer-search-player-selector clickable">CASHIER NAME</a>&nbsp;|&nbsp;<a class="dealer-search-player-selector active highlight">CASHIER ID</a>
+                </div>
+
+                <div id="dealer-search-name">
+                  <div class="dealer-search-player-input-row single-search-box">
+                    <div class="dealer-search-player-input input-search-wrapper">
+                      <input class="form-control input-search" type="text" name="first-name" placeholder="Enter first name" value="51031" />
+                      <a class="input-search-clear">
+                        <span class="glyphicon icon-close-sm"></span>
+                      </a>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <span class="glyphicon icon-search-btn"></span>
+                    </a>
+                  </div>
+                  <div class="error-text text-center">
+                    <p>
+                      <span class="glyphicon icon-error">!</span> User is not currently active at any location.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="player-search-results">
+
+                  <div class="table-responsive">
+                    <table class="table-default table-tables sticky-table-header">
+                      <thead>
+                        <tr>
+                          <th>User</th>
+                          <th>Username</th>
+                          <th class="text-center">Login Location</th>
+                          <th class="text-center">Login Time</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr class="player-search-results-row">
+                          <td>
+                            <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Smith B.">
+                            <p class="text-left highlight padding-top">Anderson, Bill
+                              <span class="player-id"> (Id 51031)</span>
+                            </p>
+                          </td>
+                          <td>B.Anderson</td>
+                          <td class="text-center">MB003</td>
+                          <td class="text-center">10:01</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../vendor/jquery-1.11.3.js"></script>
+  <script src="../vendor/jquery-ui.js"></script>
+  <script src="../vendor/jquery.keyboard-focus.js"></script>
+  <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+  <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="../vendor/jquery.stickytableheaders.min.js"></script>
+  <script src="../js/dropdowns.js"></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/buttons.js"></script>
+  <script src="../js/filters.js"></script>
+  <script src="../js/alerts.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/table.js"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.table-limits-details {
+    background-color: $brand-background-color;
+    margin-bottom:0;
+
+    th, td {
+        padding-top: 4px;
+        padding-bottom: 5px;
+        font-size: 12px;
+        border-bottom: 1px dashed darken($brand-background-color,10);
+    }
+    tr:nth-child(even) td {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    &.last-child {
+        margin-bottom: 20px;
+    }
+
+}
+.form-group.has-limits-details {
+    margin-bottom: 0;
+}

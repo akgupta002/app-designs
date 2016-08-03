@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Perfect Pay UI Library</title>
+
+  <link rel="stylesheet" href="../vendor/bootstrap/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="../vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+
+  <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body class="has-header has-sub-header has-tabs">
+
+  <header class="navbar navbar-fixed-top">
+
+    <div class="container-fluid">
+
+      <div class="nav navbar-nav">
+
+        <ul class="breadcrumbs clearfix">
+
+          <li class="breadcrumb-item">
+
+            <a href="../mgm-index.html" class="breadcrumb-item-link">
+
+              <img class="logo" src="../assets/img/logo-test.png" alt="MGM-Macau">
+
+            </a>
+
+          </li>
+
+          <li class="breadcrumb-item">
+
+            <a href="../casino/casino-overview.html" class="breadcrumb-item-link" title="Casino">Casino</a>
+
+          </li>
+
+          <li class="breadcrumb-item">
+
+            <a href="casino-vip.html" class="breadcrumb-item-link" title="VIP">VIP</a>
+
+          </li>
+
+          <li class="breadcrumb-item">
+
+            <span class="breadcrumb-item-link">Pit 1</span>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="nav navbar-nav navbar-center">
+          <li class="dropdown dropdown-center application-menu">
+              <a href="#" class="dropdown-toggle application-menu-toggle" type="button" id="application-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <span class="glyphicon icon-application-menu"></span> Casino Manager
+              </a>
+              <div class="dropdown-menu applications-menu" aria-labelledby="application-menu">
+                  <div class="dropdown-body apps-menu">
+                      <div class="dropdown-content">
+                          <div class='app-instruction-text'>
+                              <span class='icon-fav lg' title='Set as default app'></span>
+                              <p>Set as default.</p>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-right">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a data-href="casino-vip-table-dashboard.html" class="application-menu-item-link clickable">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-table-dash"></span>
+                                          </div>
+                                          Table<br>Dashboard
+                                      </a>
+
+                                  </div>
+                              </div>
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a href="#" class="application-menu-item-link application-menu-separator-right">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-treasury-manager"></span>
+                                          </div>
+                                          Treasury<br>Manager
+                                      </a>
+
+                                  </div>
+                              </div>
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-right">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a href="#" class="application-menu-item-link">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-cam"></span>
+                                          </div>
+                                          CAM<br>Application
+                                      </a>
+
+                                  </div>
+                              </div>
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a href="#" class="application-menu-item-link">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-cashier"></span>
+                                          </div>
+                                          Cashier<br>Application
+                                      </a>
+
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a data-href="../configuration/config-table.html" class="application-menu-item-link clickable">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-configurations-landing"></span>
+                                          </div>
+                                          Configuration<br>Application
+                                      </a>
+
+                                  </div>
+                              </div>
+
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a data-href="casino-vip-player-dashboard.html" class="application-menu-item-link clickable">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-player-dash"></span>
+                                          </div>
+                                          Player<br>Dashboard
+                                      </a>
+
+                                  </div>
+                              </div>
+
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item application-menu-separator-right application-menu-separator-top">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a href="#" class="application-menu-item-link">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-alert-landing"></span>
+                                          </div>
+                                          Alerts<br>Application
+                                      </a>
+
+                                  </div>
+                              </div>
+
+                              <div class="col-xs-3">
+                                  <div class="application-menu-item disable application-menu-separator-top">
+                                      <div class='icon-fav' title='Set as default app'></div>
+                                      <a href="#" class="application-menu-item-link">
+                                          <div class="application-menu-item-icon">
+                                              <span class="glyphicon icon-chart"></span>
+                                          </div>
+                                          BI<br>Application
+                                      </a>
+
+                                  </div>
+                              </div>
+
+                          </div>
+
+                      </div>
+                  </div>
+
+              </div>
+
+          </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown dropdown-right navbar-calendar">
+
+          <a href="#" class="dropdown-toggle icon-top-bar" type="button" id="casino-gaming-day" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+            <span class="glyphicon icon-calendar"></span>
+
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="casino-gaming-day">
+
+            <div class="dropdown-body">
+
+              <div class="dropdown-content">
+
+                <ul class="nav dropdown-nav">
+
+                  <li class="dropdown-nav-item">
+
+                    <a href="#" class="dropdown-nav-link">30/01</a>
+
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+        <li class="dropdown dropdown-right dropdown-lg casino-alerts">
+
+          <a href="#" class="dropdown-toggle" type="button" id="casino-alerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+            <span class="navbar-casino-alerts-indicator has-alerts"></span>
+
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="casino-alerts">
+
+            <div class="dropdown-body">
+
+              <div class="dropdown-content">
+
+                <div class="dropdown-alert-filters-header clearfix">
+                  <a class="dropdown-alert-filter-link active" data-target="#casino-alert-filters-critical">CRITICAL (2)</a>
+                  <span class="dropdown-alert-filter-separator">|</span>
+                  <a class="dropdown-alert-filter-link" data-target="#casino-alert-filters-high">HIGH (2)</a>
+                  <span class="dropdown-alert-filter-separator">|</span>
+                  <a class="dropdown-alert-filter-link" data-target="#casino-alert-filters-low">LOW (3)</a>
+                  <a class="dropdown-alert-filter-link pull-right clickable" data-href="../alert/casino-alerts.html">SEE ALL (7)</a>
+                </div>
+
+                <div class="dropdown-alert-filters collapse in" id="casino-alert-filters-critical">
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert1">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert2">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="dropdown-alert-filters collapse" id="casino-alert-filters-high">
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert1">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert2">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="dropdown-alert-filters collapse" id="casino-alert-filters-low">
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">CHIPS MISSING</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert3">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">FALSE LOGIN</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert4">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                  <div class="dropdown-item-box dropdown-alert-box">
+
+                    <header class="dropdown-alert-box-header clearfix">
+                      <span class="dropdown-alert-box-title">INVENTORY UNLOCKED</span>
+                      <span class="dropdown-alert-box-time pull-right">2 h</span>
+                    </header>
+
+                    <div class="dropdown-alert-box-body clearfix">
+                      <a class="dropdown-alert-box-expand-link" data-target="#alert5">Area 1 / Pit 2</a>
+                      <div class="dropdown-alert-box-expandable collapse" id="alert5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae rutrum mi. Aenean non urna tellus. Vivamus turpis tortor, venenatis vel commodo eu, aliquet nec ante. Nam risus ex, bibendum et maximus id, congue vel nunc.
+                        Cras id urna accumsan, sollicitudin neque quis, accumsan libero. Phasellus ut vestibulum mi, et lobortis augue. Nulla quis maximus dui, non tempus massa.</div>
+                      <button class="btn btn-primary pull-right" type="button">DONE</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+        <li class="dropdown dropdown-right user-menu">
+
+          <a href="#" class="dropdown-toggle user-menu-toggle" type="button" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+              Mark F. <span class="caret"></span>
+
+            </a>
+
+          <div class="dropdown-menu" aria-labelledby="user-menu">
+
+            <div class="dropdown-body">
+
+              <div class="dropdown-content">
+
+                <ul class="nav dropdown-nav">
+
+                  <li class="dropdown-nav-item">
+
+                    <a href="#" class="dropdown-nav-link">Change language</a>
+
+                  </li>
+
+                  <li class="dropdown-nav-item">
+
+                    <a href="#" class="dropdown-nav-link">View account</a>
+
+                  </li>
+
+                  <li class="dropdown-nav-item">
+
+                    <a href="#" class="dropdown-nav-link">Log out</a>
+
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+        <li class="navbar-refresh">
+
+          <a href="#"><span class="glyphicon glyphicon-refresh"></span></a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </header>
+  <!-- .navbar -->
+
+  <header class="navbar navbar-fixed-top sub-navbar">
+
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+
+        <span class="navbar-brand">
+
+            <a href="casino-vip.html" class="header-back-link">
+
+              <span class="glyphicon icon-lsaquo"></span> Pit 1
+
+        </a>
+
+        </span>
+
+      </div>
+
+      <ul class="nav navbar-nav navbar-left width-80">
+
+        <div class="row nine-divs">
+
+          <div class="col-1">
+
+            <li class="sub-navbar-data-group">
+
+              <div class="item-data-label sub-navbar-data-label">Open Tables</div>
+
+              <div class="item-data-value sub-navbar-data-value">6/12</div>
+
+            </li>
+
+          </div>
+
+          <div class="col-1">
+
+            <li class="sub-navbar-data-group">
+
+              <div class="item-data-label sub-navbar-data-label">Utilization</div>
+
+              <div class="item-data-value sub-navbar-data-value">34%</div>
+
+            </li>
+
+          </div>
+
+          <div class="col-1">
+
+            <li class="sub-navbar-data-group">
+
+              <div class="item-data-label sub-navbar-data-label">Casino W/L</div>
+
+              <div class="item-data-value sub-navbar-data-value">825,000</div>
+
+            </li>
+
+          </div>
+
+          <div class="col-1">
+
+            <li class="sub-navbar-data-group">
+
+              <div class="item-data-label sub-navbar-data-label">Theo Win</div>
+
+              <div class="item-data-value sub-navbar-data-value">745,000</div>
+
+            </li>
+
+          </div>
+
+          <div class="col-1">
+
+            <li class="sub-navbar-data-group">
+
+              <div class="item-data-label sub-navbar-data-label">Hold %</div>
+
+              <div class="item-data-value sub-navbar-data-value">10</div>
+
+            </li>
+
+          </div>
+
+          <div class="col-1">
+
+            <li class="sub-navbar-data-group">
+
+              <div class="item-data-label sub-navbar-data-label">Total Buy In</div>
+
+              <div class="item-data-value sub-navbar-data-value">10,090</div>
+
+            </li>
+
+          </div>
+
+          <div class="col-1">
+
+            <li class="sub-navbar-data-group">
+
+              <div class="item-data-label sub-navbar-data-label">Average Bet</div>
+
+              <div class="item-data-value sub-navbar-data-value">19,875</div>
+
+            </li>
+
+          </div>
+
+          <div class="col-1">
+
+            <li class="sub-navbar-data-group">
+
+              <div class="item-data-label sub-navbar-data-label">Turnover</div>
+
+              <div class="item-data-value sub-navbar-data-value">19,875</div>
+
+            </li>
+
+          </div>
+
+          <div class="col-1">
+
+            <li class="sub-navbar-data-group">
+
+              <div class="item-data-label sub-navbar-data-label">Rated Play</div>
+
+              <div class="item-data-value sub-navbar-data-value">35%</div>
+
+            </li>
+
+          </div>
+
+        </div>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown dropdown-right">
+
+          <a href="#" class="dropdown-toggle action-menu-toggle" type="button" id="action-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+            <span class="glyphicon icon-action-menu"></span>
+
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="action-menu">
+
+            <div class="dropdown-body">
+
+              <div class="dropdown-content">
+
+                <ul class="nav dropdown-nav">
+
+                  <li class="dropdown-nav-item">
+                    <a id="showRollTime-trigger">Show Roll Time</a>
+                  </li>
+                  <li class="dropdown-nav-item">
+                    <a id="playerSearch-trigger">Player Search</a>
+                  </li>
+                  <li class="dropdown-nav-item clickable" data-href="../search/mgm-dealer-search.html">
+                    <a href="#" class="dropdown-nav-link">Dealer Search</a>
+                  </li>
+                  <li class="dropdown-nav-item clickable" data-href="../search/mgm-supervisor-search.html">
+                    <a href="#" class="dropdown-nav-link">Supervisor Search</a>
+                  </li>
+                  <li class="dropdown-nav-item clickable" data-href="../search/mgm-cashier-search.html">
+                    <a href="#" class="dropdown-nav-link">Cashier Search</a>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </header>
+  <!-- .sub-navbar -->
+
+  <div class="modal modal-roll-time auto-height fade" id="modalRollTime" tabindex="-1" role="dialog" aria-labelledby="modalRollTime">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+        <header class="modal-sticky-header navbar-fixed-top">
+          <div class='row'>
+            <div class="col-xs-12">
+              <div class="dealer-search-player-options text-center">
+                Show Roll Time
+                <hr>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div id="roll-time-picker-1" class="input-append date datetimepicker">
+                <div class="input-group">
+                  <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="Set Roll Time">
+                  <a class="add-on input-group-addon">
+                    <span class="glyphicon icon-time"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class='col-xs-8'>
+              <button class="btn btn-secondary table-action-option btn-change-roll-time" type="button">
+                CHANGE ROLL TIME
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="modal-body">
+          <div class='table-responsive'>
+            <table class="table-default table-alerts">
+              <thead>
+                <th class="narrow">
+                  <div class="checkbox">
+                    <input type="checkbox" class="input-checkbox table-action-checkbox toggle-all-checkbox" id="checkbox00">
+                    <label for="checkbox00"></label>
+                  </div>
+                </th>
+                <th class="md-width">Nodes</th>
+                <th>Roll Time</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox11">
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 1</li>
+                      <li class="highlight">Table 1</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input11" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input11" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox12">
+                      <label for="checkbox12"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 1</li>
+                      <li class="highlight">Table 2</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input12" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input12" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox21">
+                      <label for="checkbox21"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 2</li>
+                      <li class="highlight">Table 1</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input21" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input21" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="narrow">
+                    <div class="checkbox">
+                      <input type="checkbox" class="input-checkbox table-action-checkbox" id="checkbox22">
+                      <label for="checkbox22"></label>
+                    </div>
+                  </td>
+                  <td class="md-width">
+                    <ol class="breadcrumb">
+                      <li>MGM</li>
+                      <li>Casino</li>
+                      <li>VIP</li>
+                      <li>Pit 1</li>
+                      <li class="highlight">Table 3</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="input22" class="sr-only">Roll Time</label>
+                      <input type="text" class="form-control input-text" id="input22" placeholder="Enter Roll Time" readonly="readonly" value="17:00" />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-sticky-footer navbar-fixed-bottom">
+          <div class="modal-footer">
+            <div class="pull-left">
+              <p class="text-info">* Select the node(s) to roll the time.</p>
+            </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-fullscreen" id="modalPlayerSearch" tabindex="-1" role="dialog" aria-labelledby="modalPlayerSearch" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content has-sticky-header has-sticky-footer sm-paddings">
+
+        <header class="modal-sticky-header navbar-fixed-top" style="background-color:##eee7dd;">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="dealer-search-player-options text-center">
+                Player Search by:&nbsp;
+                <button id="btn-search-card" type="button" class="btn btn-primary btn-margins">
+                  <span class="glyphicon icon-search-btn"></span>Swipe Player Id Card</button>
+                <button id="btn-search-name" type="button" class="btn btn-secondary btn-margins">
+                  <span class="glyphicon icon-search-btn"></span>Player Name</button>
+                <button id="btn-search-id" type="button" class="btn btn-secondary btn-margins">
+                  <span class="glyphicon icon-search-btn"></span>Player Id</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- Player search form view by swiping card -->
+              <div class="search-wrapper search-form-by-card">
+                <div class="swipe-card">
+                  <h3 class="pull-left">Swipe<br>Player ID Card</h3>
+                  <div class="pull-right">
+                    <img src="../assets/img/swipe-player-id-card.svg" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Player search form view by name -->
+              <div class="search-wrapper search-form-by-name">
+                <div id="player-search-name">
+                  <div class="dealer-search-player-input-row">
+                    <div class="dealer-search-player-input input-search-wrapper">
+                      <input class="form-control input-search" type="text" name="first-name" placeholder="Enter first name" value="Brian" />
+                      <a class="input-search-clear">
+                        <span class="glyphicon icon-close-sm"></span>
+                      </a>
+                    </div>
+                    <div class="dealer-search-player-input input-search-wrapper">
+                      <input class="form-control input-search" type="text" name="last-name" placeholder="Enter last name" />
+                      <a class="input-search-clear">
+                        <span class="glyphicon icon-close-sm"></span>
+                      </a>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <span class="glyphicon icon-search-btn"></span>
+                    </a>
+                  </div>
+                  <div class="error-text text-center">
+                    <p>
+                      <span class="glyphicon icon-error">!</span> More than 10 players identified, please refine search.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Player search form view by id -->
+              <div class="search-wrapper search-form-by-id">
+                <div id="player-search-id">
+                  <div class="dealer-search-player-input-row single-search-box ">
+                    <div class="dealer-search-player-input input-search-wrapper">
+                      <input class="form-control input-search" type="text" name="player-id" placeholder="Enter Player Id" />
+
+                      <a class="input-search-clear">
+                        <span class="glyphicon icon-close-sm"></span>
+                      </a>
+                    </div>
+
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <span class="glyphicon icon-search-btn"></span>
+                    </a>
+
+                  </div>
+
+                  <div class="error-text text-center">
+                    <p>
+                      <span class="glyphicon icon-error">!</span> More than 10 players identified, please refine search.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </header>
+
+        <div class="modal-body">
+
+          <div class="search-wrapper">
+            <div class="player-search-results">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="table-responsive">
+                    <table class="table-default table-tables sticky-table-header">
+                      <thead>
+                        <tr>
+                          <th>Player</th>
+                          <th class="text-center">Last Session Id</th>
+                          <th class="text-center">Session Location</th>
+                          <th class="text-center">Last Player Location</th>
+                          <th class="text-center">Last Activity Time</th>
+                          <th class="text-center">Session Active</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="player-search-results-row clickable" data-href="../manager/table-dashboard-session-12345-games.html">
+                          <td>
+                            <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Smith B.">
+                            <p class="text-left highlight">Smith, Brian
+                              <span class="player-id"> (Id 11480)</span>
+                            </p>
+                          </td>
+                          <td class="text-center">12345</td>
+                          <td class="text-center">MB005</td>
+                          <td class="text-center">MB005</td>
+                          <td class="text-center">16:35</td>
+                          <td class="text-center"><span class="glyphicon glyphicon-flag"></span></td>
+                        </tr>
+                        <tr class="player-search-results-row clickable" data-href="../manager/casino-vip-player-dashboard.html">
+                          <td>
+                            <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Besterman B.">
+                            <p class="text-left highlight">Besterman, Brian<span class="player-id"> (Id 10237)</span></p>
+                          </td>
+                          <td class="text-center">67891</td>
+                          <td class="text-center">MB001</td>
+                          <td class="text-center">MB001</td>
+                          <td class="text-center">17:40</td>
+                          <td class="text-center"><span class="glyphicon glyphicon-flag disable"></span></td>
+                        </tr>
+                        <tr class="player-search-results-row clickable" data-href="../manager/table-dashboard-session-12345-games.html">
+                          <td>
+                            <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Smith B.">
+                            <p class="text-left highlight">Smith, Brian
+                              <span class="player-id"> (Id 11480)</span>
+                            </p>
+                          </td>
+                          <td class="text-center">12345</td>
+                          <td class="text-center">MB005</td>
+                          <td class="text-center">MB005</td>
+                          <td class="text-center">16:35</td>
+                          <td class="text-center"><span class="glyphicon glyphicon-flag"></span></td>
+                        </tr>
+                        <tr class="player-search-results-row clickable" data-href="../manager/casino-vip-player-dashboard.html">
+                          <td>
+                            <img class="game-player-image pull-left" src="../assets/img/game-player-default.svg" alt="Besterman B.">
+                            <p class="text-left highlight">Besterman, Brian<span class="player-id"> (Id 10237)</span></p>
+                          </td>
+                          <td class="text-center">67891</td>
+                          <td class="text-center">MB001</td>
+                          <td class="text-center">MB001</td>
+                          <td class="text-center">17:40</td>
+                          <td class="text-center"><span class="glyphicon glyphicon-flag disable"></span></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer clearfix">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="main-content">
+
+    <div class="container-fluid">
+
+      <ul class="nav nav-tabs" role="tablist">
+
+        <li role="presentation">
+
+          <a class="clickable" data-href="casino-vip-pit.html" aria-controls="tab1" role="tab" data-toggle="tab">TABLES</a>
+
+        </li>
+
+        <li role="presentation">
+
+          <a class="clickable" data-href="casino-vip-pit-players.html" aria-controls="tab2" role="tab" data-toggle="tab">PLAYERS</a>
+
+        </li>
+
+        <li role="presentation">
+
+          <a class="clickable" data-href="casino-vip-pit-inventory.html" aria-controls="tab3" role="tab" data-toggle="tab">INVENTORY</a>
+
+        </li>
+
+        <li role="presentation">
+
+          <a class="clickable" data-href="casino-vip-pit-performance.html" role="tab" data-toggle="tab">PERFORMANCE</a>
+
+        </li>
+
+        <li role="presentation" class="active">
+
+          <a class="clickable" data-href="casino-vip-pit-manual-ratings.html" aria-controls="tab5" role="tab" data-toggle="tab"><small>MANUAL RATINGS</small></a>
+
+        </li>
+
+      </ul>
+
+      <div class="tab-content main-tab-content">
+
+        <!-- Contents for Tab-Manual-Ratings -->
+        <div role="tabpanel" class="tab-pane fade in active" id="tab-manual-ratings">
+          <div class="row">
+            <div class="col-xs-12">
+
+              <header class="content-header tab-content-header no-context clearfix">
+                <div class="pull-right">
+                  <!-- Filter button -->
+                  <a class="tab-content-action-link collapsed" role="button" data-toggle="collapse" href="#filters-table-players" aria-expanded="false" aria-controls="filters-table-players">
+                    <span class="caret"></span> FILTERS
+                  </a>
+                </div>
+              </header>
+
+              <div class="collapse table-filters" id="filters-table-players">
+                <div class="row">
+
+                  <div class="col-xs-2">
+                    <div class="filter-title">
+                      TABLE</span>
+                    </div>
+                    <div class="dropdown dropdown-block">
+
+                      <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-table-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                        ALL <span class="caret"></span>
+
+                      </button>
+
+                      <div class="dropdown-menu" aria-labelledby="filters-table-filter">
+
+                        <div class="dropdown-body">
+
+                          <div class="dropdown-content">
+
+                            <ul class="nav dropdown-nav">
+
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="table-1">
+                                    <label for="table-1">MB001</label>
+                                    <span class="pull-right">18</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="table-2">
+                                    <label for="table-2">MB002</label>
+                                    <span class="pull-right">6</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="table-3">
+                                    <label for="table-3">MB003</label>
+                                    <span class="pull-right">10</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="table-4">
+                                    <label for="table-4">MB004</label>
+                                    <span class="pull-right">4</span>
+                                  </div>
+                                </div>
+                              </li>
+
+                            </ul>
+
+                          </div>
+
+                        </div>
+
+                        <div class="dropdown-footer text-center">
+
+                          <a href="#" class="btn btn-secondary clear-button">CLEAR</a>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2">
+                    <div class="filter-title">
+                      STATUS</span>
+                    </div>
+                    <div class="dropdown dropdown-block">
+
+                      <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-status-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                        ALL <span class="caret"></span>
+
+                      </button>
+
+                      <div class="dropdown-menu" aria-labelledby="filters-status-filter">
+
+                        <div class="dropdown-body">
+
+                          <div class="dropdown-content">
+
+                            <ul class="nav dropdown-nav">
+
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="status-open">
+                                    <label for="status-open">OPEN</label>
+                                    <span class="pull-right">10</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="status-pending">
+                                    <label for="status-pending">PENDING</label>
+                                    <span class="pull-right">4</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="status-cancelled">
+                                    <label for="status-cancelled">CANCELLED</label>
+                                    <span class="pull-right">2</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="status-closed">
+                                    <label for="status-closed">CLOSED</label>
+                                    <span class="pull-right">24</span>
+                                  </div>
+                                </div>
+                              </li>
+
+                            </ul>
+
+                          </div>
+
+                        </div>
+
+                        <div class="dropdown-footer text-center">
+
+                          <a href="#" class="btn btn-secondary clear-button">CLEAR</a>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2">
+                    <div class="filter-title">
+                      PLAYER
+                    </div>
+                    <div class="dropdown dropdown-block">
+
+                      <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-player-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                        ALL <span class="caret"></span>
+
+                      </button>
+
+                      <div class="dropdown-menu" aria-labelledby="filters-player-filter">
+
+                        <div class="dropdown-body">
+
+                          <div class="dropdown-content">
+
+                            <ul class="nav dropdown-nav">
+
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="player-name">
+                                    <label for="player-name">Besterman, Brian <span class="player-id">(10237)</span></label>
+                                  </div>
+                                </div>
+                              </li>
+
+
+                            </ul>
+
+                          </div>
+
+                        </div>
+
+                        <div class="dropdown-footer text-center">
+
+                          <a href="#" class="btn btn-secondary clear-button">CLEAR</a>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2">
+                    <div class="filter-title">
+                      SEAT NUMBER
+                    </div>
+                    <div class="dropdown dropdown-block">
+
+                      <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-seatnumber-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                        ALL <span class="caret"></span>
+
+                      </button>
+
+                      <div class="dropdown-menu" aria-labelledby="filters-seatnumber-filter">
+
+                        <div class="dropdown-body">
+
+                          <div class="dropdown-content">
+
+                            <ul class="nav dropdown-nav">
+
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="seat-one">
+                                    <label for="seat-one">1 </span>
+                                    </label>
+                                    <span class="pull-right">4</span>
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="seat-three">
+                                    <label for="seat-three">3 </span>
+                                    </label>
+                                    <span class="pull-right">1</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="seat-five">
+                                    <label for="seat-five">5 </span>
+                                    </label>
+                                    <span class="pull-right">1</span>
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="seat-seven">
+                                    <label for="seat-seven">7 </span>
+                                    </label>
+                                    <span class="pull-right">1</span>
+                                  </div>
+                                </div>
+                              </li>
+
+                            </ul>
+
+                          </div>
+
+                        </div>
+
+                        <div class="dropdown-footer text-center">
+
+                          <a href="#" class="btn btn-secondary clear-button">CLEAR</a>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2">
+                    <div class="filter-title">
+                      CREATED BY
+                    </div>
+                    <div class="dropdown dropdown-block">
+
+                      <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-createdby-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                        ALL <span class="caret"></span>
+
+                      </button>
+
+                      <div class="dropdown-menu" aria-labelledby="filters-createdby-filter">
+
+                        <div class="dropdown-body">
+
+                          <div class="dropdown-content">
+
+                            <ul class="nav dropdown-nav">
+
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="user-creator1">
+                                    <label for="user-creator1">USERNAME 1 (ID#)</label>
+                                    <span class="pull-right">6</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="user-creator2">
+                                    <label for="user-creator2">USERNAME 2 (ID#)</label>
+                                    <span class="pull-right">3</span>
+                                  </div>
+                                </div>
+                              </li>
+
+                            </ul>
+
+                          </div>
+
+                        </div>
+
+                        <div class="dropdown-footer text-center">
+
+                          <a href="#" class="btn btn-secondary clear-button">CLEAR</a>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="filter-title">
+                      APPROVED BY
+                    </div>
+                    <div class="dropdown dropdown-block dropdown-right">
+
+                      <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="filters-approvedby-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                        ALL <span class="caret"></span>
+
+                      </button>
+
+                      <div class="dropdown-menu" aria-labelledby="">
+
+                        <div class="dropdown-body">
+
+                          <div class="dropdown-content">
+
+                            <ul class="nav dropdown-nav">
+
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="user-approver1">
+                                    <label for="user-approver1">USERNAME 1 (ID#)</label>
+                                    <span class="pull-right">6</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-nav-item">
+                                <div class="dropdown-nav-link">
+                                  <div class="checkbox">
+                                    <input type="checkbox" class="input-checkbox" id="user-approver2">
+                                    <label for="user-approver2">USERNAME 2 (ID#)</label>
+                                    <span class="pull-right">3</span>
+                                  </div>
+                                </div>
+                              </li>
+
+                            </ul>
+
+                          </div>
+
+                        </div>
+
+                        <div class="dropdown-footer text-center">
+
+                          <a href="#" class="btn btn-secondary clear-button">CLEAR</a>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- DISPLAY MANUAL RATINGS FORM MODAL TO APPROV -->
+              <div class="modal fade vertical-center manual-rating-modal" id="modal-manual-ratings-approv" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title highlight" id="manual-rating-form-title">MANUAL RATING FORM</h4>
+                    </div>
+                    <div class="modal-body">
+
+                      <form class="form-horizontal">
+
+                        <div class="form-group">
+                          <div class="col-xs-6">
+                            <label for="rating-table-name" class="control-label">TABLE</label>
+                            <input type="text" class="form-control input-text" id="rating-table-name" placeholder="" readonly="readonly" value="MB001" data-toggle="tooltip" data-placement="bottom" title="Table name" />
+                          </div>
+
+                          <div class="col-xs-6">
+                            <label for="rating-created-by" class="control-label">CREATED BY</label>
+                            <input type="text" class="form-control input-text" id="rating-created-by" placeholder="" readonly="readonly" value="Username (Id#)" data-toggle="tooltip" data-placement="bottom" title="Created by" />
+                          </div>
+
+                        </div>
+                      </form>
+
+                      <div class="form-control-separator"></div>
+
+                      <form class="form-horizontal">
+                        <div class="form-group">
+                          <div class="col-xs-4">
+                            <div class="row">
+                              <div class="col-xs-12">
+                                START TIME
+                              </div>
+                              <div class="col-xs-12">
+                                <div id="start-time-picker" class="input-append date datetimepicker">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="" value="11:10">
+                                    <a class="add-on input-group-addon">
+                                      <span class="glyphicon icon-time"></span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-4">
+                            <div class="row">
+                              <div class="col-xs-12">
+                                STOP TIME
+                              </div>
+                              <div class="col-xs-12">
+                                <div id="stop-time-picker" class="input-append date datetimepicker">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control input-text input-datetimepicker" data-format="hh:mm" placeholder="" value="11:17">
+                                    <a class="add-on input-group-addon">
+                                      <span class="glyphicon icon-time"></span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-4">
+                            <div class="row">
+                              <div class="col-xs-12">
+                                TOTAL TIME
+                                <input type="text" class="form-control input-text" id="rating-total-time-played" readonly="readonly" value="00:07" data-toggle="tooltip" data-placement="bottom" title="Total time played" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+
+                      <div class="form-control-separator"></div>
+
+                      <form class="form-horizontal">
+                        <div class="form-group">
+                          <div class="col-xs-8">
+                            <label for="rating-player-id" class="control-label">PLAYER</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control input-text hover" id="rating-player-id" placeholder="Enter Player Id" value="Moore, Carolyn (11480)" />
+                              <a class="input-group-addon player-search-btn">
+                                <div class="glyphicon icon-search2"></div>
+
+                                <div class="search-loader not-visible">
+                                  <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                    <path opacity="0.3" fill="#bb9156" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"
+                                    />
+                                    <path fill="#bb9156" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z">
+                                      <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.75s" repeatCount="indefinite" />
+                                    </path>
+                                  </svg>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-4">
+                            <label for="rating-seat-id" class="control-label">SEAT NUMBER</label>
+                            <div class="number-selector">
+                              <input type="text" class="form-control input-text input-number-selector" id="rating-seat-id" placeholder="" value="3" />
+                              <div class=number-selector-btns>
+                                <a href="#" class="number-selector-btn number-selector-increase">
+                                  <span class="caret caret-up"></span>
+                                </a>
+                                <a href="#" class="number-selector-btn number-selector-decrease">
+                                  <span class="caret"></span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+
+                      <div class="form-control-separator"></div>
+
+                      <form class="form-horizontal">
+                        <div class="form-group">
+                          <div class="col-xs-4">
+                            <label for="rating-cash-buyin">CASH BUYIN</label>
+                            <div>
+                              <input type="text" class="form-control input-text hover text-right active" id="rating-cash-buyin" placeholder="Enter buyin value" value="1,000" />
+                            </div>
+                          </div>
+
+                          <div class="col-xs-4">
+                            <label for="rating-average-bet">AVERAGE BET</label>
+                            <input type="text" class="form-control input-text hover text-right active" id="rating-average-bet" placeholder="Enter average bet value" value="1,400" />
+                          </div>
+
+                          <div class="col-xs-4">
+                            <label for="rating-average-bet">CASINO W/L</label>
+                            <input type="text" class="form-control input-text hover text-right active" id="rating-casino-winloss" placeholder="Enter casino W/L value" value="5,000" />
+                          </div>
+                        </div>
+                      </form>
+
+                      <div class="form-control-separator"></div>
+
+                      <div class="modal-footer">
+                        <div class="row">
+                          <div class="col-xs-12 pull-right">
+                            <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">CANCEL</a>
+                            <a href="#" class="btn btn-secondary btn-margins" data-dismiss="modal">SAVE</a>
+                            <a href="#" class="btn btn-primary btn-margins" data-dismiss="modal">APPROVE</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- display players list  -->
+              <div id="table-manual-ratings-list">
+                <div class="table-responsive">
+                  <table class="table-default table-tables sticky-table-header table-manual-ratings small">
+                    <thead>
+                      <tr>
+                        <th>Player <span class="caret column-sorting"></th>
+                        <th class="narrower">Status <span class="caret column-sorting"></th>
+                        <th>Start Time <span class="caret column-sorting"></th>
+                        <th>Stop Time <span class="caret column-sorting"></th>
+                        <th>Total Time <span class="caret column-sorting"></th>
+                        <th>Seat <span class="caret column-sorting"></th>
+                        <th>Cash Buy In <span class="caret column-sorting"></th>
+                        <th>Average Bet <span class="caret column-sorting"></th>
+                        <th>Casino W/L <span class="caret column-sorting"></th>
+                        <th>Created By <span class="caret column-sorting"></th>
+                        <th>Approved By <span class="caret column-sorting"></th>
+                        <th>Rating ID <span class="caret column-sorting"></th>
+                        <th>Table <span class="caret column-sorting"></th>
+                      </tr>
+                    </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>Besterman, Brian<br>(10237)</td>
+                          <!-- <td class="highlight">Open</td> -->
+                          <td class='narrow'>
+                            <span class="icon-status open" title='Open Rating'></span>
+                          </td>
+                          <td>11:10</td>
+                          <td>11:17</td>
+                          <td>00:07</td>
+                          <td>3</td>
+                          <td>5,000</td>
+                          <td>4,500</td>
+                          <td>1,200</td>
+                          <td>Username (Id #)</td>
+                          <td class="highlight text-center" aria-label="Not submitted">
+
+                            <div class="dropdown has-error dropdown-center ">
+                              <a class="icon-status not-submitted dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">!</a>
+                              <div class="dropdown-menu">
+                                <div class="dropdown-body">
+                                  <div class="dropdown-content">
+                                    <p>This <span class="highlight">new</span> manual rating has not been submitted yet.</p>
+                                    <p>Go to <span class="highlight">Table Dashboard</span> > <span class="highlight">Sessions</span> > <span class="highlight">Manual Ratings</span> tab to submit this request by the authorised person.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </td>
+                          <td class="text-center">-</td>
+                          <td>MB001</td>
+                        </tr>
+
+                        <tr>
+                          <td>Moore, Carolyn
+                            <br>(11480)
+                          </td>
+                          <td class='narrow'>
+                            <span class="icon-status pending" title='Pending Rating'>
+                              <span class='pending-sign'>P</span>
+                            </span>
+                          </td>
+                          <td>11:10</td>
+                          <td>11:17</td>
+                          <td>00:07</td>
+                          <td>2</td>
+                          <td>5,000</td>
+                          <td>4,500</td>
+                          <td>1,200</td>
+                          <td>Username (Id #)</td>
+                          <td class="highlight text-center" aria-lable="Not approved">
+
+                            <div class="dropdown has-error dropside dropside-right">
+                              <a class="icon-status not-approved dropdown-toggle" type="button" data-toggle="modal" data-target="#modal-manual-ratings-approv" data-backdrop="static">!</a>
+                            </div>
+                          </td>
+                          <td class="text-center">-</td>
+                          <td>MB001</td>
+                        </tr>
+
+                        <tr>
+                          <td>Wingate, Todd
+                            <br>(12579)
+                          </td>
+                          <td class='narrow'>
+                            <span class="icon-status closed" title="Closed Rating"></span>
+                          </td>
+                          <td>11:10</td>
+                          <td>11:17</td>
+                          <td>00:07</td>
+                          <td>1</td>
+                          <td>5,000</td>
+                          <td>4,500</td>
+                          <td>1,200</td>
+                          <td>Username (Id #)</td>
+                          <td>Username (Id #)</td>
+                          <td class="text-center">1</td>
+                          <td>MB001</td>
+                        </tr>
+
+                        <tr>
+                          <td>Singh, Surinder
+                            <br>(24378)
+                          </td>
+                          <td class='narrow'>
+                            <span class="icon-status cancelled" title='Cancelled Rating'></span>
+                          </td>
+                          <td>11:10</td>
+                          <td>11:17</td>
+                          <td>00:07</td>
+                          <td>7</td>
+                          <td>5,000</td>
+                          <td>4,500</td>
+                          <td>1,200</td>
+                          <td>Username (Id #)</td>
+                          <td class="text-center">-</td>
+                          <td class="text-center">-</td>
+                          <td>MB001</td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  /Tab-Manual-Ratings -->
+
+      </div>
+
+    </div>
+    <!-- .container -->
+
+  </section>
+
+  <script src="../vendor/jquery-1.11.3.js"></script>
+
+  <script src="../vendor/jquery-ui.js"></script>
+
+  <script src="../vendor/jquery.keyboard-focus.js"></script>
+
+  <script src="../vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+  <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script src="../vendor/jquery.stickytableheaders.min.js"></script>
+
+  <script src="../js/dropdowns.js"></script>
+
+  <script src="../js/header.js"></script>
+
+  <script src="../js/buttons.js"></script>
+
+  <script src="../js/filters.js"></script>
+
+  <script src="../js/alerts.js"></script>
+
+  <script src="../js/forms.js"></script>
+
+  <script src="../js/table.js"></script>
+
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,600 @@
+.icon-search {
+    width: 18px;
+    height: 18px;
+    background: url("../assets/icons/icon-search.svg") center center no-repeat;
+}
+.icon-search2 {
+    width: 23px;
+    height: 23px;
+    background: url("../assets/icons/icon-search2.svg") center center no-repeat;
+}
+a:hover .icon-search {
+    -webkit-filter: brightness(10);
+    filter:brightness(10);
+}
+.icon-search-input {
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    width: 13px;
+    height: 13px;
+    background: url("../assets/icons/icon-search-input.svg") center center no-repeat;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.icon-application-menu {
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    background: url("../assets/icons/icon-application-menu.svg") center center no-repeat;
+}
+a:hover .icon-application-menu {
+    -webkit-filter: brightness(10);
+    filter:brightness(10);
+}
+.icon-action-menu {
+    width: 28px;
+    height: 30px;
+    background: url("../assets/icons/icon-action-menu.svg") center center no-repeat;
+}
+a:hover .icon-action-menu {
+    -webkit-filter: brightness(10);
+    filter:brightness(10);
+}
+.icon-grid {
+    width: 23px;
+    height: 23px;
+    background: url("../assets/icons/icon-grid.svg") center center no-repeat;
+}
+.active > .icon-grid,
+.btn-group .active .icon-grid {
+    background-image: url("../assets/icons/icon-grid-active.svg");
+}
+.icon-list {
+    width: 26px;
+    height: 23px;
+    background: url("../assets/icons/icon-list.svg") center center no-repeat;
+}
+.active > .icon-list,
+.btn-group .active .icon-list {
+    background-image: url("../assets/icons/icon-list-active.svg");
+}
+.icon-breadcrumbs-casino {
+    width: 23px;
+    height: 25px;
+    background: url("../assets/icons/icon-breadcrumbs-casino.svg") center center no-repeat;
+}
+a:hover .icon-breadcrumbs-casino {
+    -webkit-filter: brightness(10);
+    filter:brightness(10);
+}
+.icon-lsaquo {
+    width: 12px;
+    height: 22px;
+    margin-right: 15px;
+    vertical-align: text-top;
+    background: url("../assets/icons/icon-lsaquo.svg") center center no-repeat;
+}
+.header-back-link:hover .icon-lsaquo {
+    -webkit-filter: brightness(10);
+    filter:brightness(10);
+}
+.icon-casino-manager {
+    width: 68px;
+    height: 68px;
+    background: url("../assets/icons/icon-casino-manager.svg") center center no-repeat;
+}
+.icon-configurations {
+    width: 64px;
+    height: 64px;
+    background: url("../assets/icons/icon-configurations.svg") center center no-repeat;
+}
+.icon-application-placeholder {
+    width: 91px;
+    height: 68px;
+    background: url("../assets/icons/icon-application-placeholder.svg") center center no-repeat;
+}
+.icon-add-player {
+    width: 56px;
+    height: 56px;
+    background: url("../assets/icons/icon-add-player.svg") center center no-repeat;
+}
+a:active .icon-add-player {
+    background: url("../assets/icons/icon-add-player-active.svg") center center no-repeat;
+}
+.icon-search-btn {
+    width: 22px;
+    height: 22px;
+    margin: 2px 5px -4px 0;
+    background: url("../assets/icons/icon-search-btn.svg") center center no-repeat;
+}
+.btn-sm .icon-search-btn {
+    margin: 0;
+}
+.icon-unlocked {
+    width: 30px;
+    height: 34px;
+    background: url("../assets/icons/icon-unlocked.svg") center center no-repeat;
+}
+.icon-locked {
+    width: 30px;
+    height: 34px;
+    background: url("../assets/icons/icon-locked.svg") center center no-repeat;
+}
+.icon-bet-management {
+    width: 32px;
+    height: 32px;
+    background: url("../assets/icons/icon-bet-management.svg") center center no-repeat;
+}
+.icon-close {
+    width: 20px;
+    height: 20px;
+    background: url("../assets/icons/icon-close.svg") center center no-repeat;
+}
+.icon-close-sm {
+    top: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("../assets/icons/icon-close-sm.svg") center center no-repeat;
+}
+.icon-close-sm-gold {
+    top: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("../assets/icons/icon-close-sm-gold.svg") center center no-repeat;
+}
+.icon-book {
+    width: 33px;
+    height: 30px;
+    background: url("../assets/icons/icon-book.svg") center center no-repeat;
+}
+.icon-settle {
+    width: 28px;
+    height: 32px;
+    background: url("../assets/icons/icon-settle.svg") center center no-repeat;
+}
+.icon-cancel {
+    width: 28px;
+    height: 32px;
+    background: url("../assets/icons/icon-cancel.svg") center center no-repeat;
+}
+.icon-card-buffer {
+    width: 34px;
+    height: 44px;
+    background: url("../assets/icons/icon-card-buffer.svg") center center no-repeat;
+}
+.icon-arrow-left {
+    width: 11px;
+    height: 20px;
+    background: url("../assets/icons/icon-arrow-left.svg") center center no-repeat;
+}
+.icon-arrow-right {
+    width: 11px;
+    height: 20px;
+    background: url("../assets/icons/icon-arrow-right.svg") center center no-repeat;
+}
+.icon-arrow-down {
+    width: 11px;
+    height: 20px;
+    background: url("../assets/icons/icon-arrow-down.svg") center center no-repeat;
+}
+.icon-arrow-down-lg {
+    width: 22px;
+    height: 59px;
+    background: url("../assets/icons/icon-arrow-down.svg") center center no-repeat;
+}
+/*---*/
+.icon-arrow-left-lg {
+    width: 22px;
+    height: 59px;
+    background: url("../assets/icons/icon-arrow-left-lg.svg") center center no-repeat;
+}
+.icon-arrow-right-lg {
+    width: 22px;
+    height: 59px;
+    background: url("../assets/icons/icon-arrow-right-lg.svg") center center no-repeat;
+}
+.icon-s-in {
+    width: 32px;
+    height: 31px;
+    background: url("../assets/icons/icon-chips-in.svg") center center no-repeat;
+}
+.icon-swipe-in {
+    width: 37px;
+    height: 27px;
+    background: url("../assets/icons/icon-swipe-in.svg") center center no-repeat;
+}
+.icon-move-seat {
+    width: 44px;
+    height: 31px;
+    background: url("../assets/icons/icon-move-seat.svg") center center no-repeat;
+}
+.icon-cancel-rating {
+    width: 38px;
+    height: 30px;
+    background: url("../assets/icons/icon-cancel-rating.svg") center center no-repeat;
+}
+.icon-clock-out {
+    width: 32px;
+    height: 32px;
+    background: url("../assets/icons/icon-clock-out.svg") center center no-repeat;
+}
+.icon-check {
+    top: -1px;
+    width: 13px;
+    height: 10px;
+    background: url("../assets/icons/icon-checked.svg") center center no-repeat;
+}
+.icon-edit {
+    width: 23px;
+    height: 24px;
+    margin-right: 2px;
+    background: url("../assets/icons/icon-edit.svg") center center no-repeat;
+}
+.icon-calendar {
+    display: inline-block;
+    width: 26px;
+    height: 27px;
+    background: url("../assets/icons/icon-calendar.svg") center center no-repeat;
+}
+a:hover .icon-calendar {
+    background: url("../assets/icons/icon-calendar-hover.svg") center center no-repeat;
+}
+.icon-time {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background: url("../assets/icons/icon-clock.svg") center center no-repeat;
+}
+a:hover .icon-time {
+    background: url("../assets/icons/icon-clock-hover.svg") center center no-repeat;
+}
+.icon-logout {
+    top: 0;
+    width: 16px;
+    height: 17px;
+    margin-right: 4px;
+    vertical-align: text-top;
+    background: url("../assets/icons/icon-logout.svg") center center no-repeat;
+}
+.icon-logout-lg,
+.btn.btn-round .icon-logout-lg {
+    display: block;
+    width: 22px;
+    height: 23px;
+    margin: 0 auto;
+}
+.icon-error {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    font-weight: 700;
+    line-height: 18px;
+    color: $brand-white;
+    text-align: center;
+    background-color: $red;
+    border-radius: 50%;
+}
+.icon-chip {
+    width: 33px;
+    height: 33px;
+    margin: -10px 0;
+    background: url("../assets/icons/icon-chip.svg") center center no-repeat;
+    background-size: 100%;
+}
+.dealer .icon-chip {
+    margin: -4px 5px -10px 0;
+}
+.icon-chip-color {
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 2px 0 0 2px;
+}
+.icon-chip-color path,
+.icon-chip-color line {
+    fill: none;
+    stroke: none;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+.icon-chip-color.chip-50-million path {
+    fill: #f15a24;
+}
+.icon-chip-color.chip-50-million line {
+    stroke: #f15a24;
+}
+.icon-chip-color.chip-10-million path {
+    fill: #39b54a;
+}
+.icon-chip-color.chip-10-million line {
+    stroke: #39b54a;
+}
+.icon-chip-color.chip-500-thousand path {
+    fill: $alert-blue;
+}
+.icon-chip-color.chip-500-thousand line {
+    stroke: $alert-blue;
+}
+.icon-chip-color.chip-100-thousand path {
+    fill: #e5a810;
+}
+.icon-chip-color.chip-100-thousand line {
+    stroke: #e5a810;
+}
+.icon-chip-color.chip-50-thousand path {
+    fill: #9c02b7;
+}
+.icon-chip-color.chip-50-thousand line {
+    stroke: #9c02b7;
+}
+.icon-chip-color.chip-10-thousand path {
+    fill: #e4ea00;
+}
+.icon-chip-color.chip-10-thousand line {
+    stroke: #e4ea00;
+}
+.icon-chip-color.chip-5-thousand path {
+    fill: #1b8e1b;
+}
+.icon-chip-color.chip-5-thousand line {
+    stroke: #1b8e1b;
+}
+.icon-chip-color.chip-1-thousand path {
+    fill: #2756ff;
+}
+.icon-chip-color.chip-1-thousand line {
+    stroke: #2756ff;
+}
+.icon-chip-color.chip-500 path {
+    fill: #9e7605;
+}
+.icon-chip-color.chip-500 line {
+    stroke: #9e7605;
+}
+.icon-chip-color.chip-250 path {
+    fill: #9e0505;
+}
+.icon-chip-color.chip-250 line {
+    stroke: #9e0505;
+}
+.icon-chip-color.chip-100 path {
+    fill: #10a0a0;
+}
+.icon-chip-color.chip-100 line {
+    stroke: #10a0a0;
+}
+.icon-chip-color.chip-50 path {
+    fill: #5d3cd6;
+}
+.icon-chip-color.chip-50 line {
+    stroke: #5d3cd6;
+}
+.icon-chip-color.chip-25 path {
+    fill: #d63cd6;
+}
+.icon-chip-color.chip-25 line {
+    stroke: #d63cd6;
+}
+.icon-chip-color.chip-10 path {
+    fill: #0db1cc;
+}
+.icon-chip-color.chip-10 line {
+    stroke: #0db1cc;
+}
+.icon-suit-hearts {
+    width: 28px;
+    height: 25px;
+    background: url("../assets/icons/icon-suit-hearts.svg") center center no-repeat;
+}
+.icon-suit-diamonds {
+    top: -2px;
+    width: 25px;
+    height: 30px;
+    background: url("../assets/icons/icon-suit-diamonds.svg") center center no-repeat;
+}
+.icon-suit-clubs {
+    width: 25px;
+    height: 25px;
+    background: url("../assets/icons/icon-suit-clubs.svg") center center no-repeat;
+}
+.icon-suit-spades {
+    width: 25px;
+    height: 25px;
+    background: url("../assets/icons/icon-suit-spades.svg") center center no-repeat;
+}
+.dealer .icon-suit-hearts,
+.card-buffer .icon-suit-hearts {
+    width: 20px;
+    height: 18px;
+}
+.dealer .icon-suit-diamonds,
+.card-buffer .icon-suit-diamonds {
+    top: -1px;
+    width: 18px;
+    height: 22px;
+}
+.dealer .icon-suit-clubs,
+.card-buffer .icon-suit-clubs {
+    width: 18px;
+    height: 18px;
+}
+.dealer .icon-suit-spades,
+.card-buffer .icon-suit-spades {
+    width: 18px;
+    height: 18px;
+}
+.icon-dealer-menu {
+    width: 23px;
+    height: 15px;
+    background: url("../assets/icons/icon-dealer-menu.svg") center center no-repeat;
+}
+.icon-dealer-lsaquo {
+    width: 12px;
+    height: 22px;
+    background: url("../assets/icons/icon-dealer-lsaquo.svg") center center no-repeat;
+}
+.icon-dealer-rsaquo {
+    width: 12px;
+    height: 22px;
+    background: url("../assets/icons/icon-dealer-rsaquo.svg") center center no-repeat;
+}
+.icon-dealer-close {
+    width: 20px;
+    height: 20px;
+    background: url("../assets/icons/icon-dealer-close.svg") center center no-repeat;
+}
+.icon-dealer-backspace {
+    top: 0;
+    width: 38px;
+    height: 24px;
+    background: url("../assets/icons/icon-dealer-backspace.svg") center center no-repeat;
+}
+.icon-dealer-change {
+    width: 32px;
+    height: 25px;
+    background: url("../assets/icons/icon-dealer-change.svg") center center no-repeat;
+}
+.icon-dealer-buy-in {
+    width: 32px;
+    height: 31px;
+    background: url("../assets/icons/icon-dealer-buy-in.svg") center center no-repeat;
+}
+.icon-dealer-swipe-player {
+    width: 37px;
+    height: 27px;
+    background: url("../assets/icons/icon-dealer-swipe-player.svg") center center no-repeat;
+}
+.icon-dealer-cancel-rating {
+    width: 38px;
+    height: 30px;
+    background: url("../assets/icons/icon-dealer-cancel-rating.svg") center center no-repeat;
+}
+.icon-dealer-move-player {
+    width: 44px;
+    height: 31px;
+    background: url("../assets/icons/icon-dealer-move-player.svg") center center no-repeat;
+}
+.icon-dealer-clock-out {
+    width: 32px;
+    height: 32px;
+    background: url("../assets/icons/icon-dealer-clock-out.svg") center center no-repeat;
+}
+.icon-cam {
+    width: 64px;
+    height: 64px;
+    background: url("../assets/icons/icon-cam.svg") center center no-repeat;
+}
+.icon-casino-manager-landing {
+    width: 64px;
+    height: 64px;
+    background: url("../assets/icons/icon-casino-manager-landing.svg") center center no-repeat;
+}
+.icon-configurations-landing {
+    width: 64px;
+    height: 64px;
+    background: url("../assets/icons/icon-configurations-landing.svg") center center no-repeat;
+}
+.icon-cashier {
+    width: 64px;
+    height: 64px;
+    background: url("../assets/icons/icon-cashier.svg") center center no-repeat;
+}
+.icon-treasury-manager {
+    width: 64px;
+    height: 64px;
+    background: url("../assets/icons/icon-treasury-manager.svg") center center no-repeat;
+}
+.icon-dealer-display {
+    width: 48px;
+    height: 64px;
+    background: url("../assets/icons/icon-dealer-display.svg") center center no-repeat;
+}
+.icon-chart {
+    width: 64px;
+    height: 64px;
+    background: url("../assets/icons/icon-chart.svg") center center no-repeat;
+}
+.icon-table-dash {
+    width: 64px;
+    height: 64px;
+    background: url("../assets/icons/icon-table-dash.svg") center center no-repeat;
+}
+.icon-player-dash {
+    width: 64px;
+    height: 64px;
+    background: url("../assets/icons/icon-player-dash.svg") center center no-repeat;
+}
+.icon-alert-landing {
+    width: 64px;
+    height: 64px;
+    background: url("../assets/icons/icon-alert-landing.svg") center center no-repeat;
+}
+.icon-status {
+    font-size: $base-font-size;
+    color: $brand-white;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    @include width(20px);
+    @include height(20px);
+    @include border-radius(50%);
+
+    &.open {
+        background-color: rgba(255,86,45,0.1);
+        border: 2px solid $alert-red;
+    }
+    &.pending {
+        background-color: $alert-red;
+
+        .pending-sign {
+            font-size: 13px;
+            position: relative;
+            top: 0;
+        }
+    }
+    &.closed {
+        background: url("../assets/icons/icon-checked.svg") #ff562d center center no-repeat;
+        background-color: $alert-red;
+        background-size: 15px;
+    }
+    &.cancelled {
+        background: url("../assets/icons/icon-close.svg") #ff562d center center no-repeat;
+        background-color: $brand-footer-color;
+        background-size: 12px;
+    }
+    &.active-rated-player, &.active-known-player, &.active-anonymous-player {
+        width: 16px;
+        height: 16px;
+        margin-right:4px;
+        border: 2px solid darken($alert-green,15%);
+    }
+    &.active-rated-player {
+        background-color: $alert-green;
+    }
+    &.active-known-player {
+        background-color: $brand-text-color;
+        border-color: darken($brand-text-color,15%);
+    }
+    &.active-anonymous-player {
+        background-color: $alert-red;
+        border-color: darken($alert-red,15%);
+    }
+}
+.icon-right-large {
+    color: $brand-text-color;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px dashed;
+    margin-top: 30%;
+
+    &.collapsed {
+        margin-top: 35%;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px dashed;
+        width: 10px;
+    }
+}

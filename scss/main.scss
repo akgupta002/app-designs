@@ -1,0 +1,1163 @@
+/*
+//Perfect Pay UI Frame Work v1.0.0
+*/
+@import "partials/colors";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/base";
+@import "partials/icons";
+@import "partials/dealer";
+@import "partials/demo";
+@import "partials/rolltime";
+@import "partials/manual-ratings";
+@import "partials/game-details";
+@import "partials/edit-chipset";
+@import "partials/create-user";
+@import "partials/user-login";
+@import "partials/landing-page";
+@import "partials/independent-players";
+@import "partials/limit-details";
+@import "partials/media-queries";
+
+
+.main-content .content-wrapper {
+    @include all-paddings(null, 15px, null, 15px);
+}
+a {
+    outline: none !important;
+}
+.sub-navbar {
+    a {
+        &:hover {
+            color: inherit !important;
+        }
+    }
+}
+.nav {
+    &.navbar-nav {
+        &.navbar-right {
+            position: relative;
+            top: 4px;
+        }
+    }
+}
+.clickable, .click-show-modal {
+    cursor: pointer;
+}
+.breadcrumb-item-link {
+    &.disable {
+        cursor: default;
+    }
+}
+.header-back-link {
+    .disable {
+        @extend .breadcrumb-item-link.disable;
+    }
+}
+.btn {
+    &.btn-sm {
+        &.active {
+            @extend .breadcrumb-item-link.disable;
+        }
+    }
+}
+h1 {
+    &.item-data-label {
+        color: $brand-text-color;
+        font-size: 2em;
+        margin: 0.67em 0;
+        padding: 3em 2em;
+    }
+}
+.game-table-card {
+    &.width100 {
+        margin-top: 5%;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.nav {
+    &.navbar-nav {
+        &.width-80 {
+            width: 82.750000%;
+        }
+    }
+}
+.sub-navbar-data-group {
+    &.width-12 {
+        width: 12%;
+    }
+    &.width-14 {
+        width: 14%;
+    }
+}
+.item-view-row {
+
+    &.width-12 {
+        float: left;
+        width: 12%;
+        @include all-paddings(null, 15px, null, 15px);
+    }
+    &.width-13 {
+        @extend .width-12;
+        width: 13%;
+    }
+    &.width-14 {
+        @extend .width-12;
+        width: 14%;
+    }
+    &.small-topMargin {
+        margin-top: 36px;
+    }
+}
+
+.dropdown-select {
+    .dropdown-menu {
+        &.tables-sort {
+            left: auto;
+        }
+    }
+}
+tr[data-href]:hover,
+li[data-href]:hover {
+    background-color: #fff;
+}
+.nav-tabs li[data-href]:hover {
+    background-color: transparent;
+}
+.tab-content-header {
+    &.pad-top-15 {
+        padding-top: 15px !important;
+    }
+    &.pad-btm-15 {
+        padding-bottom: 15px !important;
+    }
+}
+
+// Below is same as .tab-content-header top padding value
+
+.col-divs-7 {
+    // 100 by 7 = 14.285
+    width: 14.285%;
+    min-height: 1px;
+    position: relative;
+    float: left;
+    @include all-paddings(null, 15px, null, 15px);
+
+    .supervisor-footer-content {
+        margin: 0;
+    }
+    &.larger {
+        width: 20%;
+    }
+    &.smaller {
+        width: 10%;
+    }
+    &.pad15 {
+        @include all-paddings(null, null, null, 15px);
+    }
+}
+
+.seven-divs .col-1,
+.seven-divs .col-1.smaller,
+.seven-divs .col-1.larger,
+.nine-divs .col-1,
+.nine-divs .col-1.smaller,
+.nine-divs .col-1.larger {
+    min-height: 1px;
+    position: relative;
+    float: left;
+    @include all-paddings(null, 10px, null, 10px);
+}
+.seven-divs {
+    .col-1 {
+        // 100 / 7 = 14.2857143 */
+        width: calc(100% / 7);
+
+        &.smaller {
+            // 100 / 7 = 14.2857143 */
+            width: calc((100% / 7) - 2);
+        }
+        &.larger {
+            // 100 / 7 = 14.2857143 */
+            width: calc((100% / 7) + 2);
+        }
+    }
+}
+
+.nine-divs {
+    .supervisor-footer-content {
+        margin: 0 -8px;
+    }
+    .sub-navbar-data-group {
+        @include all-paddings(null, 0px, null, 0px);
+    }
+    .col-1 {
+        // 100 / 9 = 11.111111 */
+        width: calc(100% / 9);
+
+        &.smaller {
+            // 100 / 9 = 11.111111 */
+            width: calc((100% / 9) - 2);
+        }
+        &.larger {
+            // 100 / 9 = 11.111111%*/
+            width: calc((100% / 9) + 2);
+        }
+        &:first-child {
+            @include all-paddings(null, null, null, 15px);
+
+            .sub-navbar-data-group {
+                @include all-paddings(null, null, null, 15px);
+            }
+        }
+    }
+}
+.navbar-fixed-top {
+    .navbar-right.top-zero {
+        top: 0;
+    }
+}
+.game-table-card {
+    .game-table-card-data-row {
+        .item-data-value.smaller {
+            font-size: 17px;
+        }
+        &.txt-Left {
+            text-align: left;
+        }
+        &.top-border {
+            border-top: 1px dashed rgba(128, 128, 128, 0.15);
+        }
+    }
+}
+
+.glyphicon {
+    &.glyphicon-flag {
+        color: $brand-nav-bar-color;
+
+        &.disable {
+            color: #E1D2BC;
+            color: #dbccb9;
+        }
+    }
+    &.glyphicon-refresh {
+        color: $brand-text-color;
+    }
+}
+.glyphicon-pencil {
+    font-size: 16px;
+    padding-right: 2px;
+    border-bottom: 1px solid $brand-text-color;
+}
+.seven-divs {
+    .supervisor-footer-content {
+        margin: 0 -8px;
+    }
+}
+
+.pit-inventory {
+    &.supervisor-footer {
+        min-height: 80px;
+        height: auto;
+    }
+}
+
+.table-default {
+    &.mBottom-0 {
+        margin-bottom: 0;
+    }
+}
+.supervisor-footer-content {
+    &.active {
+        color: #fff;
+        background-color: $lighter-gold;
+    }
+}
+.supervisor-footer-content {
+    &.invert {
+        &.dropup {
+            @include width(100%);
+        }
+    }
+    .row {
+        .item-data-label {
+            color: $brand-footer-label-color;
+        }
+        &.highlight {
+            .item-data-label {
+                color: $brand-white;
+            }
+        }
+    }
+}
+
+.supervisor-footer-header {
+    h3{
+        font-size: 15px;
+        margin-left:-8px;
+
+        &.highlight {
+            color: $brand-white;
+        }
+    }
+}
+.chips {
+    @include width(32px);
+    @include height(32px);
+    display: block;
+    float: left;
+    background: url("../assets/img/chip-denom-1.svg") transparent center center no-repeat;
+
+    &.chip-1 {
+        background-image: url("../assets/img/chip-denom-1.svg");
+    }
+    &.chip-2 {
+        background-image: url("../assets/img/chip-denom-2.svg");
+    }
+    &.chip-3 {
+        background-image: url("../assets/img/chip-denom-3.svg");
+    }
+    &.chip-4 {
+        background-image: url("../assets/img/chip-denom-4.svg");
+    }
+    &.chip-5 {
+        background-image: url("../assets/img/chip-denom-5.svg");
+    }
+    &.chip-6 {
+        background-image: url("../assets/img/chip-denom-6.svg");
+    }
+    &.chip-7 {
+        background-image: url("../assets/img/chip-denom-7.svg");
+    }
+}
+.item-data-label {
+    &.bdr-top {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px dashed rgba(187, 145, 86, 0.4) !important;
+    }
+}
+.filter-title {
+    text-transform: uppercase;
+}
+
+.nav.nav-tabs {
+    a {
+        text-transform: uppercase;
+    }
+}
+
+.table-default {
+    .total-band {
+        background-color: $brand-text-color;
+        color: $brand-white;
+        color: $brand-kpi-bar-color !important;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+.sub-total-band {
+    border-top: 1px solid $brand-text-color;
+    font-weight: 700;
+}
+.btm-bdr {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed $brand-text-color;
+}
+
+.tab-content-header.lesser {
+    min-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // overflow-y: auto;
+}
+
+.game-player-cards {
+    &.row {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+    &.wrap {
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+.game-player-card-container {
+    min-height: 340px;
+    height: 100%;
+}
+
+.game-player-card, .game-player-card.empty {
+    // min-width: 194px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.game-player-card.large {
+    max-width: 600px;
+}
+
+/* Note- Position can't be relative as there to show two cards
+    one is Bet view and another is player view */
+/* position: relative; */
+/* min-height: 220px; */
+
+.game-player-card {
+    .game-player-card-title.left-padding,
+    .game-player-image.left-padding {
+        padding-left: 15px !important;
+    }
+    .game-player-image.large {
+        width: 100%;
+        height: auto;
+    }
+    .game-player-data {
+        font-size: 15px;
+    }
+    .game-player-card-content {
+        cursor: default !important;
+    }
+    &.clickable .game-player-card-content {
+        cursor: pointer !important;
+    }
+    .game-player-card-number {
+        line-height: 1;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .game-player-data {
+        margin-top: 10px;
+    }
+    .game-player-card-data-row,
+    .game-player-card-data-row.game-player-bet-data-row {
+        margin-top: 4px;
+        line-height: 1.5;
+    }
+    .game-player-card-data-row {
+        .item-data-value,
+        &.game-player-bet-data-row .item-data-value {
+            font-weight: 400;
+        }
+    }
+    .game-player-card-data-row .item-data-label,
+    .game-player-card-data-row .item-data-value,
+    .game-player-card-data-row.game-player-bet-data-row .item-data-label,
+    .game-player-card-data-row.game-player-bet-data-row .item-data-value {
+        font-size: 13px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+}
+.game-player-card-title h3 {
+    font-size: 13px;
+}
+.game-player-card.large {
+    .game-player-card-data-row .item-data-label,
+    .game-player-card-data-row .item-data-value {
+        font-size: 15px;
+    }
+    .game-player-card-data-row,
+    .game-player-card-data-row.game-player-bet-data-row {
+        margin-top: 12px;
+    }
+}
+.game-player-card.lighter {
+    .game-player-card-content .item-data-label,
+    .game-player-card-content .item-data-value {
+        font-weight: 400 !important;
+    }
+}
+.breadcrumb-item .breadcrumb-item-link.small {
+    padding-right: 8px;
+    padding-left: 16px;
+    font-size: 13px;
+}
+.dropdown-select .dropdown-menu {
+    min-width: 110px;
+}
+/*===== To distribute column evenly =======*/
+// .table-default{
+// table-layout: fixed;
+// }
+/*==================*/
+.chip-value {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.modal.modal-fullscreen .modal-content {
+    background-color: $brand-background-color;
+}
+.modal-header {
+    border-bottom: 1px solid $brand-text-color;
+}
+.modal-footer {
+    border-top: 1px solid $brand-text-color;
+    border-top-style: dashed;
+}
+
+.game-player-wrapper {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 58px;
+
+    h3, p {
+        text-align: right;
+    }
+}
+// .game-player-wrapper .game-player-image,
+// .game-player-card .game-player-backbetter .game-player-image {
+//     width: 64px;
+//     height: 64px;
+//     margin: 10px 0;
+// }
+.game-player-image {
+    .game-player-wrapper &,
+    .game-player-card .game-player-backbetter &,
+    .search-wrapper & {
+        width: 64px;
+        height: 64px;
+        margin: 10px 0;
+    }
+}
+.game-player-card {
+    .game-player-card-data-row.game-player-bet-data-row {
+        padding: 4px;
+    }
+    .game-player-card-content {
+        padding-bottom: 12px;
+    }
+}
+.game-player-known {
+    display: block;
+}
+.search-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-left: auto;
+
+    // .search-wrapper .game-player-image {
+    //     width: 64px;
+    //     height: 64px;
+    //     margin: 10px 0;
+    // }
+    .dealer-search-player-options {
+        width: 500px;
+        @include all-margins(0, auto, 0, auto);
+        text-align: center;
+        margin-bottom: 27px;
+        font-size: 15px;
+        color: #000;
+    }
+    .input-search-wrapper .form-control {
+        height: 40px;
+    }
+    .table-default td {
+        padding-top: 10px;
+        padding-bottom: 11px;
+    }
+    .dealer-search-player-selector {
+        margin: 0 10px;
+    }
+    .player-id {
+        display: block;
+    }
+    .error-text {
+        padding-top: 15px;
+    }
+    .dealer-search-player-selector.active {
+        color: $brand-kpi-bar-color;
+    }
+    .dealer-search-player-input-row {
+        width: 500px;
+        @include all-margins(0, auto, 0, auto);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .dealer-search-player-input-row .dealer-search-player-input {
+        width: 224px;
+    }
+    .player-search-results {
+        margin-top: 0;
+    }
+    .player-search-results-row {
+        margin: 25px 0;
+
+        .btn {
+            margin-top: 8px;
+        }
+        .game-player-image {
+            display: block;
+            margin: 10px 10px 10px 0;
+            border-radius: 50%;
+
+            p {
+                padding-top: 10px;
+                margin-bottom: 0;
+            }
+        }
+        td.comments {
+            max-width: 150px;
+        }
+    }
+    .dealer-search-player-input-row.single-search-box {
+        width: 300px !important;
+
+        .dealer-search-player-input {
+            width: 255px !important;
+        }
+    }
+}
+
+.table-content-wrapper {
+    overflow-y: auto;
+    position: relative;
+    height: 300px;
+}
+.table-property-wrapper
+ {
+    display: block;
+    padding-bottom: 50px;
+}
+.section-wrapper {
+    @extend .table-property-wrapper;
+
+    .list-header {
+        font-weight: 700;
+    }
+    .form-group {
+
+        h4 {
+            font-size: 15px;
+        }
+        .btn.dropdown-toggle {
+            min-width: 100px;
+            max-width: 150px;
+        }
+        .dropdown.dropdown-block.pull-left {
+            margin-right: 10px;
+        }
+    }
+
+}
+
+.nav.nav-tabs {
+    &.no-background {
+        background: $brand-background-color;
+        border-bottom: 1px solid #BA9155;
+    }
+    &.no-top-margin {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    &.config-ui > li {
+        margin-bottom: -2px;
+
+        &.active > a {
+            background: url("../assets/img/bg-tab3-active.svg") transparent left bottom no-repeat;
+        }
+    }
+    &.config-ui > li > a {
+        background: url("../assets/img/bg-tab2.svg") transparent left bottom no-repeat;
+    }
+}
+
+
+.config-ui.list-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.swipe-card {
+    display: block;
+    @include all-margins(0, auto, 0, auto);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid $brand-text-color;
+    max-width: 300px;
+    min-height: 100px;
+    height: auto;
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+}
+// .swipe-card img {
+//     width: 100px;
+//     height: auto;
+// }
+.modal .sticky-table-header.set-min-width {
+    min-width: 50px;
+}
+.modal-content.has-sticky-header {
+    padding-top: 190px;
+
+    .modal-sticky-header {
+        height: 190px;
+    }
+}
+.modal-content.has-sticky-footer {
+    padding-bottom: 100px;
+}
+
+.search-form-by-card {
+    margin-top: 15px;
+    display: block;
+}
+.search-form-by-name,
+.search-form-by-id {
+    margin-top: 40px;
+    display: none;
+}
+/* add-on styles */
+.padding-left-zero {
+    padding-left: 0;
+}
+.margin-bottom {
+    margin-bottom: 10px;
+}
+.padding-top {
+    padding-top: 15px;
+}
+.padding-bottom {
+    padding-bottom: 15px;
+}
+.margin-top {
+    margin-top: 10px;
+}
+/*
+  Alerts Table styles
+*/
+.comments-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.comment-show-btn {
+    margin-bottom: 15px;
+}
+.comments-box {
+    border-top: 1px dashed $brand-text-color;
+    padding-top: 15px;
+
+    td.narrow {
+        width: 2%;
+    }
+    .game-player-image {
+        width: 40px;
+        height: 40px;
+    }
+    .form-group {
+        margin-bottom: 50px;
+    }
+    .list-item .textarea {
+        margin-bottom: 15px;
+    }
+}
+
+.table-alerts td{
+    &.wider {
+        width: 50%;
+    }
+    &.narrower:nth-child(2) {
+        width: 10%;
+    }
+}
+
+/* POPOVER STYLES */
+.popover {
+    font-family: "Lato";
+    border: 1px solid rgba(187, 145, 86, 0.2);
+    z-index: 1019;
+
+    .popover-title {
+        font-size: 15px;
+        font-weight: 400;
+        background-color: $brand-text-color;
+        color: #fff;
+    }
+}
+
+.caret.column-sorting {
+    margin-left: 4px;
+}
+.dropdown-menu {
+    z-index: 1011;
+}
+.tab-content-header.no-context {
+    min-height: 60px;
+    padding-top: 15px;
+}
+/*
+
+Manual Ratings Styles
+
+*/
+
+.dropdown {
+    .btn-alerts {
+        background-color: $brand-white;
+        border: 1px solid $brand-text-color;
+        line-height: 0;
+        @include all-paddings(null, 10px, null, 10px);
+    }
+}
+.table-alerts {
+    .dropdown-menu {
+        &:not(.fluid-dropdown-menu) {
+            min-width: 100px;
+        }
+    }
+    td {
+        @include width(0px);
+    }
+    .dropdown-select-nav {
+        .dropdown-nav-link {
+            @include all-paddings(null, 5px, null, 5px);
+        }
+    }
+    .dropdown-select-nav > li > a {
+        @include all-paddings(null, 5px, null, 5px);
+    }
+}
+
+.bootstrap-datetimepicker-widget {
+    &.dropdown-menu {
+        z-index: 1050;
+        width: 200px;
+        min-width: 200px;
+    }
+}
+.number-selector {
+    .number-selector-btns {
+        width: 40px;
+    }
+}
+.table-default {
+    &.small {
+        font-size: 11px;
+
+        thead > tr > th {
+            text-transform: uppercase;
+        }
+        tbody > tr > td {
+            font-size: 14px;
+        }
+    }
+}
+.has-error {
+    .icon-status {
+        &.not-submitted {
+            background-color: $alert-green;
+        }
+        &.not-approved {
+            background-color: $red;
+        }
+    }
+    .dropdown-menu {
+        font-size: $base-font-size;
+    }
+}
+
+.btn {
+    .icon-status {
+        &.pending {
+            .pending-sign {
+                top: -5px;
+            }
+        }
+    }
+}
+
+.player-search-btn {
+    .search-loader {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px 5px 6px;
+
+        &.not-visible {
+            width: 0;
+            height: 0;
+            padding: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }
+    }
+    .icon-search2 {
+        &.not-visible {
+            width: 0;
+            height: 0;
+            padding: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }
+    }
+}
+
+.dropdown.dropdown-right {
+    .checkbox {
+        text-align: left;
+    }
+}
+
+.modal-content {
+    &.has-sticky-header {
+        padding-top: 60px;
+
+        .modal-sticky-header {
+            height: 60px;
+        }
+    }
+    &.has-sticky-footer {
+        padding-bottom: 60px;
+
+        .modal-sticky-footer {
+            height: 88px;
+        }
+    }
+}
+.table-default td{
+
+    &.aligned-top {
+        vertical-align: top;
+    }
+
+}
+.bootstrap-datetimepicker-widget {
+    &.dropdown-menu {
+        min-width: 230px;
+        width: 270px;
+    }
+}
+.collapse-tree {
+    a[data-toggle="collapse"] {
+        position: relative;
+    }
+    .glyphicon {
+        font-size: 11px;
+        font-weight: 400;
+        color: $brand-kpi-bar-color;
+        margin-left: -15px;
+        top: 4px;
+        position: absolute;
+    }
+}
+.instruction-text {
+    color: #b3b3b3;
+}
+.mgm-logo {
+    display:block;
+    @include width(100px);
+    @include height(100px);
+    margin: 0 auto;
+}
+.dropdown-body{
+    &.has-more-info-tip{
+        overflow:visible;
+    }
+}
+.more-info-tip {
+    display: inline;
+    position: relative;
+
+    &:hover {
+        &:before {
+            content:"";
+            position:absolute;
+            border: solid;
+            border-color: transparent $brand-text-color ;
+            border-width:10px;
+            border-left-width: 0;
+            right: -2px;
+            top: 20px;
+            -webkit-animation: translateX 1s;
+            -moz-animation: translateX 1s;
+            -o-animation: translateX 1s;
+            animation: translateX 1s;
+        }
+        &:after {
+            content: attr(data-tooltip);
+            position:absolute;
+            background-color: $brand-text-color;
+            border-radius:5px;
+            color: white;
+            padding:10px;
+            border: 2px solid $brand-text-color;
+            z-index: 1090;
+            font-size: 14px;
+            line-height:1.5;
+            width:100%;
+            min-height: 100%;
+            right: -100%;
+            top: 10px;
+            -webkit-animation: translateX 1s;
+            -moz-animation: translateX 1s;
+            -o-animation: translateX 1s;
+            animation: translateX 1s;
+        }
+    }
+    .dropdown-nav > li > &:hover:after {
+        text-transform: capitalize;
+    }
+}
+@keyframes translateX {
+  from {
+      margin-left:10%;
+  }
+  to {
+      margin-left:0
+  }
+}
+
+body {
+    &.has-header.has-sub-header.has-tabs {
+        overflow: hidden;
+    }
+}
+.table-section {
+    position:relative;
+    background: transparent;
+    padding-top:56px;
+
+    .table-wrapper {
+        min-height: 200px;
+        position:initial;
+        overflow-y:auto;
+
+        &.has-filters-above.has-fixed-footer {
+            // Combined heights of following elements need to be deducted from
+            // total = Top-nav: 50px + Top-sub-nav: 63px + Tab-area: 65px +
+            // Filter band : 74px + Footer band : 128px
+            // Total Height need to deduct from the total screen height: 380px
+
+            height: calc(100vh - 380px);
+
+            &.has-pagination {
+                height: calc(100vh - 396px);
+            }
+        }
+
+        .table-responsive {
+            overflow-x: hidden;
+        }
+
+        .table-header-fixed {
+
+            // th, td {
+            //     background-color: #550;
+            // }
+
+            th {
+              height: 0;
+              line-height: 0;
+              padding-top: 0;
+              padding-bottom: 0;
+              color: transparent;
+              white-space: nowrap;
+            }
+
+            th div{
+              position: absolute;
+              background: transparent;
+              color: #bb9156;
+              padding: 9px 25px;
+              top: 0;
+              margin-left: -25px;
+              line-height: normal;
+            }
+
+        }
+
+    }
+}
+
+
+.content-scrollable {
+    overflow:hidden;
+    height: auto;
+    max-height: calc(100vh - 424px);
+    overflow-y:auto;
+}
+
+.table-filters {
+    padding-bottom: 10px;
+}
+
+.dropdown-nav {
+    .dropdown-nav-link, > li > a {
+        text-transform: none;
+    }
+}
+.nav-tabs {
+    > li.active {
+        > a, > a:hover, > a:focus {
+            font-weight: 600;
+        }
+    }
+
+}
+
+.dropdown.dropdown-block {
+    .dropdown-menu {
+        &.content-scrollable {
+            height: auto;
+            max-height: calc(100vh - 410px);
+            overflow:hidden;
+            overflow-y:auto;
+        }
+    }
+}
+
+.dropdown-menu:not(.fluid-dropdown-menu):not(.applications-menu),
+.navbar-nav > li > .dropdown-menu:not(.fluid-dropdown-menu):not(.applications-menu) {
+    max-height: none;
+}
+
+// .table-header-fixed-0 {
+//     position:fixed;
+//
+//     > thead {
+//         th {
+//             background-color: white;
+//         }
+//     }
+// }
+
+.table-default {
+    th {
+        vertical-align: top;
+    }
+    &.cloned-header {
+        background-color: $brand-background-color;
+        index:1;
+    }
+
+    &.has-no-header {
+        > thead {
+            &.notVisible {
+                opacity:0;
+            }
+        }
+    }
+
+
+
+}

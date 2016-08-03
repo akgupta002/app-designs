@@ -1,0 +1,171 @@
+.apps-dashboard {
+    // background: url('../assets/img/mgm-logo.png') no-repeat 10px 10px $brand-background-color;
+    // background-size: 10% auto;
+}
+
+.dropdown-menu.applications-menu:not(.fluid-dropdown-menu), .navbar-nav > li > .dropdown-menu.applications-menu:not(.fluid-dropdown-menu){
+    min-width: 668px;
+    width: 45vw;
+}
+.apps-wrapper {
+    margin: 0 auto;
+    max-height: 75vh;
+    height: auto;
+    // position:relative;
+    // top: 100px;
+    padding:20px;
+    padding-bottom:0;
+    border: 1px solid rgba($brand-text-color,0.2);
+    @include border-radius(5px);
+    @include background-color(white);
+
+    @media (min-width: 700px) {
+        max-width: 60vw;
+    }
+    @media (min-width: 1050px) {
+        max-width: 55vw;
+    }
+    @media (min-width: 1400px) {
+        max-width: 50vw;
+    }
+    @media (min-width: 1750px) {
+        max-width: 49vw;
+    }
+    @media (min-width: 2100px) {
+        max-width: 48vw;
+    }
+
+    .thumbnail {
+        border:0;
+        position:relative;
+        @include background-color(white,0.75);
+        @include border-radius(0px);
+
+        // &:hover {
+        //     background-color: rgba(255, 255, 255, 1);
+        //     border-color:rgba($brand-kpi-bar-color,1);
+        //     @include drop-shadow(darken($brand-kpi-bar-color, 10%), 2px, 2px, 4px);
+        // }
+        &.icons-separator-right:after{
+            content:'';
+            border-right: 1px dashed rgba(128, 128, 128, 0.2);
+            position:absolute;
+            top: 0;
+            right: -15px;
+            bottom: 0;
+        }
+        &.icons-separator-top:before {
+            content:'';
+            border-top: 1px dashed rgba(128, 128, 128, 0.2);
+            position:absolute;
+            left: 0;
+            top: -15px;
+            right: 0;
+        }
+        .application-menu-item-link, .application-menu-item-icon {
+            min-height:10vh;
+            max-height:20vh;
+        }
+        .application-menu-item-icon {
+            min-height:5vh;
+        }
+
+        &.disable{
+            .application-menu-item-link, .application-menu-item-icon, .icon-fav {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+            .application-menu-item-link {
+                &.mouse-focus.focus, &:active, &:focus:active, &:hover, &:focus:hover {
+                    color: #808080 !important;
+                }
+            }
+        }
+    }
+}
+.icon-fav {
+    position: absolute;
+    right:0;
+    top:0;
+    @include width(20px);
+    @include height(19px);
+    cursor:pointer;
+    background:url('../assets/icons/icon-star-empty-white.svg') no-repeat top right transparent;
+
+    &.selected {
+        @include width(19px);
+        @include height(20px);
+    }
+
+    &.selected, &.selected:hover {
+        background-image: url('../assets/icons/icon-star-filled-gold.svg');
+    }
+
+    &:hover {
+        background:url('../assets/icons/icon-star-empty-hover.svg') no-repeat top right transparent;
+    }
+
+    &, &:hover, &.selected, &.selected:hover {
+        background-size:cover;
+    }
+
+    .dropdown & {
+        right:15px;
+        top:10px;
+
+        &,
+        &.selected,
+        &:hover,
+        &.selected:hover {
+            @include width(16px);
+            @include height(15px);
+        }
+
+        &.lg {
+
+            left: 15px;
+            top: 15px;
+
+            &,
+            &:hover {
+                @include width(21px);
+                @include height(20px);
+            }
+
+            &.selected,
+            &.selected:hover {
+                @include width(20px);
+                @include height(21px);
+            }
+        }
+    }
+}
+
+.dropdown {
+    .app-instruction-text {
+        border-bottom: 1px solid #eee;
+
+        p {
+            margin-left: 30px;
+        }
+    }
+
+    .application-menu-item {
+        &.disable {
+            .icon-fav, .application-menu-item-link {
+                opacity: 0.5;
+                cursor: not-allowed;
+
+                &.mouse-focus.focus, &:active, &:focus:active, &:hover, &:focus:hover {
+                    color: #808080 !important;
+                }
+            }
+        }
+    }
+}
+.navbar-nav > li > span {
+    color: white;
+    position: relative;
+    top: 10px;
+    cursor:default;
+}

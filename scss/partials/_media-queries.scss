@@ -1,0 +1,191 @@
+/* media queries */
+@media (min-width: 700px) {
+    .game-table-card {
+        width: calc((100% / 3) - 6px);
+    }
+    .game-player-card,
+    .game-player-card.empty {
+        min-width: 131px;
+        margin-bottom: 7px;
+    }
+    .game-player-card-container {
+        min-height: 277px;
+    }
+    .game-player-wrapper .game-player-image,
+    .game-player-card .game-player-backbetter .game-player-image,
+    .search-wrapper .player-search-results-row .game-player-image {
+        width: 36px;
+        height: 36px;
+        margin: 10px 10px 10px 0;
+    }
+    .search-wrapper .player-search-results-row p {
+        padding-top: 6px;
+    }
+    .game-player-card-title h3,
+    .game-player-card-title p,
+    .game-player-card .game-player-card-data-row .item-data-label,
+    .game-player-card .game-player-card-data-row .item-data-value {
+        font-size: 10px;
+    }
+    .game-player-card-title h3,
+    .game-player-card-title p {
+        margin: 4px 0;
+    }
+    .sub-navbar .navbar-brand {
+        min-width: 150px;
+    }
+    .nav.navbar-nav.width-80 {
+        width: 79%;
+    }
+    .item-data-label {
+        font-size: 11px;
+    }
+    .item-data-value {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1050px) {
+    .game-table-card {
+        width: calc((100% / 4) - 6px);
+    }
+    .game-player-card,
+    .game-player-card.empty {
+        min-width: 138px;
+    }
+    .game-player-card-container {
+        min-height: 280px;
+    }
+    .game-player-wrapper .game-player-image,
+    .game-player-card .game-player-backbetter .game-player-image,
+    .search-wrapper .player-search-results-row .game-player-image {
+        width: 40px;
+        height: 40px;
+        margin: 10px 10px 10px 0;
+    }
+    .search-wrapper .player-search-results-row p {
+        padding-top: 10px;
+    }
+    .game-player-card-title h3,
+    .game-player-card-title p,
+    .game-player-card .game-player-card-data-row .item-data-label,
+    .game-player-card .game-player-card-data-row .item-data-value {
+        font-size: 12px;
+    }
+    .game-player-card-title h3,
+    .game-player-card-title p {
+        margin: 4px 0;
+    }
+    .sub-navbar .navbar-brand {
+        min-width: 160px;
+    }
+    .nav.navbar-nav.width-80 {
+        width: 79.5%;
+    }
+    .item-data-label {
+        font-size: 13px;
+    }
+    .item-data-value {
+        font-size: 17px;
+    }
+}
+@media (min-width: 1400px) {
+    .game-table-card {
+        width: calc((100% / 5) - 6px);
+    }
+    .game-player-card,
+    .game-player-card.empty {
+        min-width: 194px;
+        margin-bottom: 10px;
+    }
+    .game-player-card-container {
+        min-height: 288px;
+    }
+    .game-player-wrapper .game-player-image,
+    .game-player-card .game-player-backbetter .game-player-image,
+    .search-wrapper .player-search-results-row .game-player-image {
+        width: 60px;
+        height: 60px;
+        margin: 10px 10px 10px 0;
+    }
+    .search-wrapper .player-search-results-row p {
+        padding-top: 15px;
+    }
+    .game-player-card-title h3,
+    .game-player-card-title p,
+    .game-player-card .game-player-card-data-row .item-data-label,
+    .game-player-card .game-player-card-data-row .item-data-value {
+        font-size: 15px;
+    }
+    .sub-navbar .navbar-brand {
+        min-width: 180px;
+    }
+    .nav.navbar-nav.width-80 {
+        width: 83.5%;
+    }
+    .item-data-label {
+        font-size: 15px;
+    }
+    .item-data-value {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1750px) {
+    .game-table-card {
+        width: calc((100% / 6) - 6px);
+    }
+    .game-player-card,
+    .game-player-card.empty {
+        min-width: 194px;
+    }
+    .nav.navbar-nav.width-80 {
+        width: 86%;
+    }
+    .search-wrapper .player-search-results-row p {
+        padding-top: 18px;
+    }
+}
+@media (min-width: 2100px) {
+    .game-table-card {
+        width: calc((100% / 7) - 6px);
+    }
+    .game-player-card,
+    .game-player-card.empty {
+        min-width: 194px;
+    }
+    .nav.navbar-nav.width-80 {
+        width: 89%;
+    }
+    .search-wrapper .player-search-results-row p {
+        padding-top: 22px;
+    }
+}
+@media (min-width: 2450px) {
+    .game-table-card {
+        width: calc((100% / 8) - 6px);
+    }
+    .game-player-card,
+    .game-player-card.empty {
+        min-width: 194px;
+    }
+    .nav.navbar-nav.width-80 {
+        width: 91%;
+    }
+    .search-wrapper .player-search-results-row p {
+        padding-top: 25px;
+    }
+}
+@media (min-width: 2800px) {
+    .game-table-card {
+        width: calc((100% / 9) - 6px);
+    }
+    .game-player-card,
+    .game-player-card.empty {
+        min-width: 194px;
+    }
+    .nav.navbar-nav.width-80 {
+        width: 91%;
+    }
+    .search-wrapper .player-search-results-row p {
+        padding-top: 28px;
+    }
+}

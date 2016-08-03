@@ -1,0 +1,356 @@
+/*
+Create User style
+*/
+.create-user {
+    .modal-dialog {
+        @include width(768px);
+        min-height: 80vh;
+    }
+    .modal-header {
+        border: 0;
+        text-align: center;
+    }
+    .modal-body {
+        min-height: 480px;
+    }
+    .nav-tabs {
+        background-color: $brand-nav-bar-color;
+        @include all-margins(-15px, -36px, 0, -36px);
+        @include all-paddings(10px, 15px, 0, 15px);
+
+        // .count-label {
+        //     @include all-margins(null, null, null, 10px);
+        // }
+    }
+    .thin-band {
+        display:inline-block;
+        min-height: 16px;
+        min-width: 20px;
+        padding:10px 10px;
+        cursor:pointer;
+        text-align:center;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+        border: 1px solid $brand-background-color;
+        border-bottom:1px solid $brand-kpi-bar-color;
+        background-color: $brand-background-color;
+        @include width(25%);
+        @include all-margins(2px, 1px, null, null);
+
+        &.active  {
+            margin-top:0;
+            padding-top:11px;
+            padding-bottom:11px;
+            background-color: #fff;
+            border-color: $brand-kpi-bar-color;
+            color: $brand-kpi-bar-color;
+            border-bottom: 1px solid #fff;
+        }
+    }
+    .top-buffer {
+        margin-top: 20px;
+    }
+    .tab-content {
+        border-top: 1px solid $brand-kpi-bar-color;
+        padding-top: 20px;
+        margin-top: -1px;
+    }
+    .form-group .btn {
+        width: 100%;
+    }
+    .table-default {
+        thead {
+            background-color: transparent;
+        }
+        td {
+            padding-top: 5px;
+            padding-bottom: 6px;
+        }
+        tr:nth-child(odd) td {
+            background-color: rgba(187, 145, 86, 0.15);
+        }
+    }
+    .form-horizontal .control-label {
+        text-align: left;
+        padding-bottom: 6px;
+        width: 100%;
+    }
+    .user-image{
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 50%;
+        margin: 0 auto;
+        border: 1px solid rgba(187, 145, 86, 0.15);
+    }
+}
+
+.create-user {
+    .dropdown-nav {
+        .dropdown-nav-link {
+            padding:10px 15px;
+        }
+    }
+    .dropdown-nav > li > a {
+        padding:10px 15px;
+    }
+    .section-access-group {
+        background-color: rgba(187, 145, 86, 0.1);
+        padding: 10px;
+        margin-bottom: 20px;
+
+        .btn {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        &:first-child {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        &:last-child {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+
+    .dropdown-select {
+        .btn.btn-secondary {
+            background-color: #fff;
+
+            &:hover {
+                color: $brand-nav-bar-color;
+                border-color: $brand-nav-bar-color;
+            }
+        }
+
+        .btn.dropdown-toggle {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.view-topology-button {
+    position: absolute;
+    right:0;
+    margin-top: -12px;
+}
+
+.divider {
+    border: 1px solid rgba(187, 145, 86, 0.1);
+    display:block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+%left-wrapper {
+    border: 1px solid $brand-text-color;
+    border-radius: 5px;
+    overflow-y:auto;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 330px;
+}
+%faded-gold-background {
+    background-color: rgba(187, 145, 86, 0.15);
+}
+
+.left-wrapper {
+    @extend %left-wrapper;
+
+    .list-group-item {
+        cursor: pointer;
+        border-left: 0;
+        border-right: 0;
+
+        &:first-child {
+            border-top:0;
+        }
+        &:last-child {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &:hover, &.selected {
+            // background-color: rgba(187, 145, 86, 0.1);
+            @extend %faded-gold-background;
+        }
+    }
+
+    .glyphicon {
+        color: $brand-text-color;
+
+        &:hover {
+            color: $brand-kpi-bar-color;
+        }
+    }
+    .instruction-text {
+        padding: 10px;
+        @extend %faded-gold-background;
+    }
+}
+.middle-wrapper {
+    @extend .left-wrapper;
+
+    &.move-btn {
+        display: table-cell;
+        vertical-align: middle;
+        border:0;
+        overflow:hidden;
+        margin-bottom:0;
+        position: relative;
+        left: 35%;
+        opacity: 0.5;
+    }
+}
+.right-wrapper {
+    @extend .left-wrapper;
+}
+
+.wrapper-heading {
+    font-weight: 700;
+    color: $brand-text-color;
+}
+.submit-role-btn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    background-color: transparent;
+    color: rgba(187, 145, 86, 0.15);
+    padding: 9px 14px;
+    border-left: 1px solid rgba(187, 145, 86, 0.15);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: default;
+
+    &.active {
+        background-color: $brand-text-color;
+        color: $brand-kpi-bar-color;
+        cursor: pointer;
+    }
+}
+.caret.right-aligned {
+    position: absolute;
+    top: 44%;
+    right: 10px;
+}
+.dropdown.full-width {
+    width: 100%;
+}
+.dropdown.full-width .btn {
+    @extend .dropdown.full-width;
+}
+.access-group-contents {
+    .modal-dialog {
+        width: 60%;
+    }
+    .modal-content {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.icon-tree {
+    background: url('../assets/img/flow_chart-gold.png') top left transparent no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+    top: 4px;
+    position: relative;
+}
+.view-tree-block {
+    display: block;
+    position: fixed;
+    top: 115px;
+    width: 300px;
+    height: 430px;
+    border: 1px solid $brand-text-color;
+    background-color: #fff;
+    padding: 15px;
+    right: -295px;
+
+    &:before {
+        content: '';
+        border: 10px solid $brand-text-color;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left:0;
+        position: absolute;
+        left: -10px;
+        top: 8px;
+    }
+    .wrapper {
+        // background-color: rgba(187, 145, 86, 0.1);
+        @extend %faded-gold-background;
+        border-radius: 5px;
+        height: 350px;
+        width: 100%;
+        overflow-y: auto;
+        margin-top: 20px;
+        position:relative;
+    }
+}
+
+.left-wrapper.version2 .list-group:after, .middle-wrapper.version2 .list-group:after {
+    content:'';
+    background-image: url('../assets/icons/icon-arrow-right-lg.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width:50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    right: -15px;
+    top: 35%;
+}
+.no-border {
+    border:0;
+}
+.wrapper-access-groups {
+    @include border-radius(5px);
+    @include height(340px);
+    border:1px solid $light-gold;
+    overflow-y:auto;
+    max-height:340px;
+
+    .add-access-group {
+        margin-top:10px;
+    }
+}
+.access-groups-container {
+    border:1px solid gray;
+    padding:5px;
+    border-radius:5px;
+    margin-bottom: 10px;
+    // background-color:rgba(187, 145, 86, 0.1);
+    @extend %faded-gold-background;
+
+    &.fixedHeight {
+        max-height:120px;
+        overflow-y:auto;
+    }
+}
+
+.access-groups-target-container {
+    @extend .access-groups-container;
+}
+
+.access-group-label {
+    @include border-radius(5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    @include all-paddings(10px,null,10px,null);
+    display:block;
+    text-align:center;
+    cursor: pointer;
+    width: 100%;
+    border:1px solid $light-gold;
+    @include all-margins(5px,null,5px,null);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 1);
+        border-color: $brand-text-color;
+    }
+
+    &.assigned{
+        @include all-paddings(null, 10px, null, 10px);
+    }
+}

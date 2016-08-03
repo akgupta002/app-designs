@@ -1,0 +1,93 @@
+/*
+Styles for show Roll time screen
+*/
+
+.modal-roll-time {
+
+    .modal-content.has-sticky-header {
+            @include all-paddings(135px, null, null, null);
+
+        .modal-sticky-header {
+            @include height(135px);
+        }
+    }
+
+    .modal-content.has-sticky-footer {
+        @include all-paddings(null, null, 60px, null);
+
+        .modal-sticky-footer {
+            @include height(88px);
+        }
+    }
+
+    &.auto-height {
+
+        .modal-dialog {
+            @include width(50%);
+            height: calc(100% - 20px);
+            margin: 10px auto 0;
+        }
+
+        .modal-content {
+            background-color: $brand-background-color;
+            display: block;
+            overflow: auto;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            @include height(100%);
+        }
+    }
+
+    .table-sorting-option,
+    .table-action-option {
+        margin-left: 0;
+    }
+
+    p.text-info {
+        color: $alert-red;
+    }
+
+    .table-default {
+
+        td {
+            vertical-align: middle;
+            @include all-paddings(15px,null,16px,null);
+
+            &.aligned-top {
+                vertical-align: top;
+            }
+        }
+
+        &.more-columns th {
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+    }
+
+    .bootstrap-datetimepicker-widget.dropdown-menu {
+        min-width: 230px;
+        @include width(270px);
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .breadcrumb {
+        background-color: $transparent;
+        @include paddings(0);
+        @extend .form-group;
+    }
+
+    .breadcrumb > li {
+        color: #555555;
+
+        &.highlight {
+            color: $brand-kpi-bar-color;
+        }
+    }
+
+    td.md-width {
+        @include width(70%);
+    }
+}

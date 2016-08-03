@@ -1,0 +1,255 @@
+.modal-game-details {
+
+    .modal-open & {
+        overflow:hidden;
+    }
+    .modal-dialog, .modal-content, .modal-sticky-header.navbar-fixed-top,
+    .modal-body, .modal-sticky-footer.navbar-fixed-bottom {
+        background-color: $brand-background-color;
+    }
+    .modal-content{
+        &.has-sticky-header .modal-sticky-header, &.has-sticky-footer .modal-sticky-footer {
+            height: auto;
+            padding-top:10px;
+            @include drop-shadow($brand-text-color,0,0,15px);
+        }
+        &.has-sticky-header .modal-sticky-header {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            padding-bottom: 10px;
+        }
+        &.has-sticky-footer .modal-sticky-footer {
+            min-height: 120px;
+            border-top-left-radius:0;
+            border-top-right-radius:0;
+
+            .tab-content-header-title {
+                color: $brand-footer-color;
+                float:right;
+            }
+            .modal-footer {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        &.has-sticky-header .modal-sticky-header, .modal-sticky-footer {
+            hr {
+                margin: 10px 0;
+                border-color: rgba(black,0.2);
+            }
+        }
+    }
+
+    .modal-dialog {
+        width: 98%;
+    }
+    .modal-footer {
+        margin-top: 10px;
+    }
+    .modal-body {
+        overflow-y:auto;
+        position:relative;
+        top: 55px;
+        min-height: 300px;
+        height: 75vh;
+
+        .game-player-card {
+
+            .game-player-card-wrapper {
+                padding: 4px;
+                @include border-radius();
+            }
+            &.has-multiple-players{
+
+                .game-player-card-content {
+                    margin-bottom: 160px;
+                    -webkit-backface-visibility: visible;
+                    backface-visibility: visible;
+
+                    .game-player-known, .game-player-backbetter {
+                        padding-bottom:15px;
+                        margin-bottom:15px;
+                        border-bottom: 1px solid lighten($brand-global-color, 90%);
+                    }
+                }
+            }
+        }
+    }
+    .cards-on-left {
+        border-right:2px solid $brand-text-color;
+        margin-right: -15px;
+    }
+    .shoe-cards-container {
+        border: none;
+
+        .shoe-card-cover {
+            min-width: 60px;
+            width: auto;
+
+            .shoe-card {
+                width: 50px;
+                height: 70px;
+
+                &.landscape {
+                    margin-left: 10px;
+                }
+                &.counter-landscape {
+                    margin-right: 10px;
+                }
+                .card-value {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+
+    .cards-on-right {
+        .shoe-cards-container {
+            padding-left: 10px;
+        }
+    }
+
+    .icon-suit-clubs, .icon-suit-hearts, .icon-suit-diamonds, .icon-suit-spades  {
+        width: 15px;
+        height: 15px;
+    }
+
+    .supervisor-footer-content {
+        width: 100%;
+
+        .item-data-label {
+            font-size: 20px;
+        }
+        .item-data-value {
+            text-align: right;
+        }
+
+        &:hover, &.active {
+            background-color: $brand-kpi-bar-color;
+            cursor: pointer;
+
+            .item-data-value {
+                color: white;
+            }
+        }
+    }
+    .tab-content-header-title {
+        text-transform: none;
+    }
+    .game-player-wrapper .game-player-image, .game-player-backbetter .game-player-wrapper .game-player-image {
+        width: 48px;
+        height: 48px;
+        margin:0;
+    }
+}
+
+.shoe-cards-wrapper {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin:0 auto;
+
+    .table-default {
+        tr {
+            &.bdr-top {
+                border-top: 1px solid $brand-text-color;
+            }
+        }
+        td {
+            color: $brand-text-color;
+
+            strong {
+                color: inherit;
+            }
+        }
+    }
+}
+.shoe-cards-container {
+    border-right: 4px solid $brand-text-color;
+    height: auto;
+    width: 100%;
+    text-align:center;
+}
+
+.shoe-card-cover {
+    padding: 0;
+    min-width: 90px;
+    width: 31.333333333333333%;
+    *width: 31.333333333333333%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: inline-block;
+}
+
+.shoe-card {
+    @include width(74px);
+    @include height(100px);
+    @include border-radius();
+    @include all-margins(0, auto, 0, auto);
+    background-color: $brand-white;
+    border-right: 1px solid $brand-text-color;
+    border-bottom: 1px solid $brand-text-color;
+    text-align: center;
+    cursor: default;
+
+    .card-value {
+        color: $brand-text-color;
+        font-size: 48px;
+        line-height: 1;
+        font-weight: 700;
+        @include all-paddings(5px, null, 5px, null);
+    }
+
+    .at-mid {
+        @include all-margins(0, auto, 0, auto);
+    }
+
+    &.landscape {
+        @include all-margins(0, auto, 0, auto);
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        max-width: 100px;
+        border-top: 1px solid $brand-text-color;
+        border-bottom: none !important;
+    }
+
+    &.counter-landscape {
+        border-left: 1px solid $brand-text-color;
+        border-right: none !important;
+        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        @include all-margins(0, auto, 0, auto);
+        max-width: 100px;
+    }
+
+}
+
+.shoe-card-footer {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: $brand-text-color;
+    padding-top: 20px;
+}
+.cards-on-right {
+    padding-left: 0 !important;
+
+    .shoe-cards-container {
+        border-right: none;
+    }
+}
+.side-title {
+    font-size: 12px;
+    color: $brand-footer-header-color;
+    font-weight: bold;
+    position: absolute;
+    right: 5px;
+    top: 37%;
+
+    .cards-on-right & {
+        left: 4px;
+        right: 0;
+    }
+}
